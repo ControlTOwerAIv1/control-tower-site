@@ -2,8 +2,11 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 
 export default function Navbar() {
+  const pathname = usePathname()
+  const router = useRouter()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -14,6 +17,12 @@ export default function Navbar() {
   }, [])
 
   const scrollToZone = (zoneIndex: number) => {
+    if (pathname !== '/') {
+      router.push(`/?zone=${zoneIndex}`)
+      setMenuOpen(false)
+      return
+    }
+
     const pageHeight = document.documentElement.scrollHeight - window.innerHeight
     const zoneStart = (zoneIndex / 8) * pageHeight
     window.scrollTo({ top: zoneStart, behavior: 'smooth' })
@@ -26,26 +35,26 @@ export default function Navbar() {
         scrolled ? 'bg-navy/80 backdrop-blur-md border-b border-white/5' : 'bg-transparent'
       }`}
     >
-      <Link href="/" className="text-cyan font-mono text-sm tracking-widest uppercase">
+      <Link href="/" className="text-cyan font-mono text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>
         Control Tower
       </Link>
 
       {/* Desktop links */}
       <div className="hidden md:flex items-center gap-8">
         <button
-          onClick={() => scrollToZone(2)}
+          onClick={() => scrollToZone(3)}
           className="text-white/60 hover:text-white text-sm transition-colors"
         >
           How It Works
         </button>
         <button
-          onClick={() => scrollToZone(3)}
+          onClick={() => scrollToZone(4)}
           className="text-white/60 hover:text-white text-sm transition-colors"
         >
           Services
         </button>
         <button
-          onClick={() => scrollToZone(6)}
+          onClick={() => scrollToZone(7)}
           className="text-white/60 hover:text-white text-sm transition-colors"
         >
           Team
@@ -64,22 +73,22 @@ export default function Navbar() {
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >
-        <span className="font-mono text-lg">{menuOpen ? '✕' : '☰'}</span>
+        <span className="font-mono text-lg">{menuOpen ? 'X' : '='}</span>
       </button>
 
       {/* Mobile menu */}
       {menuOpen && (
         <div className="absolute top-full left-0 right-0 bg-navy/95 backdrop-blur-md border-b border-white/5 flex flex-col p-6 gap-4 md:hidden">
-          <button onClick={() => scrollToZone(2)} className="text-white/70 text-sm text-left">
+          <button onClick={() => scrollToZone(3)} className="text-white/70 text-sm text-left">
             How It Works
           </button>
-          <button onClick={() => scrollToZone(3)} className="text-white/70 text-sm text-left">
+          <button onClick={() => scrollToZone(4)} className="text-white/70 text-sm text-left">
             Services
           </button>
-          <button onClick={() => scrollToZone(6)} className="text-white/70 text-sm text-left">
+          <button onClick={() => scrollToZone(7)} className="text-white/70 text-sm text-left">
             Team
           </button>
-          <Link href="/contact" className="text-cyan font-mono text-sm">
+          <Link href="/contact" className="text-cyan font-mono text-sm" onClick={() => setMenuOpen(false)}>
             Contact
           </Link>
         </div>

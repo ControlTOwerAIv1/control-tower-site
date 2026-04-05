@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Sora, JetBrains_Mono } from 'next/font/google'
 import Navbar from '@/components/ui/Navbar'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const sora = Sora({ subsets: ['latin'] })
+const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' })
 
 export const metadata: Metadata = {
   title: 'Control Tower — Your business, always in view.',
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-navy text-white antialiased`}>
+      <body className={`${sora.className} ${mono.variable} bg-navy text-white antialiased`}>
         <Navbar />
         {children}
       </body>

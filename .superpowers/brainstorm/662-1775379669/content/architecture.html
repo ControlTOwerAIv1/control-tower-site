@@ -1,0 +1,105 @@
+<h2>Site Architecture — Full Immersive 3D</h2>
+<p class="subtitle">One persistent Three.js canvas. The camera travels through a single 3D world as the user scrolls.</p>
+
+<div class="section">
+  <h3>Core Concept</h3>
+  <p style="color:var(--text-secondary);margin-bottom:16px;">Instead of separate pages or canvases, the entire homepage is <strong>one Three.js scene</strong>. Scrolling moves the camera through different "zones" of that 3D world — each zone corresponds to a section. Text and UI elements float as HTML overlays on top of the canvas.</p>
+
+  <div style="background:rgba(0,180,255,0.05);border:1px solid rgba(0,180,255,0.15);border-radius:8px;padding:20px;font-family:monospace;font-size:12px;line-height:2;color:rgba(255,255,255,0.7);">
+    <div style="color:#00c8ff;margin-bottom:8px;">SCROLL JOURNEY  ↓</div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
+      <div style="width:10px;height:10px;background:#00c8ff;border-radius:50%;box-shadow:0 0 6px #00c8ff;flex-shrink:0;"></div>
+      <span><strong style="color:white;">Zone 1 — Hero</strong> &nbsp;Operator + giant screen, slow camera orbit</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;padding-left:5px;">
+      <div style="width:1px;height:20px;background:rgba(0,200,255,0.2);"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
+      <div style="width:10px;height:10px;background:rgba(0,200,255,0.5);border-radius:50%;flex-shrink:0;"></div>
+      <span><strong style="color:white;">Zone 2 — What We Do</strong> &nbsp;Camera pulls back, control tower revealed</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;padding-left:5px;">
+      <div style="width:1px;height:20px;background:rgba(0,200,255,0.2);"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
+      <div style="width:10px;height:10px;background:rgba(0,200,255,0.5);border-radius:50%;flex-shrink:0;"></div>
+      <span><strong style="color:white;">Zone 3 — How It Works</strong> &nbsp;Camera flies into glowing process flow nodes</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;padding-left:5px;">
+      <div style="width:1px;height:20px;background:rgba(0,200,255,0.2);"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
+      <div style="width:10px;height:10px;background:rgba(0,200,255,0.5);border-radius:50%;flex-shrink:0;"></div>
+      <span><strong style="color:white;">Zone 4 — Services</strong> &nbsp;Floating 3D panels materialize in space</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;padding-left:5px;">
+      <div style="width:1px;height:20px;background:rgba(0,200,255,0.2);"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
+      <div style="width:10px;height:10px;background:rgba(0,200,255,0.5);border-radius:50%;flex-shrink:0;"></div>
+      <span><strong style="color:white;">Zone 5 — Why Us</strong> &nbsp;Stats emerge as floating 3D geometry</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;padding-left:5px;">
+      <div style="width:1px;height:20px;background:rgba(0,200,255,0.2);"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
+      <div style="width:10px;height:10px;background:rgba(0,200,255,0.5);border-radius:50%;flex-shrink:0;"></div>
+      <span><strong style="color:white;">Zone 6 — Case Studies</strong> &nbsp;Camera zooms into floating data panels</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;padding-left:5px;">
+      <div style="width:1px;height:20px;background:rgba(0,200,255,0.2);"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
+      <div style="width:10px;height:10px;background:rgba(0,200,255,0.5);border-radius:50%;flex-shrink:0;"></div>
+      <span><strong style="color:white;">Zone 7 — Team</strong> &nbsp;Abstract low-poly avatars orbit in space</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;padding-left:5px;">
+      <div style="width:1px;height:20px;background:rgba(0,200,255,0.2);"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div style="width:10px;height:10px;background:rgba(0,200,255,0.5);border-radius:50%;flex-shrink:0;"></div>
+      <span><strong style="color:white;">Zone 8 — Contact CTA</strong> &nbsp;Camera pulls way back, full scene visible</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Tech Stack</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px;">
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:12px;">
+      <div style="color:#00c8ff;font-size:11px;font-family:monospace;margin-bottom:6px;">FRAMEWORK</div>
+      <div style="color:rgba(255,255,255,0.8);font-size:13px;">Next.js 14 (App Router)</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:12px;">
+      <div style="color:#00c8ff;font-size:11px;font-family:monospace;margin-bottom:6px;">3D ENGINE</div>
+      <div style="color:rgba(255,255,255,0.8);font-size:13px;">React Three Fiber + Drei</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:12px;">
+      <div style="color:#00c8ff;font-size:11px;font-family:monospace;margin-bottom:6px;">SCROLL ANIMATION</div>
+      <div style="color:rgba(255,255,255,0.8);font-size:13px;">GSAP ScrollTrigger</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:12px;">
+      <div style="color:#00c8ff;font-size:11px;font-family:monospace;margin-bottom:6px;">UI OVERLAYS</div>
+      <div style="color:rgba(255,255,255,0.8);font-size:13px;">Tailwind CSS + Framer Motion</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:12px;">
+      <div style="color:#00c8ff;font-size:11px;font-family:monospace;margin-bottom:6px;">LANGUAGE</div>
+      <div style="color:rgba(255,255,255,0.8);font-size:13px;">TypeScript</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:12px;">
+      <div style="color:#00c8ff;font-size:11px;font-family:monospace;margin-bottom:6px;">DEPLOYMENT</div>
+      <div style="color:rgba(255,255,255,0.8);font-size:13px;">Vercel</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Pages</h3>
+  <div style="font-family:monospace;font-size:12px;color:rgba(255,255,255,0.7);background:rgba(0,0,0,0.3);border-radius:6px;padding:16px;line-height:2;">
+    <span style="color:#00c8ff;">/</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Main scrolling experience (all 8 zones)<br/>
+    <span style="color:#00c8ff;">/contact</span> &nbsp;→ Contact form (minimal 3D particle background)<br/>
+    <span style="color:#00c8ff;">/about</span> &nbsp;&nbsp;→ Extended team page (optional, can add later)
+  </div>
+</div>
+
+<p style="color:rgba(255,255,255,0.4);font-size:12px;margin-top:16px;">Does this overall architecture look right? Reply in the terminal.</p>

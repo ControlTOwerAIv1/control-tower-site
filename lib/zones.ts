@@ -15,47 +15,46 @@ export interface ZoneDefinition {
 export const ZONES: ZoneDefinition[] = [
   {
     id: 0,
-    name: 'Hero',
-    camera: { position: [0, 3, 9], lookAt: [-1, 1, 0] },
+    name: 'City Overview',
+    camera: { position: [0, 26, 84], lookAt: [0, 6, 0] },
   },
   {
     id: 1,
-    name: 'What We Do',
-    camera: { position: [0, 8, 22], lookAt: [0, 3, 0] },
+    name: 'Hero Interior',
+    camera: { position: [-8.8, 3.4, 8.8], lookAt: [1.8, 1.9, 1.1] },
   },
   {
     id: 2,
-    name: 'How It Works',
-    navLabel: 'How It Works',
-    camera: { position: [0, 4, 5], lookAt: [0, 2, -10] },
+    name: 'What We Do',
+    camera: { position: [2.9, 3.3, 10.6], lookAt: [-6.1, 2.55, 3.45] },
   },
   {
     id: 3,
-    name: 'Services',
-    navLabel: 'Services',
-    camera: { position: [18, 4, 8], lookAt: [18, 2, 0] },
+    name: 'How It Works',
+    navLabel: 'How It Works',
+    camera: { position: [2.9, 3.3, 8.2], lookAt: [-6.2, 2.25, 3.35] },
   },
   {
     id: 4,
-    name: 'Why Us',
-    camera: { position: [30, 5, 10], lookAt: [28, 2, 0] },
+    name: 'Services',
+    navLabel: 'Services',
+    camera: { position: [2.8, 3.3, 8.1], lookAt: [-6.1, 2.15, 3.3] },
   },
   {
     id: 5,
-    name: 'Case Studies',
-    camera: { position: [42, 4, 8], lookAt: [42, 2, 0] },
+    name: 'Why Us',
+    camera: { position: [3.1, 4.9, 7.2], lookAt: [-6.2, 2.8, 3.2] },
   },
   {
     id: 6,
-    name: 'Team',
-    navLabel: 'Team',
-    camera: { position: [55, 4, 8], lookAt: [55, 2, 0] },
+    name: 'Case Studies',
+    camera: { position: [3.1, 4.9, 7.2], lookAt: [-6.1, 2.75, 3.25] },
   },
   {
     id: 7,
-    name: 'Contact CTA',
-    navLabel: 'Contact',
-    camera: { position: [0, 30, 60], lookAt: [0, 0, 0] },
+    name: 'Team',
+    navLabel: 'Team',
+    camera: { position: [3.3, 5.3, 7.1], lookAt: [-6.25, 2.95, 3.15] },
   },
 ]
 
@@ -71,6 +70,13 @@ export function getZoneProgress(scrollProgress: number, zoneId: number): number 
   const zoneStart = zoneId * zoneSize
   const raw = (scrollProgress - zoneStart) / zoneSize
   return Math.max(0, Math.min(1, raw))
+}
+
+/** Zone visibility around its center, useful for smooth cross-fades */
+export function getZoneVisibility(scrollProgress: number, zoneId: number): number {
+  const center = (zoneId + 0.5) / TOTAL_ZONES
+  const distance = Math.abs(scrollProgress - center)
+  return Math.max(0, 1 - distance * TOTAL_ZONES)
 }
 
 /** Get interpolated camera position between two zones */
