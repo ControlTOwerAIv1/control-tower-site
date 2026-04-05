@@ -80,7 +80,7 @@ export function interpolateCameraPosition(
   const rawZone = scrollProgress * TOTAL_ZONES
   const fromIndex = Math.min(Math.floor(rawZone), TOTAL_ZONES - 1)
   const toIndex = Math.min(fromIndex + 1, TOTAL_ZONES - 1)
-  const t = rawZone - fromIndex
+  const t = Math.min(rawZone - fromIndex, 1)
 
   const from = ZONES[fromIndex].camera
   const to = ZONES[toIndex].camera
