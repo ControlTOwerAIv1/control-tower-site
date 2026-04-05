@@ -12,6 +12,7 @@ const config: Config = {
         green: '#00ff88',
         amber: '#ffa000',
         navy: '#04080f',
+        'navy-mid': '#060b14',
       },
       fontFamily: {
         mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
