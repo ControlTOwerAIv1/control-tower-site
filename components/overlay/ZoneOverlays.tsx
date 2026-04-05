@@ -32,7 +32,7 @@ export default function ZoneOverlays({ progress, onJumpToZone }: ZoneOverlaysPro
           {zoneIndex === 0 && (
             <section className="absolute inset-0 flex items-start justify-center px-6 pt-24">
               <div className="overlay-panel rounded-2xl px-5 py-3 text-center">
-                <p className="font-mono text-[11px] tracking-[0.28em] text-cyan/90">LIVE CITY OPERATIONS</p>
+                <p className="font-mono text-[11px] tracking-[0.28em] text-cyan/90">CONTROL TOWER AI</p>
               </div>
             </section>
           )}
