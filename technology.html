@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technologies — Control Tower</title>
+  <meta name="description"
+    content="Discover the modern technologies Control Tower uses to build websites, apps, software, cloud systems, and smart solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <script>(function () { const t = localStorage.getItem('theme') || 'light'; document.documentElement.setAttribute('data-theme', t); })();</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Google Analytics (Add your tracking ID here) -->
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.controltower.in/technology.html">
+  <meta property="og:title" content="Technologies | Control Tower">
+  <meta property="og:description"
+    content="Discover the cutting-edge tech stack we use at Control Tower, spanning modern frontend, robust backend, mobile apps, and IoT hardware.">
+  <meta property="og:image" content="https://www.controltower.in/og-image.png">
+  <meta property="og:site_name" content="Control Tower">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.controltower.in/technology.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Technologies | Control Tower">
+  <meta name="twitter:description"
+    content="Discover the cutting-edge tech stack we use at Control Tower, spanning modern frontend, robust backend, mobile apps, and IoT hardware.">
+  <meta name="twitter:image" content="https://www.controltower.in/og-image.png">
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader-overlay">
+    <div class="preloader-content" id="preloader-content">
+      <svg class="preloader-svg" viewBox="0 0 1000 200" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="preloader-accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="var(--accent)" />
+            <stop offset="50%" stop-color="var(--cyan)" />
+            <stop offset="100%" stop-color="var(--accent2)" />
+          </linearGradient>
+          <mask id="text-mask">
+            <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="preloader-svg-text-mask-only">
+              Control Tower
+            </text>
+          </mask>
+        </defs>
+        <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="preloader-svg-text">
+          Control Tower
+        </text>
+        <g mask="url(#text-mask)">
+          <g class="wave-rise-group">
+            <path class="preloader-wave-path preloader-wave-path-back"
+              d="M 0,100 Q 250,130 500,100 T 1000,100 T 1500,100 T 2000,100 L 2000,300 L 0,300 Z" />
+            <path class="preloader-wave-path preloader-wave-path-front"
+              d="M 0,100 Q 250,70 500,100 T 1000,100 T 1500,100 T 2000,100 L 2000,300 L 0,300 Z" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let loaderShown = false;
+      try {
+        loaderShown = sessionStorage.getItem('loaderShown');
+      } catch (e) {
+        console.warn("sessionStorage is not available:", e);
+      }
+      if (prefersReduced || loaderShown) {
+        document.getElementById('preloader').style.display = 'none';
+      } else {
+        document.body.classList.add('preloader-active');
+      }
+    })();
+  </script>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo" class="logo-image">
+      <div>Control<span>Tower</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link-item" data-page="home">Home</a></li>
+      <li><a href="about.html" class="nav-link-item" data-page="about">About</a></li>
+      <li><a href="services.html" class="nav-link-item" data-page="services">Services</a></li>
+      <li><a href="portfolio.html" class="nav-link-item" data-page="portfolio">Portfolio</a></li>
+      <li><a href="technology.html" class="nav-link-item active" data-page="tech">Technologies</a></li>
+      <li><a href="process.html" class="nav-link-item" data-page="process">Process</a></li>
+      <li><a href="contact.html" class="nav-link-item" data-page="contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" onclick="toggleTheme()">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <a href="contact.html" class="nav-cta"><span>Start a Project</span></a>
+      <div class="nav-hamburger" onclick="toggleMobileMenu()" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" onclick="toggleMobileMenu()">Home</a>
+    <a href="about.html" onclick="toggleMobileMenu()">About</a>
+    <a href="services.html" onclick="toggleMobileMenu()">Services</a>
+    <a href="portfolio.html" onclick="toggleMobileMenu()">Portfolio</a>
+    <a href="technology.html" onclick="toggleMobileMenu()">Technologies</a>
+    <a href="process.html" onclick="toggleMobileMenu()">Process</a>
+    <a href="contact.html" onclick="toggleMobileMenu()">Contact</a>
+  </div>
+
+  <!-- 1. Technology Hero -->
+  <section class="tech-hero">
+    <div class="container reveal">
+      <div class="section-label">// TECHNOLOGIES</div>
+      <h1 class="hero-title">The Tools Behind Our <span class="text-accent">Solutions</span></h1>
+      <p class="section-sub" style="margin-top:1rem; max-width: 700px; margin-inline: auto;">
+        We use modern and reliable technologies to build websites, apps, software, cloud systems, and smart solutions
+        for businesses.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. Technology Categories -->
+  <section class="tech-categories-section">
+    <div class="container">
+      <div class="tech-category-grid">
+
+        <!-- Frontend -->
+        <div class="tech-category-card reveal">
+          <div class="tech-card-image-wrapper">
+            <img src="assets/images/tech_frontend.webp" loading="lazy" alt="Frontend" class="tech-card-img">
+          </div>
+          <div class="tech-card-body">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </div>
+            <h3>Frontend</h3>
+            <p>Building beautiful, fast, and responsive user interfaces.</p>
+            <div class="tech-stack-chips">
+              <span class="tech-stack-chip">HTML</span>
+              <span class="tech-stack-chip">CSS</span>
+              <span class="tech-stack-chip">JavaScript</span>
+              <span class="tech-stack-chip">React</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Database -->
+        <div class="tech-category-card reveal">
+          <div class="tech-card-image-wrapper">
+            <img src="assets/images/tech_backend.webp" loading="lazy" alt="Backend & Database" class="tech-card-img">
+          </div>
+          <div class="tech-card-body">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3>Backend & Database</h3>
+            <p>Robust and secure data storage and logic processing.</p>
+            <div class="tech-stack-chips">
+              <span class="tech-stack-chip">Firebase</span>
+              <span class="tech-stack-chip">SQL</span>
+              <span class="tech-stack-chip">Database Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="tech-category-card reveal">
+          <div class="tech-card-image-wrapper">
+            <img src="assets/images/tech_mobile.webp" loading="lazy" alt="Mobile Development" class="tech-card-img">
+          </div>
+          <div class="tech-card-body">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Mobile Development</h3>
+            <p>Native and powerful mobile applications for any device.</p>
+            <div class="tech-stack-chips">
+              <span class="tech-stack-chip">Android</span>
+              <span class="tech-stack-chip">Java</span>
+              <span class="tech-stack-chip">Kotlin</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="tech-category-card reveal">
+          <div class="tech-card-image-wrapper">
+            <img src="assets/images/tech_cloud.webp" loading="lazy" alt="Cloud" class="tech-card-img">
+          </div>
+          <div class="tech-card-body">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+              </svg>
+            </div>
+            <h3>Cloud</h3>
+            <p>Scalable, always-online cloud infrastructure.</p>
+            <div class="tech-stack-chips">
+              <span class="tech-stack-chip">Firebase Hosting</span>
+              <span class="tech-stack-chip">Cloud Deployment</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IoT & Smart Systems -->
+        <div class="tech-category-card reveal">
+          <div class="tech-card-image-wrapper">
+            <img src="assets/images/tech_iot.webp" loading="lazy" alt="IoT & Smart Systems" class="tech-card-img">
+          </div>
+          <div class="tech-card-body">
+            <div class="tech-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                </path>
+              </svg>
+            </div>
+            <h3>IoT & Smart Systems</h3>
+            <p>Connecting hardware to the internet for smart automation.</p>
+            <div class="tech-stack-chips">
+              <span class="tech-stack-chip">Arduino</span>
+              <span class="tech-stack-chip">Sensors</span>
+              <span class="tech-stack-chip">Smart Devices</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= PHASE 2 ADDITIONS ================= -->
+
+  <!-- Floating Tech Marquee -->
+  <section class="tech-marquee-section">
+    <div class="tech-marquee">
+      <div class="tech-marquee-content">
+        <span class="tech-stack-chip">HTML</span>
+        <span class="tech-stack-chip">CSS</span>
+        <span class="tech-stack-chip">JavaScript</span>
+        <span class="tech-stack-chip">React</span>
+        <span class="tech-stack-chip">Firebase</span>
+        <span class="tech-stack-chip">Android</span>
+        <span class="tech-stack-chip">Java</span>
+        <span class="tech-stack-chip">Cloud</span>
+        <span class="tech-stack-chip">IoT</span>
+        <!-- Duplicated for infinite scroll -->
+        <span class="tech-stack-chip">HTML</span>
+        <span class="tech-stack-chip">CSS</span>
+        <span class="tech-stack-chip">JavaScript</span>
+        <span class="tech-stack-chip">React</span>
+        <span class="tech-stack-chip">Firebase</span>
+        <span class="tech-stack-chip">Android</span>
+        <span class="tech-stack-chip">Java</span>
+        <span class="tech-stack-chip">Cloud</span>
+        <span class="tech-stack-chip">IoT</span>
+      </div>
+      <div class="tech-marquee-content" aria-hidden="true">
+        <span class="tech-stack-chip">HTML</span>
+        <span class="tech-stack-chip">CSS</span>
+        <span class="tech-stack-chip">JavaScript</span>
+        <span class="tech-stack-chip">React</span>
+        <span class="tech-stack-chip">Firebase</span>
+        <span class="tech-stack-chip">Android</span>
+        <span class="tech-stack-chip">Java</span>
+        <span class="tech-stack-chip">Cloud</span>
+        <span class="tech-stack-chip">IoT</span>
+        <!-- Duplicated for infinite scroll -->
+        <span class="tech-stack-chip">HTML</span>
+        <span class="tech-stack-chip">CSS</span>
+        <span class="tech-stack-chip">JavaScript</span>
+        <span class="tech-stack-chip">React</span>
+        <span class="tech-stack-chip">Firebase</span>
+        <span class="tech-stack-chip">Android</span>
+        <span class="tech-stack-chip">Java</span>
+        <span class="tech-stack-chip">Cloud</span>
+        <span class="tech-stack-chip">IoT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Banner -->
+  <section class="tech-trust-section">
+    <div class="container">
+      <div class="section-header reveal text-center">
+        <h2>Built On Reliable Foundations</h2>
+      </div>
+      <div class="tech-trust-grid">
+        <div class="tech-trust-card reveal">
+          <img src="assets/images/bg_trust_reliable.webp" loading="lazy" class="card-bg-img"
+            alt="Reliable Technologies Background">
+          <div class="tech-trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h4>Reliable Technologies</h4>
+          <p>Proven tools trusted worldwide.</p>
+        </div>
+        <div class="tech-trust-card reveal reveal-delay-1">
+          <img src="assets/images/bg_trust_scalable.webp" loading="lazy" class="card-bg-img"
+            alt="Scalable Systems Background">
+          <div class="tech-trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+          </div>
+          <h4>Scalable Systems</h4>
+          <p>Designed for future growth.</p>
+        </div>
+        <div class="tech-trust-card reveal reveal-delay-2">
+          <img src="assets/images/bg_trust_secure.webp" loading="lazy" class="card-bg-img"
+            alt="Secure Development Background">
+          <div class="tech-trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <h4>Secure Development</h4>
+          <p>Security considered from the beginning.</p>
+        </div>
+        <div class="tech-trust-card reveal reveal-delay-3">
+          <img src="assets/images/bg_trust_future.webp" loading="lazy" class="card-bg-img"
+            alt="Future Ready Background">
+          <div class="tech-trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h4>Future Ready</h4>
+          <p>Built with long-term support in mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 3. How We Choose Technology -->
+  <section class="tech-choices-section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: center;">
+        <h2>How We Choose Technology</h2>
+      </div>
+      <div class="tech-choice-grid">
+        <div class="tech-choice-card reveal">
+          <img src="assets/images/bg_choice_budget.webp" loading="lazy" class="card-bg-img"
+            alt="Budget Friendly Background">
+          <h4>Budget Friendly</h4>
+          <p>Cost-effective solutions that don't compromise quality.</p>
+        </div>
+        <div class="tech-choice-card reveal">
+          <img src="assets/images/bg_choice_scalable.webp" loading="lazy" class="card-bg-img" alt="Scalable Background">
+          <h4>Scalable</h4>
+          <p>Architecture that grows alongside your business.</p>
+        </div>
+        <div class="tech-choice-card reveal">
+          <img src="assets/images/bg_choice_reliable.webp" loading="lazy" class="card-bg-img" alt="Reliable Background">
+          <h4>Reliable</h4>
+          <p>Proven frameworks tested for uptime and security.</p>
+        </div>
+        <div class="tech-choice-card reveal">
+          <img src="assets/images/bg_choice_maintain.webp" loading="lazy" class="card-bg-img"
+            alt="Easy to Maintain Background">
+          <h4>Easy to Maintain</h4>
+          <p>Clean code built for simple future updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Future Focus -->
+  <section class="tech-future-section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: center;">
+        <h2>Future Focus</h2>
+        <p style="margin-top:0.5rem; color:var(--text2);">We continuously explore emerging paradigms to prepare for
+          tomorrow.</p>
+      </div>
+      <div class="tech-future-grid">
+        <div class="tech-future-card reveal">
+          <h4>Artificial Intelligence</h4>
+        </div>
+        <div class="tech-future-card reveal">
+          <h4>Cybersecurity</h4>
+        </div>
+        <div class="tech-future-card reveal">
+          <h4>DevOps</h4>
+        </div>
+        <div class="tech-future-card reveal">
+          <h4>Advanced IoT</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Final CTA -->
+  <section class="tech-cta-section">
+    <div class="container">
+      <div class="portfolio-cta-card reveal">
+        <h2>Not Sure Which Technology You Need?</h2>
+        <p>Tell us your idea and we'll suggest the right solution for your business.</p>
+        <div class="portfolio-cta-actions">
+          <a href="contact.html" class="btn-primary"><span>Contact Us
+              &rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHATSAPP FLOAT -->
+  <div class="wa-float">
+    <div class="wa-tooltip">Chat with us 👋</div>
+    <a href="#" class="wa-fab" onclick="openWhatsApp();return false" title="Chat on WhatsApp"
+      aria-label="Chat with us on WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- GLOBAL FULL FOOTER (outside all page divs) -->
+  <footer id="global-footer">
+    <div class="footer-glow"></div>
+    <div class="container relative">
+
+
+      <!-- 2. Main Footer Grid -->
+      <div class="footer-inner reveal reveal-delay-1">
+        <div class="footer-brand">
+          <div class="nav-logo" style="display:flex;margin-bottom:.5rem;align-items:center;gap:.5rem">
+            <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo" class="logo-image">
+            <div>Control<span>Tower</span></div>
+          </div>
+          <p>Building scalable digital solutions for startups and businesses. Based in Mumbai, serving clients across
+            India and beyond.</p>
+          <div class="footer-socials">
+            <a href="mailto:controltower2026.ai@gmail.com" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="#" title="To be updated soon" class="social-link" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" title="To be updated soon" class="social-link" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" title="To be updated soon" class="social-link" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="technology.html">Technologies</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Android Applications</a></li>
+            <li><a href="services.html">Cloud Deployment</a></li>
+            <li><a href="services.html">IoT Solutions</a></li>
+            <li><a href="services.html">Desktop Software</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:controltower2026.ai@gmail.com">controltower2026.ai@gmail.com</a></li>
+            <li><a href="tel:+919821139201">📞 +91 98211 39201</a></li>
+            <li><a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business."
+                target="_blank" rel="noopener noreferrer">💬 WhatsApp Chat</a></li>
+            <li><a>📍 Remote-First / Global</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3. Bottom Bar -->
+      <div class="footer-bottom reveal reveal-delay-2">
+        <p>© 2026 Control Tower. All rights reserved </p>
+        <p style="font-family:var(--font-mono);font-size:.75rem;color:var(--text3)">Built with ❤️ by Control Tower
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

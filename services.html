@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Services — Control Tower</title>
+
+  <meta name="description"
+    content="Control Tower offers web development, Android apps, desktop software, cloud systems, and IoT solutions.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <script>(function () { const t = localStorage.getItem('theme') || 'light'; document.documentElement.setAttribute('data-theme', t); })();</script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Analytics (Add your tracking ID here) -->
+
+
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="https://www.controltower.in/services.html">
+
+  <meta property="og:title" content="Services | Control Tower">
+
+  <meta property="og:description"
+    content="Discover custom technology services offered by Control Tower, including modern web apps, Android applications, cloud setups, and IoT systems.">
+
+  <meta property="og:image" content="https://www.controltower.in/og-image.png">
+
+  <meta property="og:site_name" content="Control Tower">
+
+  <meta property="og:locale" content="en_US">
+
+
+
+  <!-- Canonical URL -->
+
+  <link rel="canonical" href="https://www.controltower.in/services.html">
+
+
+
+  <!-- Twitter -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="twitter:title" content="Services | Control Tower">
+
+  <meta name="twitter:description"
+    content="Discover custom technology services offered by Control Tower, including modern web apps, Android applications, cloud setups, and IoT systems.">
+
+  <meta name="twitter:image" content="https://www.controltower.in/og-image.png">
+
+</head>
+
+
+
+<body>
+
+
+
+  <!-- PRELOADER -->
+
+  <div id="preloader" class="preloader-overlay">
+
+    <div class="preloader-content" id="preloader-content">
+
+      <svg class="preloader-svg" viewBox="0 0 1000 200" preserveAspectRatio="xMidYMid meet">
+
+        <defs>
+
+          <linearGradient id="preloader-accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+
+            <stop offset="0%" stop-color="var(--accent)" />
+
+            <stop offset="50%" stop-color="var(--cyan)" />
+
+            <stop offset="100%" stop-color="var(--accent2)" />
+
+          </linearGradient>
+
+          <mask id="text-mask">
+
+            <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="preloader-svg-text-mask-only">
+
+              Control Tower
+
+            </text>
+
+          </mask>
+
+        </defs>
+
+        <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="preloader-svg-text">
+
+          Control Tower
+
+        </text>
+
+        <g mask="url(#text-mask)">
+
+          <g class="wave-rise-group">
+
+            <path class="preloader-wave-path preloader-wave-path-back"
+              d="M 0,100 Q 250,130 500,100 T 1000,100 T 1500,100 T 2000,100 L 2000,300 L 0,300 Z" />
+
+            <path class="preloader-wave-path preloader-wave-path-front"
+              d="M 0,100 Q 250,70 500,100 T 1000,100 T 1500,100 T 2000,100 L 2000,300 L 0,300 Z" />
+
+          </g>
+
+        </g>
+
+      </svg>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    (function () {
+
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      let loaderShown = false;
+
+      try {
+
+        loaderShown = sessionStorage.getItem('loaderShown');
+
+      } catch (e) {
+
+        console.warn("sessionStorage is not available:", e);
+
+      }
+
+      if (prefersReduced || loaderShown) {
+
+        document.getElementById('preloader').style.display = 'none';
+
+      } else {
+
+        document.body.classList.add('preloader-active');
+
+      }
+
+    })();
+
+  </script>
+
+
+
+  <!-- NAV -->
+
+  <nav id="main-nav">
+
+    <a href="index.html" class="nav-logo">
+
+      <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo" class="logo-image">
+
+      <div>Control<span>Tower</span></div>
+
+    </a>
+
+    <ul class="nav-links">
+
+      <li><a href="index.html" class="nav-link-item" data-page="home">Home</a></li>
+
+      <li><a href="about.html" class="nav-link-item" data-page="about">About</a></li>
+
+      <li><a href="services.html" class="nav-link-item active" data-page="services">Services</a></li>
+
+      <li><a href="portfolio.html" class="nav-link-item" data-page="portfolio">Portfolio</a></li>
+
+      <li><a href="technology.html" class="nav-link-item" data-page="tech">Technologies</a></li>
+
+      <li><a href="process.html" class="nav-link-item" data-page="process">Process</a></li>
+
+      <li><a href="contact.html" class="nav-link-item" data-page="contact">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" onclick="toggleTheme()">
+
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <circle cx="12" cy="12" r="5"></circle>
+
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+
+        </svg>
+
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+
+        </svg>
+
+      </button>
+
+      <a href="contact.html#contact-form" class="nav-cta"><span>Start a Project</span></a>
+
+      <div class="nav-hamburger" onclick="toggleMobileMenu()" id="hamburger">
+
+        <span></span><span></span><span></span>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- MOBILE MENU -->
+
+  <div class="mobile-menu" id="mobile-menu">
+
+    <a href="index.html" onclick="toggleMobileMenu()">Home</a>
+
+    <a href="about.html" onclick="toggleMobileMenu()">About</a>
+
+    <a href="services.html" onclick="toggleMobileMenu()">Services</a>
+
+    <a href="portfolio.html" onclick="toggleMobileMenu()">Portfolio</a>
+
+    <a href="technology.html" onclick="toggleMobileMenu()">Technologies</a>
+
+    <a href="process.html" onclick="toggleMobileMenu()">Process</a>
+
+    <a href="contact.html" onclick="toggleMobileMenu()">Contact</a>
+
+  </div>
+
+
+
+  <!-- 1. Services Hero -->
+
+  <section class="services-page-hero" id="services">
+
+    <div class="container">
+
+      <div>
+
+        <div class="section-label">Our Capabilities</div>
+
+        <h1>Technology solutions designed for <span class="text-accent">real</span> business needs.</h1>
+
+        <p>From websites and mobile apps to cloud systems and IoT solutions, we help businesses turn ideas into
+
+          reliable digital products.</p>
+
+        <div class="services-hero-actions">
+
+          <button class="btn-primary"
+            onclick="document.querySelector('.service-detailed').scrollIntoView({behavior: 'smooth'})"><span>Explore
+
+              Services</span></button>
+
+        </div>
+
+      </div>
+
+      <div class="services-hero-visual">
+
+        <div class="services-hero-glow"></div>
+
+        <div class="services-eco-blocks">
+
+          <div class="services-eco-block web-block">
+
+            <span class="eco-icon">🌐</span>
+
+            <span class="eco-text">Websites</span>
+
+          </div>
+
+          <div class="services-eco-block mobile-block">
+
+            <span class="eco-icon">📱</span>
+
+            <span class="eco-text">Android Apps</span>
+
+          </div>
+
+          <div class="services-eco-block software-block">
+
+            <span class="eco-icon">💻</span>
+
+            <span class="eco-text">Software</span>
+
+          </div>
+
+          <div class="services-eco-block cloud-block">
+
+            <span class="eco-icon">☁️</span>
+
+            <span class="eco-text">Cloud Systems</span>
+
+          </div>
+
+          <div class="services-eco-block iot-block">
+
+            <span class="eco-icon">🔌</span>
+
+            <span class="eco-text">IoT Solutions</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 2. Services Overview -->
+
+  <section class="services-overview" id="services-grid">
+
+    <div class="container reveal">
+
+      <div class="section-label">Core Competencies</div>
+
+      <h2>What we do best</h2>
+
+      <div class="overview-grid">
+
+        <div class="svc-card">
+
+          <div class="svc-card-icon">🌐</div>
+
+          <h3>Web Development</h3>
+
+          <p>Professional websites and web apps for businesses that want a strong online presence.</p>
+
+        </div>
+
+        <div class="svc-card">
+
+          <div class="svc-card-icon">📱</div>
+
+          <h3>Mobile Apps</h3>
+
+          <p>Custom Android applications designed to keep your customers connected on the go.</p>
+
+        </div>
+
+        <div class="svc-card">
+
+          <div class="svc-card-icon">☁️</div>
+
+          <h3>Cloud Solutions</h3>
+
+          <p>Secure and reliable cloud setup to store data, run systems, and support growth without downtime.</p>
+
+        </div>
+
+        <div class="svc-card">
+
+          <div class="svc-card-icon">💻</div>
+
+          <h3>Desktop Software</h3>
+
+          <p>High-performance offline software for inventory, billing, or custom business operations.</p>
+
+        </div>
+
+        <div class="svc-card">
+
+          <div class="svc-card-icon">🔌</div>
+
+          <h3>Smart IoT Systems</h3>
+
+          <p>Connecting hardware, sensors, and software dashboards to automate and track operations in real time.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 3. Detailed Service Showcase -->
+
+  <section class="service-detailed">
+
+    <div class="container">
+
+
+
+      <!-- Web Apps Showcase -->
+
+      <div class="service-full-item reveal" id="web-development">
+
+        <div class="service-full-text">
+
+          <div class="service-num">// 01</div>
+
+          <h2>Web Development</h2>
+
+          <p>We design and develop modern, secure websites and web applications tailored for your business. Whether
+
+            you need a simple website for your local shop or a complex customer portal, we build it to be fast,
+
+            mobile-friendly, and easy to manage.</p>
+
+          <ul class="feature-list">
+
+            <li>Custom business websites</li>
+
+            <li>E-commerce & online stores</li>
+
+            <li>Customer & employee portals</li>
+
+            <li>Secure billing & dashboard tools</li>
+
+          </ul>
+
+          <div class="service-tech-chips">
+
+            <div class="service-tech-chip">React</div>
+
+            <div class="service-tech-chip">Next.js</div>
+
+            <div class="service-tech-chip">Node.js</div>
+
+            <div class="service-tech-chip">PostgreSQL</div>
+
+          </div>
+
+          <a href="contact.html" class="service-showcase-cta">Discuss this service →</a>
+
+        </div>
+
+        <div class="service-full-visual">
+
+          <div class="service-visual-box">
+
+            <div class="mockup-browser">
+
+              <div class="mockup-browser-header">
+
+                <span class="dot red"></span>
+
+                <span class="dot yellow"></span>
+
+                <span class="dot green"></span>
+
+                <div class="mockup-browser-url">yourbusiness.com</div>
+
+              </div>
+
+              <div class="mockup-browser-body">
+
+                <div class="mockup-web-nav">
+
+                  <div class="mockup-web-logo"></div>
+
+                  <div class="mockup-web-links">
+
+                    <div class="mockup-web-link"></div>
+
+                    <div class="mockup-web-link"></div>
+
+                  </div>
+
+                </div>
+
+                <div class="mockup-web-hero">
+
+                  <div class="mockup-web-title">Grow Your Business</div>
+
+                  <div class="mockup-web-btn">Get Started</div>
+
+                </div>
+
+                <div class="mockup-web-analytics">
+
+                  <div class="analytics-card">
+
+                    <span class="analytics-label">Visitors</span>
+
+                    <span class="analytics-value">+48%</span>
+
+                    <div class="analytics-graph">
+
+                      <div class="graph-bar" style="height: 40px"></div>
+
+                      <div class="graph-bar" style="height: 60px"></div>
+
+                      <div class="graph-bar" style="height: 50px"></div>
+
+                      <div class="graph-bar" style="height: 85px"></div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Mobile Apps Showcase -->
+
+      <div class="service-full-item reveal" id="android-applications">
+
+        <div class="service-full-text">
+
+          <div class="service-num">// 02</div>
+
+          <h2>Android Applications</h2>
+
+          <p>Bring your business to your customers' smartphones. We build secure and fast Android applications that
+
+            run smoothly, work offline when needed, and help you send direct updates or notifications to your
+
+            customers.</p>
+
+          <ul class="feature-list">
+
+            <li>Custom Android apps</li>
+
+            <li>Simple customer-facing app interfaces</li>
+
+            <li>Real-time updates & notifications</li>
+
+            <li>Secure offline-first capabilities</li>
+
+          </ul>
+
+          <div class="service-tech-chips">
+
+            <div class="service-tech-chip">Kotlin</div>
+
+            <div class="service-tech-chip">React Native</div>
+
+            <div class="service-tech-chip">Flutter</div>
+            Mumbai
+          </div>
+
+          <a href="contact.html" class="service-showcase-cta">Discuss this service →</a>
+
+        </div>
+
+        <div class="service-full-visual">
+
+          <div class="service-visual-box">
+
+            <div class="mockup-phone">
+
+              <div class="mockup-phone-notch"></div>
+
+              <div class="mockup-phone-body">
+
+                <div class="mockup-app-header">
+
+                  <span class="app-avatar"></span>
+
+                  <span class="app-title">Dashboard</span>
+
+                </div>
+
+                <div class="mockup-app-content">
+
+                  <div class="mockup-app-card notification">
+
+                    <div class="card-icon-blue">🔔</div>
+
+                    <div>
+
+                      <div class="card-title">Order Received</div>
+
+                      <div class="card-subtitle">Customer paid Rs. 1,250</div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="mockup-app-stats">
+
+                    <div class="stat-box">
+
+                      <span class="stat-num">12</span>
+
+                      <span class="stat-lbl">Active</span>
+
+                    </div>
+
+                    <div class="stat-box">
+
+                      <span class="stat-num">98%</span>
+
+                      <span class="stat-lbl">On Time</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="mockup-app-nav">
+
+                  <span class="nav-icon active">🏠</span>
+
+                  <span class="nav-icon">📊</span>
+
+                  <span class="nav-icon">👤</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Cloud Architecture Showcase -->
+
+      <div class="service-full-item reveal" id="cloud-deployment">
+
+        <div class="service-full-text">
+
+          <div class="service-num">// 03</div>
+
+          <h2>Cloud Solutions</h2>
+
+          <p>Move your business systems to secure servers. We help you set up databases, store client files safely,
+
+            and ensure your websites and software are always online. We design cloud infrastructure that fits your
+
+            current budget and grows as you do.</p>
+
+          <ul class="feature-list">
+
+            <li>Secure file & database hosting</li>
+
+            <li>Automatic data backups</li>
+
+            <li>High availability (always online)</li>
+
+            <li>Cost-efficient hosting setups</li>
+
+          </ul>
+          Mumbai
+          <div class="service-tech-chips">
+
+            <div class="service-tech-chip">AWS</div>
+
+            <div class="service-tech-chip">Docker</div>
+
+            <div class="service-tech-chip">Firebase</div>
+
+            <div class="service-tech-chip">Supabase</div>
+
+          </div>
+
+          <a href="contact.html" class="service-showcase-cta">Discuss this service →</a>
+
+        </div>
+
+        <div class="service-full-visual">
+
+          <div class="service-visual-box">
+
+            <div class="mockup-cloud">
+
+              <div class="cloud-node pipeline-node">
+
+                <span class="node-icon">🚀</span>
+
+                <span class="node-label">Pipeline</span>
+
+                <div class="pipeline-flow">
+
+                  <div class="flow-dot"></div>
+
+                </div>
+
+              </div>
+
+              <div class="cloud-nodes-grid">
+
+                <div class="cloud-node server-node">
+
+                  <span class="node-icon">💻</span>
+
+                  <span class="node-label">App Server</span>
+
+                </div>
+
+                <div class="cloud-node database-node">
+
+                  <span class="node-icon">🗄️</span>
+
+                  <span class="node-label">Database</span>
+
+                </div>
+
+                <div class="cloud-node storage-node">
+
+                  <span class="node-icon">📦</span>
+
+                  <span class="node-label">Storage</span>
+
+                </div>
+
+              </div>
+
+              <div class="cloud-connection-lines">
+
+                <span class="conn-line vertical"></span>
+
+                <span class="conn-line horizontal"></span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Desktop Software Showcase -->
+
+      <div class="service-full-item reveal" id="desktop-software">
+
+        <div class="service-full-text">
+
+          <div class="service-num">// 04</div>
+
+          <h2>Desktop Software</h2>
+
+          <p>For businesses that need reliable software running directly on their office computers. We build
+
+            customized billing, accounting, inventory management, and CRM software that work lightning-fast, offline,
+
+            and integrate with local scanners or printers.</p>
+
+          <ul class="feature-list">
+
+            <li>Billing & inventory systems</li>
+
+            <li>Offline-first local applications</li>
+
+            <li>Custom report generation</li>
+
+            <li>Scanner & printer integrations</li>
+
+          </ul>
+
+          <div class="service-tech-chips">
+
+            <div class="service-tech-chip">Electron</div>
+
+            <div class="service-tech-chip">C#</div>
+
+            <div class="service-tech-chip">Rust</div>
+
+            <div class="service-tech-chip">C++</div>
+
+          </div>
+
+          <a href="contact.html" class="service-showcase-cta">Discuss this service →</a>
+
+        </div>
+
+        <div class="service-full-visual">
+
+          <div class="service-visual-box">
+
+            <div class="mockup-desktop">
+
+              <div class="mockup-desktop-header">
+
+                <span class="win-dot red"></span>
+
+                <span class="win-dot yellow"></span>
+
+                <span class="win-dot green"></span>
+
+                <span class="desktop-app-title">Inventory & Billing</span>
+
+              </div>
+
+              <div class="mockup-desktop-body">
+
+                <div class="desktop-sidebar">
+
+                  <div class="sidebar-item active">📦 Items</div>
+
+                  <div class="sidebar-item">🧾 Bills</div>
+
+                  <div class="sidebar-item">👥 Clients</div>
+
+                </div>
+
+                <div class="desktop-content">
+
+                  <div class="desktop-cards">
+
+                    <div class="desktop-card">
+
+                      <span class="d-card-val">2,410</span>
+
+                      <span class="d-card-lbl">Items</span>
+
+                    </div>
+
+                    <div class="desktop-card">
+
+                      <span class="d-card-val">Rs. 45.8k</span>
+
+                      <span class="d-card-lbl">Sales</span>
+
+                    </div>
+
+                  </div>
+
+                  <div class="desktop-table">
+
+                    <div class="table-header">
+
+                      <span>Item</span>
+
+                      <span>Stock</span>
+
+                      <span>Status</span>
+
+                    </div>
+
+                    <div class="table-row">
+
+                      <span>Smart Watch</span>
+
+                      <span>45 units</span>
+
+                      <span class="status-badge green">In Stock</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- IoT Ecosystems Showcase -->
+
+      <div class="service-full-item reveal" id="iot-solutions">
+
+        <div class="service-full-text">
+
+          <div class="service-num">// 05</div>
+
+          <h2>IoT Solutions</h2>
+
+          <p>Connect your hardware and machinery to smart control panels. We develop systems that collect temperature,
+
+            humidity, flow, or electrical data from sensors and show them in real-time dashboards on your computer or
+
+            phone.</p>
+
+          <ul class="feature-list">
+
+            <li>Sensor telemetry & data collection</li>
+
+            <li>Real-time automation flows</li>
+
+            <li>Computer & mobile dashboards</li>
+
+            <li>Secure device configurations</li>
+
+          </ul>
+
+          <div class="service-tech-chips">
+
+            <div class="service-tech-chip">Python</div>
+
+            <div class="service-tech-chip">MQTT</div>
+
+            <div class="service-tech-chip">C++</div>
+
+            <div class="service-tech-chip">Arduino</div>
+
+          </div>
+
+          <a href="contact.html" class="service-showcase-cta">Discuss this service →</a>
+
+        </div>
+
+        <div class="service-full-visual">
+
+          <div class="service-visual-box">
+
+            <div class="mockup-iot">
+
+              <div class="iot-dashboard">
+
+                <div class="iot-dash-header">
+
+                  <span>Smart Factory Control</span>
+
+                  <span class="iot-status-online">● Online</span>
+
+                </div>
+
+                <div class="iot-widgets">
+
+                  <div class="iot-widget">
+
+                    <div class="sensor-value">24.5 °C</div>
+
+                    <div class="sensor-label">Sensor 01</div>
+
+                  </div>
+
+                  <div class="iot-widget">
+
+                    <div class="device-switch active">
+
+                      <span class="switch-knob"></span>
+
+                    </div>
+
+                    <div class="sensor-label">Pump</div>
+
+                  </div>
+
+                </div>
+
+                <div class="iot-flow">
+
+                  <div class="iot-node sensor">🌡️ Temp</div>
+
+                  <div class="iot-arrow">➔</div>
+
+                  <div class="iot-node actuator">⚙️ Pump</div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Why Clients Choose Us -->
+
+  <section class="why-us">
+
+    <div class="container reveal">
+
+      <div class="section-label">The Control Tower Advantage</div>
+
+      <h2>Why partner with us?</h2>
+
+      <div class="trust-grid">
+
+        <div class="trust-card">
+
+          <h4>Clear Communication</h4>
+
+          <p>No confusing technical jargon or hidden costs. We keep you updated at every stage of the project so you
+
+            are always in control.</p>
+
+        </div>
+
+        <div class="trust-card">
+
+          <h4>Practical Solutions</h4>
+
+          <p>We build what your business actually needs. We focus on tools that save you time, reduce errors, and
+
+            increase sales.</p>
+
+        </div>
+
+        <div class="trust-card">
+
+          <h4>Modern Technology</h4>
+
+          <p>We build with tools that are fast, secure, and ready to scale. Your software is designed to last for
+
+            years to come.</p>
+
+        </div>
+
+        <div class="trust-card">
+
+          <h4>Long-Term Support</h4>
+
+          <p>We don't vanish after launch. We are based locally, always reachable, and ready to help whenever you need
+
+            updates or fixes.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 7. Service Add-ons -->
+
+  <section class="service-addons">
+
+    <div class="container reveal" style="text-align: center;">
+
+      <div class="section-label">Beyond Development</div>
+
+      <h2>Comprehensive Support Options</h2>
+
+      <div class="services-addon-grid">
+
+        <div class="services-addon-card">
+
+          <h4>Website Maintenance</h4>
+
+          <p>Regular checkups, database backups, and content updates to keep your site fresh.</p>
+
+        </div>
+
+        <div class="services-addon-card">
+
+          <h4>Hosting Setup</h4>
+
+          <p>Deploying your system on fast, reliable, and secure cloud servers like AWS.</p>
+
+        </div>
+
+        <div class="services-addon-card">
+
+          <h4>Firebase Integration</h4>
+
+          <p>Quick setup for real-time databases, user accounts, and push notifications.</p>
+
+        </div>
+
+        <div class="services-addon-card">
+
+          <h4>UI/UX Improvements</h4>
+
+          <p>Upgrading old interfaces to look clean, premium, and easy to use on mobile devices.</p>
+
+        </div>
+
+        <div class="services-addon-card">
+
+          <h4>Performance Optimization</h4>
+
+          <p>Speeding up slow-loading pages and software to improve customer satisfaction.</p>
+
+        </div>
+
+        <div class="services-addon-card">
+
+          <h4>Technical Consultation</h4>
+
+          <p>Discussing system architectures, feasibility, timeline planning, and cost estimates.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 8. FAQ -->
+
+  <section class="faq-section">
+
+    <div class="container reveal">
+
+      <div class="section-label">Common Questions</div>
+
+      <h2 style="text-align: center;">Frequently Asked Questions</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+
+          <div class="faq-header" onclick="toggleFaq(this)">
+
+            <h4>Do you work with startups and small businesses?</h4>
+
+            <div class="faq-icon">+</div>
+
+          </div>
+
+          <div class="faq-body">
+
+            <div class="faq-body-inner">
+
+              <p>Yes! We work with businesses of all sizes, from newly formed startups looking to build their first
+
+                app, to local shops and organizations in Ratnagiri needing websites or internal systems.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <div class="faq-header" onclick="toggleFaq(this)">
+
+            <h4>Can you build custom software for my business?</h4>
+
+            <div class="faq-icon">+</div>
+
+          </div>
+
+          <div class="faq-body">
+
+            <div class="faq-body-inner">
+
+              <p>Absolutely. We build customized database systems, inventory trackers, customer portals, and billing
+
+                systems designed specifically to match how your business operates daily.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <div class="faq-header" onclick="toggleFaq(this)">
+
+            <h4>Do you provide support after project delivery?</h4>
+
+            <div class="faq-icon">+</div>
+
+          </div>
+
+          <div class="faq-body">
+
+            <div class="faq-body-inner">
+
+              <p>Yes. We offer long-term support plans that cover website updates, security checkups, daily database
+
+                backups, and server maintenance so your software runs smoothly without interruptions.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <div class="faq-header" onclick="toggleFaq(this)">
+
+            <h4>Can you improve my existing website or app?</h4>
+
+            <div class="faq-icon">+</div>
+
+          </div>
+
+          <div class="faq-body">
+
+            <div class="faq-body-inner">
+
+              <p>Yes, we can analyze your current website or app to speed up loading times, fix bugs, refresh the
+
+                interface to look modern, or move it to a more reliable hosting provider.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <div class="faq-header" onclick="toggleFaq(this)">
+
+            <h4>How much does a project cost?</h4>
+
+            <div class="faq-icon">+</div>
+
+          </div>
+
+          <div class="faq-body">
+
+            <div class="faq-body-inner">
+
+              <p>The cost depends on what you need built. A simple website starts at a very reasonable local business
+
+                rate, while custom software is quoted based on complexity. We give you a clear, fixed price estimate
+
+                before starting so there are no surprises.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <div class="faq-header" onclick="toggleFaq(this)">
+
+            <h4>How do I start a project with Control Tower?</h4>
+
+            <div class="faq-icon">+</div>
+
+          </div>
+
+          <div class="faq-body">
+
+            <div class="faq-body-inner">
+
+              <p>Simply click "Start A Project" to fill out our contact form, or message us directly on WhatsApp.
+
+                We'll set up a friendly, jargon-free talk to discuss your requirement, and provide a clear proposal.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- CTA -->
+
+  <section class="cta-section">
+
+    <div class="container">
+
+      <div class="cta-inner reveal">
+
+        <div class="section-label" style="justify-content:center">Let's work together</div>
+
+        <h2>Ready to build<br>your next digital product?</h2>
+
+        <p>We'll take your idea from a napkin sketch to a production-ready system.<br>No bloated proposals. Just real
+
+          conversations about real work.</p>
+
+        <div class="cta-actions">
+
+          <a href="contact.html#contact-form" class="btn-primary"><span>Start a Conversation →</span></a>
+
+          <a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business."
+            target="_blank" rel="noopener noreferrer" class="btn-ghost"><span>💬 WhatsApp Us</span></a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- WHATSAPP FLOAT -->
+
+  <div class="wa-float">
+
+    <div class="wa-tooltip">Chat with us 👋</div>
+
+    <a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business." class="wa-fab"
+      target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat with us on WhatsApp">
+
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+
+      </svg>
+
+    </a>
+
+  </div>
+
+
+
+  <!-- GLOBAL FULL FOOTER (outside all page divs) -->
+
+  <footer id="global-footer">
+
+    <div class="footer-glow"></div>
+
+    <div class="container relative">
+
+
+
+      <!-- 2. Main Footer Grid -->
+
+      <div class="footer-inner reveal reveal-delay-1">
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="nav-logo"
+            style="display:flex;margin-bottom:.5rem;align-items:center;gap:.5rem;text-decoration:none">
+
+            <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo" class="logo-image">
+
+            <div>Control<span>Tower</span></div>
+
+          </a>
+
+          <p>Building scalable digital solutions for startups and businesses. Based in Ratnagiri, serving clients across
+
+            India and beyond.</p>
+
+
+
+          <div class="footer-socials">
+
+            <a href="mailto:controltower2026.ai@gmail.com" class="social-link" aria-label="Email">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+
+                <polyline points="22,6 12,13 2,6"></polyline>
+
+              </svg>
+
+            </a>
+
+            <a href="#" title="To be updated soon" class="social-link" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+
+                <rect x="2" y="9" width="4" height="12"></rect>
+
+                <circle cx="4" cy="4" r="2"></circle>
+
+              </svg>
+
+            </a>
+
+            <a href="#" title="To be updated soon" class="social-link" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+
+              </svg>
+
+            </a>
+
+            <a href="#" title="To be updated soon" class="social-link" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+
+              </svg>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+          <h4>Company</h4>
+
+          <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html#about">About</a></li>
+
+            <li><a href="portfolio.html#portfolio">Portfolio</a></li>
+
+            <li><a href="technology.html#tech-overview">Technologies</a></li>
+
+            <li><a href="process.html#process">Process</a></li>
+
+            <li><a href="contact.html#contact-form">Contact</a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+          <h4>Services</h4>
+
+          <ul>
+
+            <li><a href="services.html#web-development">Web Development</a></li>
+
+            <li><a href="services.html#android-applications">Android Applications</a></li>
+
+            <li><a href="services.html#cloud-deployment">Cloud Deployment</a></li>
+
+            <li><a href="services.html#iot-solutions">IoT Solutions</a></li>
+
+            <li><a href="services.html#desktop-software">Desktop Software</a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+          <h4>Contact</h4>
+
+          <ul>
+
+            <li><a href="mailto:controltower2026.ai@gmail.com">controltower2026.ai@gmail.com</a></li>
+
+            <li><a href="tel:+919821139201">📞 +91 98211 39201</a></li>
+
+            <li><a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business."
+                target="_blank" rel="noopener noreferrer">💬 WhatsApp Chat</a></li>
+
+            <li><a>📍 Remote-First / Global</a></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 3. Bottom Bar -->
+
+      <div class="footer-bottom reveal reveal-delay-2">
+
+        <p>© 2026 Control Tower. All rights reserved </p>
+
+        <p style="font-family:var(--font-mono);font-size:.75rem;color:var(--text3)">Built with ❤️ by Control Tower</p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- GSAP & ScrollTrigger -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+
+</body>
+
+
+
+</html>

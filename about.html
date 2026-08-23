@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About — Control Tower</title>
+
+  <meta name="description"
+    content="Learn about Control Tower — a professional software and website development studio operating remotely.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <script>(function () { const t = localStorage.getItem('theme') || 'light'; document.documentElement.setAttribute('data-theme', t); })();</script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Analytics (Add your tracking ID here) -->
+
+
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="https://www.controltower.in/about.html">
+
+  <meta property="og:title" content="About Control Tower | Software Development Studio">
+
+  <meta property="og:description"
+    content="Learn about Control Tower, a software development and website studio delivering premium custom apps and technology solutions.">
+
+  <meta property="og:image" content="https://www.controltower.in/og-image.png">
+
+  <meta property="og:site_name" content="Control Tower">
+
+  <meta property="og:locale" content="en_US">
+
+
+
+  <!-- Canonical URL -->
+
+  <link rel="canonical" href="https://www.controltower.in/about.html">
+
+
+
+  <!-- Twitter -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="twitter:title" content="About Control Tower | Software Development Studio">
+
+  <meta name="twitter:description"
+    content="Learn about Control Tower, a software development and website studio delivering premium custom apps and technology solutions.">
+
+  <meta name="twitter:image" content="https://www.controltower.in/og-image.png">
+
+</head>
+
+
+
+<body>
+
+
+
+  <!-- PRELOADER -->
+
+  <div id="preloader" class="preloader-overlay">
+
+    <div class="preloader-content" id="preloader-content">
+
+      <svg class="preloader-svg" viewBox="0 0 1000 200" preserveAspectRatio="xMidYMid meet">
+
+        <defs>
+
+          <linearGradient id="preloader-accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+
+            <stop offset="0%" stop-color="var(--accent)" />
+
+            <stop offset="50%" stop-color="var(--cyan)" />
+
+            <stop offset="100%" stop-color="var(--accent2)" />
+
+          </linearGradient>
+
+          <mask id="text-mask">
+
+            <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="preloader-svg-text-mask-only">
+
+              Control Tower
+
+            </text>
+
+          </mask>
+
+        </defs>
+
+        <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="preloader-svg-text">
+
+          Control Tower
+
+        </text>
+
+        <g mask="url(#text-mask)">
+
+          <g class="wave-rise-group">
+
+            <path class="preloader-wave-path preloader-wave-path-back"
+              d="M 0,100 Q 250,130 500,100 T 1000,100 T 1500,100 T 2000,100 L 2000,300 L 0,300 Z" />
+
+            <path class="preloader-wave-path preloader-wave-path-front"
+              d="M 0,100 Q 250,70 500,100 T 1000,100 T 1500,100 T 2000,100 L 2000,300 L 0,300 Z" />
+
+          </g>
+
+        </g>
+
+      </svg>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    (function () {
+
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      let loaderShown = false;
+
+      try {
+
+        loaderShown = sessionStorage.getItem('loaderShown');
+
+      } catch (e) {
+
+        console.warn("sessionStorage is not available:", e);
+
+      }
+
+      if (prefersReduced || loaderShown) {
+
+        document.getElementById('preloader').style.display = 'none';
+
+      } else {
+
+        document.body.classList.add('preloader-active');
+
+      }
+
+    })();
+
+  </script>
+
+
+
+  <!-- NAV -->
+
+  <nav id="main-nav">
+
+    <a href="index.html" class="nav-logo">
+
+      <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo" class="logo-image">
+
+      <div>Control<span>Tower</span></div>
+
+    </a>
+
+    <ul class="nav-links">
+
+      <li><a href="index.html" class="nav-link-item" data-page="home">Home</a></li>
+
+      <li><a href="about.html" class="nav-link-item active" data-page="about">About</a></li>
+
+      <li><a href="services.html" class="nav-link-item" data-page="services">Services</a></li>
+
+      <li><a href="portfolio.html" class="nav-link-item" data-page="portfolio">Portfolio</a></li>
+
+      <li><a href="technology.html" class="nav-link-item" data-page="tech">Technologies</a></li>
+
+      <li><a href="process.html" class="nav-link-item" data-page="process">Process</a></li>
+
+      <li><a href="contact.html" class="nav-link-item" data-page="contact">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" onclick="toggleTheme()">
+
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <circle cx="12" cy="12" r="5"></circle>
+
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+
+        </svg>
+
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+
+        </svg>
+
+      </button>
+
+      <a href="contact.html#contact-form" class="nav-cta"><span>Start a Project</span></a>
+
+      <div class="nav-hamburger" onclick="toggleMobileMenu()" id="hamburger">
+
+        <span></span><span></span><span></span>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- MOBILE MENU -->
+
+  <div class="mobile-menu" id="mobile-menu">
+
+    <a href="index.html" onclick="toggleMobileMenu()">Home</a>
+
+    <a href="about.html" onclick="toggleMobileMenu()">About</a>
+
+    <a href="services.html" onclick="toggleMobileMenu()">Services</a>
+
+    <a href="portfolio.html" onclick="toggleMobileMenu()">Portfolio</a>
+
+    <a href="technology.html" onclick="toggleMobileMenu()">Technologies</a>
+
+    <a href="process.html" onclick="toggleMobileMenu()">Process</a>
+
+    <a href="contact.html" onclick="toggleMobileMenu()">Contact</a>
+
+  </div>
+
+
+
+  <div id="page-about" class="page active">
+
+    <!-- Section 1: ABOUT HERO -->
+
+    <section class="about-hero" id="about">
+
+      <div class="container">
+
+        <div class="about-inner">
+
+          <div class="about-copy reveal">
+
+            <div class="section-label">// ABOUT VERTEXSOFT LABS</div>
+
+            <h1 class="about-hero-title">
+
+              <span class="about-hero-line">We build simple,</span>
+
+              <span class="about-hero-line"><span class="text-accent">reliable software</span></span>
+
+              <span class="about-hero-line">that helps businesses grow</span>
+
+            </h1>
+
+
+
+            <!-- Mobile-only Stats Card (Change 1 & 2) -->
+
+            <div class="about-mobile-stats-wrap">
+
+              <div class="about-id-card-wrap" tabindex="0" aria-haspopup="true" aria-expanded="false">
+
+                <div class="about-id-card-inner">
+
+                  <!-- Front Side -->
+
+                  <div class="about-id-card-front">
+
+                    <div class="about-id-card">
+
+                      <div class="about-id-header">
+
+                        <div class="about-id-logo">
+
+                          <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo"
+                            class="about-id-logo-img">
+
+                        </div>
+
+                        <div>
+
+                          <div class="about-id-name">Control Tower</div>Mumbai
+
+                          <div class="about-id-type">Innovate . Build . Scale</div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="about-id-stats">
+
+                        <div class="about-id-stat">
+
+                          <div class="about-id-stat-value">2026</div>
+
+                          <div class="about-id-stat-label">Founded</div>
+
+                        </div>
+
+                        <div class="about-id-stat">
+
+                          <div class="about-id-stat-value">3</div>
+                          <div class="about-id-stat-label">Team Members</div>
+
+                        </div>
+
+                        <div class="about-id-stat">
+
+                          <div class="about-id-stat-value">2</div>
+
+                          <div class="about-id-stat-label">Projects Onboarded</div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <!-- Back Side -->
+
+                  <div class="about-id-card-back">
+
+                    <div class="about-id-card about-id-card-back-content">
+
+                      <div class="about-id-back-inner">
+
+                        <h4 class="about-id-back-title">Connect With Us</h4>
+
+                        <div class="about-id-social-grid">
+
+                          <a href="#" title="To be updated soon" target="_blank" rel="noopener noreferrer"
+                            class="about-id-social-link" aria-label="Facebook" onclick="event.stopPropagation();">
+
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round" class="social-icon-svg">
+
+                              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+
+                            </svg>
+
+                          </a>
+
+                          <a href="#" title="To be updated soon" target="_blank" rel="noopener noreferrer"
+                            class="about-id-social-link" aria-label="Instagram" onclick="event.stopPropagation();">
+
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round" class="social-icon-svg">
+
+                              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+
+                              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+
+                              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+
+                            </svg>
+
+                          </a>
+
+                          <a href="#" title="To be updated soon" target="_blank" rel="noopener noreferrer"
+                            class="about-id-social-link" aria-label="LinkedIn" onclick="event.stopPropagation();">
+
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round" class="social-icon-svg">
+
+                              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+
+                              </path>
+
+                              <rect x="2" y="9" width="4" height="12"></rect>
+
+                              <circle cx="4" cy="4" r="2"></circle>
+
+                            </svg>
+
+                          </a>
+
+                          <a href="mailto:controltower2026.ai@gmail.com" class="about-id-social-link" aria-label="Email"
+                            onclick="event.stopPropagation();">
+
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round" class="social-icon-svg">
+
+                              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+
+                              </path>
+
+                              <polyline points="22,6 12,13 2,6"></polyline>
+
+                            </svg>
+
+                          </a>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+            <p>Control Tower is a professional software and website development studio operating remotely. We design
+
+              and build custom websites, mobile apps, small scale IOT projects, provide cloud services and business
+
+              management systems that are easy to use, highly
+
+              secure, and built to last.</p>
+
+            <p>We've deliberately stayed small so we can work closely with our clients. Every project gets our team's
+
+              direct attention, ensuring clear communication and practical solutions without any complex jargon.</p>
+
+            <div class="about-hero-actions">
+
+              <a href="contact.html#contact-form" class="btn-ghost about-btn-start"><span>Start A Project
+
+                  &rarr;</span></a>
+
+              <a href="#about-team-section" class="btn-primary about-btn-meet"
+                onclick="document.getElementById('about-team-section').scrollIntoView({behavior:'smooth'})"><span>Meet
+
+                  The Team ↓</span></a>
+
+            </div>
+
+
+
+
+
+          </div>
+
+          <div class="about-hero-visual reveal reveal-delay-2">
+
+            <div class="about-id-card-wrap" tabindex="0" aria-haspopup="true" aria-expanded="false">
+
+              <div class="about-id-card-inner">
+
+                <!-- Front Side -->
+
+                <div class="about-id-card-front">
+
+                  <div class="about-id-card">
+
+                    <div class="about-id-header">
+
+                      <div class="about-id-logo">
+
+                        <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo"
+                          class="about-id-logo-img">
+
+                      </div>
+
+                      <div>
+
+                        <div class="about-id-name">Control Tower</div>
+
+                        <div class="about-id-type">Innovate . Build . Scale</div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="about-id-stats">
+
+                      <div class="about-id-stat">
+
+                        <div class="about-id-stat-value">2026</div>
+
+                        <div class="about-id-stat-label">Founded</div>
+
+                      </div>
+
+                      <div class="about-id-stat">
+
+                        <div class="about-id-stat-value">3</div>
+                        <div class="about-id-stat-label">Team Members</div>
+
+                      </div>
+
+                      <div class="about-id-stat">
+
+                        <div class="about-id-stat-value">2</div>
+
+                        <div class="about-id-stat-label">Projects Onboarded</div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <!-- Back Side -->
+
+                <div class="about-id-card-back">
+
+                  <div class="about-id-card about-id-card-back-content">
+
+                    <div class="about-id-back-inner">
+
+                      <h4 class="about-id-back-title">Connect With Us</h4>
+
+                      <div class="about-id-social-grid">
+
+                        <a href="#" title="To be updated soon" target="_blank" rel="noopener noreferrer"
+                          class="about-id-social-link" aria-label="Facebook" onclick="event.stopPropagation();">
+
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="social-icon-svg">
+
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+
+                          </svg>
+
+                        </a>
+
+                        <a href="#" title="To be updated soon" target="_blank" rel="noopener noreferrer"
+                          class="about-id-social-link" aria-label="Instagram" onclick="event.stopPropagation();">
+
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="social-icon-svg">
+
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+
+                          </svg>
+
+                        </a>
+
+                        <a href="#" title="To be updated soon" target="_blank" rel="noopener noreferrer"
+                          class="about-id-social-link" aria-label="LinkedIn" onclick="event.stopPropagation();">
+
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="social-icon-svg">
+
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+
+                            </path>
+
+                            <rect x="2" y="9" width="4" height="12"></rect>
+
+                            <circle cx="4" cy="4" r="2"></circle>
+
+                          </svg>
+
+                        </a>
+
+                        <a href="mailto:controltower2026.ai@gmail.com" class="about-id-social-link" aria-label="Email"
+                          onclick="event.stopPropagation();">
+
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="social-icon-svg">
+
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+
+                            </path>
+
+                            <polyline points="22,6 12,13 2,6"></polyline>
+
+                          </svg>
+
+                        </a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="about-code-snippet">
+
+              <span class="code-keyword">const</span> <span class="code-prop">studio</span> = {<br>
+
+              &nbsp;&nbsp;<span class="code-prop">name</span>: <span class="code-string">"Control Tower"</span>,<br>
+
+              &nbsp;&nbsp;<span class="code-prop">location</span>: <span class="code-string">"Mumbai, IN"</span>,<br>
+
+              &nbsp;&nbsp;<span class="code-prop">focus</span>: <span class="code-string">"Websites, apps &
+
+                software"</span>,<br>
+
+              &nbsp;&nbsp;<span class="code-prop">status</span>: <span class="code-string">"Building simple
+
+                solutions"</span><br>
+
+              };
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Section 2: OUR STORY -->
+
+    <section class="about-story">
+
+      <div class="container">
+
+        <div class="reveal">
+
+          <div class="section-label">// OUR STORY</div>
+
+          <h2 class="section-title">The journey so far</h2>
+
+        </div>
+
+        <div class="about-story-grid">
+
+          <div class="about-story-card about-story-card-first reveal reveal-delay-1">
+
+            <div class="about-story-header">
+
+              <span class="about-story-num">01</span>
+
+              <span class="about-story-keyword">// ORIGIN</span>
+
+            </div>
+
+            <div class="about-story-divider"></div>
+
+            <h3>Started With A Simple Goal</h3>
+
+            <p>Control Tower started with a simple goal: to help businesses get software that doesn't break. Too
+
+              often, companies pay for complicated technology that is hard to maintain once the developers leave. We
+
+              wanted to build the alternative—practical websites and software that just work.<br></p>
+
+          </div>
+
+          <div class="about-story-card reveal reveal-delay-2">
+
+            <div class="about-story-header">
+
+              <span class="about-story-num">02</span>
+
+              <span class="about-story-keyword">// SOLVING PROBLEMS</span>
+
+            </div>
+            
+            <div class="about-story-divider"></div>
+
+            <h3>Solving Real Problems</h3>
+
+            <p>Growing businesses need websites and systems that work reliably and are easy to manage without needing a
+
+              full-time tech team. We bridge the gap by offering professional-grade software that is affordable, easy to
+
+              use, and scale-ready.</p>
+
+          </div>
+
+          <div class="about-story-card reveal reveal-delay-3">
+
+            <div class="about-story-header">
+
+              <span class="about-story-num">03</span>
+
+              <span class="about-story-keyword">// NEXT STEPS</span>
+
+            </div>
+
+            <div class="about-story-divider"></div>
+
+            <h3>Building For The Future</h3>
+
+            <p>We are expanding our services to include complex IoT solutions, complex cloud integrations,by
+
+              implementing AI and Automation as a service while keeping the personal, small-team support that our
+
+              clients value. We grow by helping you
+
+              grow.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Section 3: MISSION & VISION -->
+
+    <section class="about-mv">
+
+      <div class="container">
+
+        <div class="reveal">
+
+          <div class="section-label">// MISSION & VISION</div>
+
+          <h2 class="section-title">What drives us forward</h2>
+
+        </div>
+
+        <div class="about-mv-grid">
+
+          <div class="about-mv-card reveal reveal-delay-1">
+
+            <div class="about-mv-icon-wrapper">
+
+              <span class="about-mv-icon">🎯</span>
+
+            </div>
+
+            <h3>Our Mission</h3>
+
+            <p>To help businesses turn their ideas into reliable websites, apps, and software through clear
+
+              communication, practical technology, and honest support. We build systems that are easy to run, secure,
+
+              and ready to support your daily operations.</p>
+
+          </div>
+
+          <div class="about-mv-card reveal reveal-delay-2">
+
+            <div class="about-mv-icon-wrapper">
+
+              <span class="about-mv-icon">🚀</span>
+
+            </div>
+
+            <h3>Our Vision</h3>
+
+            <p>To be the most trusted software partner for businesses worldwide—making technology an easy,
+
+              stress-free tool that helps you grow, rather than a complicated hurdle you have to struggle with.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Section 4: MEET THE TEAM -->
+
+    <section class="about-team" id="about-team-section">
+
+      <div class="container">
+
+        <div class="reveal">
+
+          <div class="section-label">// TEAM MEMBERS</div>
+
+          <h2 class="section-title">The People Behind Control Tower</h2>
+
+          <p class="section-subtitle">A passionate team working together to create practical technology solutions.</p>
+
+        </div>
+
+        <!-- Featured Founder -->
+        <div class="about-team-featured reveal reveal-delay-1">
+          <div class="about-team-img-wrapper">
+            <img src="assets/images/salman_memon.webp" loading="lazy" alt="Salman Memon" class="about-team-img">
+          </div>
+          <div class="about-team-content">
+            <div class="about-team-name">Salman Memon</div>
+            <div class="about-team-role">Founder & CEO</div>
+            <p class="about-team-bio">The Founder and CEO of Control Tower, dedicated to building resilient digital
+              systems and high-impact technology for modern businesses. Specializing in Cloud Solutions, System
+              Architecture, and Enterprise Software, he leads product strategy, client partnerships, and overall
+              engineering direction. He believes that the best tech is invisible — and that the greatest business tools
+              are the ones that work so reliably you never have to worry about them.</p>
+            <div class="about-team-chips">
+              <span class="about-team-chip">Cloud Solutions</span>
+              <span class="about-team-chip">System Architecture</span>
+              <span class="about-team-chip">Software Engineering</span>
+              <span class="about-team-chip">Business Strategy</span>
+            </div>
+            <div class="about-team-socials about-team-socials-featured">
+              <a href="#" class="social-link" aria-label="LinkedIn" title="To be updated soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram" title="To be updated soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="mailto:controltower2026.ai@gmail.com" class="social-link" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Team Grid -->
+        <div class="about-team-grid">
+          <div class="about-team-card reveal reveal-delay-1">
+            <div class="about-team-img-wrapper-sm">
+              <img src="assets/images/jafar_beldar.webp" loading="lazy" alt="Jafar Beldar" class="about-team-img-sm">
+            </div>
+            <div class="about-team-name">Jafar Beldar</div>
+            <div class="about-team-role">Co-Founder</div>
+            <p class="about-team-bio">A strategic builder and Software Engineer passionate about developing
+              high-performance applications and intelligent software architectures. As Co-Founder of Control Tower,
+              oversees technical execution, product scalability, and robust engineering standards.</p>
+            <div class="about-team-chips">
+              <span class="about-team-chip">Full Stack Development</span>
+              <span class="about-team-chip">System Design</span>
+              <span class="about-team-chip">Cloud Infrastructure</span>
+            </div>
+            <div class="about-team-socials">
+              <a href="#" class="social-link" aria-label="LinkedIn" title="To be updated soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram" title="To be updated soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="mailto:controltower2026.ai@gmail.com" class="social-link" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="about-team-card reveal reveal-delay-2">
+            <div class="about-team-img-wrapper-sm">
+              <img src="assets/images/pristin_varghese.webp" loading="lazy" alt="Pristin Varghese"
+                class="about-team-img-sm">
+            </div>
+            <div class="about-team-name">Pristin Varghese</div>
+            <div class="about-team-role">Co-Founder</div>
+            <p class="about-team-bio">A versatile technologist and problem solver focusing on intuitive user
+              experiences, scalable backend systems, and agile product delivery. As Co-Founder of Control Tower, drives
+              innovation and ensures smooth, reliable execution across client projects.</p>
+            <div class="about-team-chips">
+              <span class="about-team-chip">Software Engineering</span>
+              <span class="about-team-chip">Product Architecture</span>
+              <span class="about-team-chip">Web & Mobile Systems</span>
+            </div>
+            <div class="about-team-socials">
+              <a href="#" class="social-link" aria-label="LinkedIn" title="To be updated soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram" title="To be updated soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="mailto:controltower2026.ai@gmail.com" class="social-link" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: CORE VALUES -->
+
+    <section class="about-values">
+
+      <div class="container">
+
+        <div class="reveal">
+
+          <div class="section-label">// CORE VALUES</div>
+
+          <h2 class="section-title">What we actually believe</h2>
+
+        </div>
+
+        <div class="about-values-grid">
+
+
+
+          <div class="about-value-card reveal reveal-delay-1">
+
+            <span class="about-value-icon">🛡️</span>
+
+            <h3>Reliable Support</h3>
+
+            <p>We build websites and software that run smoothly without constant attention. We design everything to be
+
+              robust, secure, and ready when you need it.</p>
+
+          </div>
+
+          <div class="about-value-card reveal reveal-delay-2">
+
+            <span class="about-value-icon">🔍</span>
+
+            <h3>Clear Communication</h3>
+
+            <p>No hidden costs, no confusing tech speak. We keep you updated at every step, so you always know how your
+
+              project is progressing.</p>
+
+          </div>
+
+          <div class="about-value-card reveal reveal-delay-2">
+
+            <span class="about-value-icon">📈</span>
+
+            <h3>Built to Grow</h3>
+
+            <p>We design software and databases that grow alongside your business. What works for a few users today is
+
+              built to support thousands tomorrow.</p>
+
+          </div>
+
+          <div class="about-value-card reveal reveal-delay-3">
+
+            <span class="about-value-icon">🔒</span>
+
+            <h3>Secure Systems</h3>
+
+            <p>Your business data is precious. We protect it using industry-standard security features in every website
+
+              and app we build.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Section 6: HOW WE WORK -->
+
+    <section class="about-workflow">
+
+      <div class="container">
+
+        <div class="reveal">
+
+          <div class="section-label">// HOW WE WORK</div>
+
+          <h2 class="section-title">Our process, step by step</h2>
+
+        </div>
+
+        <div class="about-workflow-steps reveal reveal-delay-1">
+
+          <div class="about-workflow-step">
+
+            <div class="about-wf-num">01</div>
+
+            <h4>Understand</h4>
+
+            <p>We learn about your business needs, goals, and ideas.</p>
+
+          </div>
+
+          <div class="about-workflow-step">
+
+            <div class="about-wf-num">02</div>
+
+            <h4>Plan</h4>
+
+            <p>We map out the timeline, costs, and project plan.</p>
+
+          </div>
+
+          <div class="about-workflow-step">
+
+            <div class="about-wf-num">03</div>
+
+            <h4>Design</h4>
+
+            <p>We create easy-to-use screens and website layouts.</p>
+
+          </div>
+
+          <div class="about-workflow-step">
+
+            <div class="about-wf-num">04</div>
+
+            <h4>Build</h4>
+
+            <p>We write clean, secure code to bring the designs to life.</p>
+
+          </div>
+
+          <div class="about-workflow-step">
+
+            <div class="about-wf-num">05</div>
+
+            <h4>Test</h4>
+
+            <p>We run final tests and launch your system to the public.</p>
+
+          </div>
+
+          <div class="about-workflow-step">
+
+            <div class="about-wf-num">06</div>
+
+            <h4>Support</h4>
+
+            <p>We stay by your side to offer updates, help, and maintenance.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Section 8: FUTURE VISION -->
+
+    <section class="about-future">
+
+      <div class="container">
+
+        <div class="reveal">
+
+          <div class="section-label">// FUTURE VISION</div>
+
+          <h2 class="section-title">Where we are and where we're going</h2>
+
+        </div>
+
+        <div class="about-future-grid">
+
+          <div class="about-future-col reveal reveal-delay-1">
+
+            <div class="about-future-col-title">Today <span class="future-badge future-badge-current">Current</span>
+
+            </div>
+
+            <div class="about-future-items">
+
+              <div class="about-future-item">
+
+                <span class="about-future-item-icon">🌐</span> Modern Websites & Web Apps
+
+              </div>
+
+              <div class="about-future-item">
+
+                <span class="about-future-item-icon">📱</span> Android Apps
+
+              </div>
+
+              <div class="about-future-item">
+
+                <span class="about-future-item-icon">☁️</span> Online Database & Cloud Systems
+
+              </div>
+
+              <div class="about-future-item">
+
+                <span class="about-future-item-icon">📡</span> Smart Hardware & IoT Solutions
+
+              </div>
+
+              <div class="about-future-item">
+
+                <span class="about-future-item-icon">🏢</span> Large Business Management Systems
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="about-future-col reveal reveal-delay-2">
+
+            <div class="about-future-col-title">Tomorrow <span class="future-badge future-badge-next">Next</span></div>
+
+            <div class="about-future-items">
+
+              <div class="about-future-item">
+
+                <span class="about-future-item-icon">🤖</span> Smart AI Tools
+
+              </div>
+
+              <div class="about-future-item">
+
+                <span class="about-future-item-icon">⚙️</span> Automation For Businesses
+
+              </div>
+
+              <div class="about-future-item">
+
+                <span class="about-future-item-icon">🔐</span> High-Security Software & Audits
+
+              </div>
+
+              <div class="about-future-item">
+
+                <span class="about-future-item-icon"></span> More To Come Soon ...
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Section 9: SOCIAL PROOF STRIP -->
+
+    <section class="about-proof-strip">
+
+      <div class="container reveal">
+
+        <h3 class="about-proof-title">Why People Choose Control Tower</h3>
+
+        <div class="about-proof-grid">
+
+          <span class="about-proof-item"><span class="about-proof-check">✓</span> Clear Communication</span>
+
+          <span class="about-proof-item"><span class="about-proof-check">✓</span> Practical Solutions</span>
+
+          <span class="about-proof-item"><span class="about-proof-check">✓</span> Modern Technology</span>
+
+          <span class="about-proof-item"><span class="about-proof-check">✓</span> Long-Term Support</span>
+
+          <span class="about-proof-item"><span class="about-proof-check">✓</span> Startup-Friendly Approach</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Section 10: FINAL CTA -->
+
+    <section class="about-cta">
+
+      <div class="container">
+
+        <div class="about-cta-inner reveal">
+
+          <h2>Let's Build Something <span class="text-accent">Meaningful</span> Together.</h2>
+
+          <p>Whether you have a fully scoped project or just an idea on a napkin — let's have a real conversation about
+
+            it. We are here to guide you and build systems that make your business run smoother.</p>
+
+          <div class="about-cta-actions">
+
+            <a href="contact.html#contact-form" class="btn-primary"><span>Start A Project →</span></a>
+
+            <a href="contact.html#contact-form" class="btn-ghost"><span>Contact Us</span></a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+  </div>
+
+
+
+  <!-- WHATSAPP FLOAT -->
+
+  <div class="wa-float">
+
+    <div class="wa-tooltip">Chat with us 👋</div>
+
+    <a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business." class="wa-fab"
+      target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat with us on WhatsApp">
+
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+
+      </svg>
+
+    </a>
+
+  </div>
+
+
+
+  <!-- GLOBAL FULL FOOTER (outside all page divs) -->
+
+  <footer id="global-footer">
+
+    <div class="footer-glow"></div>
+
+    <div class="container relative">
+
+
+
+      <!-- 2. Main Footer Grid -->
+
+      <div class="footer-inner reveal reveal-delay-1">
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="nav-logo"
+            style="display:flex;margin-bottom:.5rem;align-items:center;gap:.5rem;text-decoration:none">
+
+            <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo" class="logo-image">
+
+            <div>Control<span>Tower</span></div>
+
+          </a>
+
+          <p>Building scalable digital solutions for startups and businesses. Based in Ratnagiri, serving clients across
+
+            India and beyond.</p>
+
+
+
+          <div class="footer-socials">
+
+            <a href="mailto:controltower2026.ai@gmail.com" class="social-link" aria-label="Email">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+
+                <polyline points="22,6 12,13 2,6"></polyline>
+
+              </svg>
+
+            </a>
+
+            <a href="#" title="To be updated soon" class="social-link" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+
+                <rect x="2" y="9" width="4" height="12"></rect>
+
+                <circle cx="4" cy="4" r="2"></circle>
+
+              </svg>
+
+            </a>
+
+            <a href="#" title="To be updated soon" class="social-link" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+
+              </svg>
+
+            </a>
+
+            <a href="#" title="To be updated soon" class="social-link" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+
+              </svg>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+          <h4>Company</h4>
+
+          <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html#about">About</a></li>
+
+            <li><a href="portfolio.html#portfolio">Portfolio</a></li>
+
+            <li><a href="technology.html#tech-overview">Technologies</a></li>
+
+            <li><a href="process.html#process">Process</a></li>
+
+            <li><a href="contact.html#contact-form">Contact</a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+          <h4>Services</h4>
+
+          <ul>
+
+            <li><a href="services.html#web-development">Web Development</a></li>
+
+            <li><a href="services.html#android-applications">Android Applications</a></li>
+
+            <li><a href="services.html#cloud-deployment">Cloud Deployment</a></li>
+
+            <li><a href="services.html#iot-solutions">IoT Solutions</a></li>
+
+            <li><a href="services.html#desktop-software">Desktop Software</a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+          <h4>Contact</h4>
+
+          <ul>
+
+            <li><a href="mailto:controltower2026.ai@gmail.com">controltower2026.ai@gmail.com</a></li>
+
+            <li><a href="tel:+919821139201">📞 +91 98211 39201</a></li>
+
+            <li><a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business."
+                target="_blank" rel="noopener noreferrer">💬 WhatsApp Chat</a></li>
+
+            <li><a>📍 Remote-First / Global</a></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 3. Bottom Bar -->
+
+      <div class="footer-bottom reveal reveal-delay-2">
+
+        <p>© 2026 Control Tower. All rights reserved </p>
+
+        <p style="font-family:var(--font-mono);font-size:.75rem;color:var(--text3)">Built with ❤️ by Control Tower</p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- GSAP & ScrollTrigger -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const cardWraps = document.querySelectorAll('.about-id-card-wrap');
+
+      cardWraps.forEach(cardWrap => {
+
+        cardWrap.addEventListener('click', function (e) {
+
+          if (window.innerWidth <= 1024) {
+
+            this.classList.toggle('flipped');
+
+            const isFlipped = this.classList.contains('flipped');
+
+            this.setAttribute('aria-expanded', isFlipped ? 'true' : 'false');
+
+          }
+
+        });
+
+
+
+        cardWrap.addEventListener('keydown', function (e) {
+
+          if (e.key === 'Enter' || e.key === ' ') {
+
+            if (document.activeElement === this) {
+
+              e.preventDefault();
+
+              this.classList.toggle('flipped');
+
+              const isFlipped = this.classList.contains('flipped');
+
+              this.setAttribute('aria-expanded', isFlipped ? 'true' : 'false');
+
+            }
+
+          }
+
+        });
+
+      });
+
+
+
+      // -- Journey Story Cards Stretching Interaction --
+
+      const storyGrid = document.querySelector('.about-story-grid');
+
+      if (storyGrid) {
+
+        const cards = storyGrid.querySelectorAll('.about-story-card');
+
+
+
+        const updateGridClass = () => {
+
+          const hasExpanded = Array.from(cards).some(c => c.classList.contains('expanded'));
+
+          if (hasExpanded) {
+
+            storyGrid.classList.add('has-expanded');
+
+          } else {
+
+            storyGrid.classList.remove('has-expanded');
+
+          }
+
+        };
+
+
+
+        // Mobile/Tablet default active state
+
+        if (window.innerWidth <= 1024 && cards.length > 0) {
+
+          cards[0].classList.add('expanded');
+
+          updateGridClass();
+
+        }
+
+
+
+        cards.forEach(card => {
+
+          card.addEventListener('click', () => {
+
+            if (window.innerWidth <= 1024) {
+
+              const isExpanded = card.classList.contains('expanded');
+
+              cards.forEach(c => c.classList.remove('expanded'));
+
+              if (!isExpanded) {
+
+                card.classList.add('expanded');
+
+              }
+
+              updateGridClass();
+
+            }
+
+          });
+
+        });
+
+
+
+        window.addEventListener('resize', () => {
+
+          if (window.innerWidth > 1024) {
+
+            cards.forEach(c => c.classList.remove('expanded'));
+
+            storyGrid.classList.remove('has-expanded');
+
+          } else {
+
+            const anyExpanded = Array.from(cards).some(c => c.classList.contains('expanded'));
+
+            if (!anyExpanded && cards.length > 0) {
+
+              cards[0].classList.add('expanded');
+
+              updateGridClass();
+
+            }
+
+          }
+
+        });
+
+      }
+
+    });
+
+  </script>
+
+
+</body>
+
+
+
+</html>

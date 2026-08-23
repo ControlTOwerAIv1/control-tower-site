@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Process — Control Tower</title>
+  <meta name="description"
+    content="Control Tower follows a clear, repeatable process to deliver reliable digital products — from idea to production.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <script>(function () { const t = localStorage.getItem('theme') || 'light'; document.documentElement.setAttribute('data-theme', t); })();</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Google Analytics (Add your tracking ID here) -->
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.controltower.in/process.html">
+  <meta property="og:title" content="Our Process | Control Tower">
+  <meta property="og:description"
+    content="Learn about our structured software development lifecycle, ensuring delivery of high-quality, scalable digital solutions from concept to production.">
+  <meta property="og:image" content="https://www.controltower.in/og-image.png">
+  <meta property="og:site_name" content="Control Tower">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.controltower.in/process.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Process | Control Tower">
+  <meta name="twitter:description"
+    content="Learn about our structured software development lifecycle, ensuring delivery of high-quality, scalable digital solutions from concept to production.">
+  <meta name="twitter:image" content="https://www.controltower.in/og-image.png">
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader-overlay">
+    <div class="preloader-content" id="preloader-content">
+      <svg class="preloader-svg" viewBox="0 0 1000 200" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="preloader-accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="var(--accent)" />
+            <stop offset="50%" stop-color="var(--cyan)" />
+            <stop offset="100%" stop-color="var(--accent2)" />
+          </linearGradient>
+          <mask id="text-mask">
+            <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="preloader-svg-text-mask-only">
+              Control Tower
+            </text>
+          </mask>
+        </defs>
+        <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="preloader-svg-text">
+          Control Tower
+        </text>
+        <g mask="url(#text-mask)">
+          <g class="wave-rise-group">
+            <path class="preloader-wave-path preloader-wave-path-back"
+              d="M 0,100 Q 250,130 500,100 T 1000,100 T 1500,100 T 2000,100 L 2000,300 L 0,300 Z" />
+            <path class="preloader-wave-path preloader-wave-path-front"
+              d="M 0,100 Q 250,70 500,100 T 1000,100 T 1500,100 T 2000,100 L 2000,300 L 0,300 Z" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let loaderShown = false;
+      try {
+        loaderShown = sessionStorage.getItem('loaderShown');
+      } catch (e) {
+        console.warn("sessionStorage is not available:", e);
+      }
+      if (prefersReduced || loaderShown) {
+        document.getElementById('preloader').style.display = 'none';
+      } else {
+        document.body.classList.add('preloader-active');
+      }
+    })();
+  </script>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo" class="logo-image">
+      <div>Control<span>Tower</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link-item" data-page="home">Home</a></li>
+      <li><a href="about.html" class="nav-link-item" data-page="about">About</a></li>
+      <li><a href="services.html" class="nav-link-item" data-page="services">Services</a></li>
+      <li><a href="portfolio.html" class="nav-link-item" data-page="portfolio">Portfolio</a></li>
+      <li><a href="technology.html" class="nav-link-item" data-page="tech">Technologies</a></li>
+      <li><a href="process.html" class="nav-link-item active" data-page="process">Process</a></li>
+      <li><a href="contact.html" class="nav-link-item" data-page="contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" onclick="toggleTheme()">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <a href="contact.html#contact-form" class="nav-cta"><span>Start a Project</span></a>
+      <div class="nav-hamburger" onclick="toggleMobileMenu()" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" onclick="toggleMobileMenu()">Home</a>
+    <a href="about.html" onclick="toggleMobileMenu()">About</a>
+    <a href="services.html" onclick="toggleMobileMenu()">Services</a>
+    <a href="portfolio.html" onclick="toggleMobileMenu()">Portfolio</a>
+    <a href="technology.html" onclick="toggleMobileMenu()">Technologies</a>
+    <a href="process.html" onclick="toggleMobileMenu()">Process</a>
+    <a href="contact.html" onclick="toggleMobileMenu()">Contact</a>
+  </div>
+
+  <section class="process-hero" id="process">
+    <div class="container reveal">
+      <div class="section-label">How We Work</div>
+      <h1>From idea to <span class="text-green">production</span></h1>
+      <p class="section-sub" style="margin-top:1rem">A clear, repeatable process that keeps projects on track without
+        unnecessary ceremony.</p>
+    </div>
+  </section>
+
+  <section style="padding:2rem 0 6rem;background:transparent">
+    <div class="container">
+      <div class="process-page-timeline">
+        <!-- Center line tracks -->
+        <div class="process-page-line-bg"></div>
+        <div class="process-page-line-active"></div>
+
+        <!-- Step 1 -->
+        <div class="process-page-step" id="step-1">
+          <div class="process-page-title-side">
+            <span class="process-page-side-num">// PHASE 01</span>
+            <h3>Requirement Analysis</h3>
+          </div>
+          <div class="process-page-center">
+            <div class="process-page-dot"></div>
+          </div>
+          <div class="process-page-card">
+            <p>Before we write a line of code, we deeply understand what you're building and why. We ask the
+              uncomfortable questions — the ones that save everyone time later. What problem are you solving? Who's
+              using this? What does "done" actually look like?</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-page-step" id="step-2">
+          <div class="process-page-card">
+            <p>We map out the system architecture, choose the right tech stack for your specific constraints, and
+              break the work into meaningful milestones. You get a realistic timeline — not an optimistic one — and a
+              clear view of what gets built in which order.</p>
+          </div>
+          <div class="process-page-center">
+            <div class="process-page-dot"></div>
+          </div>
+          <div class="process-page-title-side">
+            <span class="process-page-side-num">// PHASE 02</span>
+            <h3>Planning & Architecture</h3>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-page-step" id="step-3">
+          <div class="process-page-title-side">
+            <span class="process-page-side-num">// PHASE 03</span>
+            <h3>Development</h3>
+          </div>
+          <div class="process-page-center">
+            <div class="process-page-dot"></div>
+          </div>
+          <div class="process-page-card">
+            <p>Iterative development in two-week sprints. You see working software early, not just mockups. We share
+              progress updates regularly — you're never left wondering what's happening. Code is reviewed, tested as
+              it's written, and documented.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-page-step" id="step-4">
+          <div class="process-page-card">
+            <p>We test like users, not like developers. Unit tests, integration tests, manual exploratory testing on
+              real devices. Edge cases, error states, and slow network conditions — because your users will encounter
+              all of these.</p>
+          </div>
+          <div class="process-page-center">
+            <div class="process-page-dot"></div>
+          </div>
+          <div class="process-page-title-side">
+            <span class="process-page-side-num">// PHASE 04</span>
+            <h3>Testing & QA</h3>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="process-page-step" id="step-5">
+          <div class="process-page-title-side">
+            <span class="process-page-side-num">// PHASE 05</span>
+            <h3>Deployment</h3>
+          </div>
+          <div class="process-page-center">
+            <div class="process-page-dot"></div>
+          </div>
+          <div class="process-page-card">
+            <p>Launch day isn't stressful when deployment is automated. We set up CI/CD pipelines, staging
+              environments, and rollback capabilities before we go live. Zero-downtime deployments are the standard,
+              not the exception.</p>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="process-page-step" id="step-6">
+          <div class="process-page-card">
+            <p>Shipping is the beginning, not the end. We monitor production, handle post-launch bugs promptly, and
+              stay available for the inevitable "one more thing." Most clients stick around for the next project —
+              that's the best metric we have.</p>
+          </div>
+          <div class="process-page-center">
+            <div class="process-page-dot"></div>
+          </div>
+          <div class="process-page-title-side">
+            <span class="process-page-side-num">// PHASE 06</span>
+            <h3>Support & Iteration</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2>Ready to start?</h2>
+        <p>Tell us about your project and we'll walk you through how this process applies to what you're building.</p>
+        <div class="cta-actions">
+          <a href="contact.html#contact-form" class="btn-primary"><span>Let's Talk &rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHATSAPP FLOAT -->
+  <div class="wa-float">
+    <div class="wa-tooltip">Chat with us 👋</div>
+    <a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business." class="wa-fab"
+      target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat with us on WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- GLOBAL FULL FOOTER (outside all page divs) -->
+  <footer id="global-footer">
+    <div class="footer-glow"></div>
+    <div class="container relative">
+
+      <!-- 2. Main Footer Grid -->
+      <div class="footer-inner reveal reveal-delay-1">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"
+            style="display:flex;margin-bottom:.5rem;align-items:center;gap:.5rem;text-decoration:none">
+            <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo" class="logo-image">
+            <div>Control<span>Tower</span></div>
+          </a>
+          <p>Building scalable digital solutions for startups and businesses. Based in Mumbai, serving clients across
+            India and beyond.</p>
+
+          <div class="footer-socials">
+            <a href="mailto:controltower2026.ai@gmail.com" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="#" title="To be updated soon" class="social-link" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" title="To be updated soon" class="social-link" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" title="To be updated soon" class="social-link" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html#about">About</a></li>
+            <li><a href="portfolio.html#portfolio">Portfolio</a></li>
+            <li><a href="technology.html#tech-overview">Technologies</a></li>
+            <li><a href="process.html#process">Process</a></li>
+            <li><a href="contact.html#contact-form">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#web-development">Web Development</a></li>
+            <li><a href="services.html#android-applications">Android Applications</a></li>
+            <li><a href="services.html#cloud-deployment">Cloud Deployment</a></li>
+            <li><a href="services.html#iot-solutions">IoT Solutions</a></li>
+            <li><a href="services.html#desktop-software">Desktop Software</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:controltower2026.ai@gmail.com">controltower2026.ai@gmail.com</a></li>
+            <li><a href="tel:+919821139201">📞 +91 98211 39201</a></li>
+            <li><a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business."
+                target="_blank" rel="noopener noreferrer">💬 WhatsApp Chat</a></li>
+            <li><a>📍 Remote-First / Global</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3. Bottom Bar -->
+      <div class="footer-bottom reveal reveal-delay-2">
+        <p>© 2026 Control Tower. All rights reserved </p>
+        <p style="font-family:var(--font-mono);font-size:.75rem;color:var(--text3)">Built with ❤️ by Control Tower</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

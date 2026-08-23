@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Control Tower — Innovate. Build. Scale.</title>
+
+  <meta name="description"
+    content="Control Tower builds scalable web, mobile, desktop, cloud, and IoT solutions for startups and businesses. Operating remotely and serving clients globally.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <script>(function () { const t = localStorage.getItem('theme') || 'light'; document.documentElement.setAttribute('data-theme', t); })();</script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Analytics (Add your tracking ID here) -->
+
+
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="https://www.controltower.in/index.html">
+
+  <meta property="og:title" content="Control Tower | Web, Mobile, Cloud & IoT Solutions">
+
+  <meta property="og:description"
+    content="Control Tower is a professional technology company building scalable web, mobile, cloud, and IoT solutions for startups and businesses.">
+
+  <meta property="og:image" content="https://www.controltower.in/og-image.png">
+
+  <meta property="og:site_name" content="Control Tower">
+
+  <meta property="og:locale" content="en_US">
+
+
+
+  <!-- Canonical URL -->
+
+  <link rel="canonical" href="https://www.controltower.in/">
+
+
+
+  <!-- Twitter -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="twitter:title" content="Control Tower | Web, Mobile, Cloud & IoT Solutions">
+
+  <meta name="twitter:description"
+    content="Control Tower is a professional technology company building scalable web, mobile, cloud, and IoT solutions for startups and businesses.">
+
+  <meta name="twitter:image" content="https://www.controltower.in/og-image.png">
+
+</head>
+
+
+
+<body>
+
+
+
+  <!-- PRELOADER -->
+
+  <div id="preloader" class="preloader-overlay">
+
+    <div class="preloader-content" id="preloader-content">
+
+      <svg class="preloader-svg" viewBox="0 0 1000 200" preserveAspectRatio="xMidYMid meet">
+
+        <defs>
+
+          <linearGradient id="preloader-accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+
+            <stop offset="0%" stop-color="var(--accent)" />
+
+            <stop offset="50%" stop-color="var(--cyan)" />
+
+            <stop offset="100%" stop-color="var(--accent2)" />
+
+          </linearGradient>
+
+          <mask id="text-mask">
+
+            <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="preloader-svg-text-mask-only">
+
+              Control Tower
+
+            </text>
+
+          </mask>
+
+        </defs>
+
+        <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="preloader-svg-text">
+
+          Control Tower
+
+        </text>
+
+        <g mask="url(#text-mask)">
+
+          <g class="wave-rise-group">
+
+            <path class="preloader-wave-path preloader-wave-path-back"
+              d="M 0,100 Q 250,130 500,100 T 1000,100 T 1500,100 T 2000,100 L 2000,300 L 0,300 Z" />
+
+            <path class="preloader-wave-path preloader-wave-path-front"
+              d="M 0,100 Q 250,70 500,100 T 1000,100 T 1500,100 T 2000,100 L 2000,300 L 0,300 Z" />
+
+          </g>
+
+        </g>
+
+      </svg>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    (function () {
+
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      let loaderShown = false;
+
+      try {
+
+        loaderShown = sessionStorage.getItem('loaderShown');
+
+      } catch (e) {
+
+        console.warn("sessionStorage is not available:", e);
+
+      }
+
+      if (prefersReduced || loaderShown) {
+
+        document.getElementById('preloader').style.display = 'none';
+
+      } else {
+
+        document.body.classList.add('preloader-active');
+
+      }
+
+    })();
+
+  </script>
+
+
+
+  <!-- NAV -->
+
+  <nav id="main-nav">
+
+    <a href="index.html" class="nav-logo">
+
+      <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo" class="logo-image">
+
+      <div>Control<span>Tower</span></div>
+
+    </a>
+
+    <ul class="nav-links">
+
+      <li><a href="index.html" class="nav-link-item active" data-page="home">Home</a></li>
+
+      <li><a href="about.html" class="nav-link-item" data-page="about">About</a></li>
+
+      <li><a href="services.html" class="nav-link-item" data-page="services">Services</a></li>
+
+      <li><a href="portfolio.html" class="nav-link-item" data-page="portfolio">Portfolio</a></li>
+
+      <li><a href="technology.html" class="nav-link-item" data-page="tech">Technologies</a></li>
+
+      <li><a href="process.html" class="nav-link-item" data-page="process">Process</a></li>
+
+      <li><a href="contact.html" class="nav-link-item" data-page="contact">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" onclick="toggleTheme()">
+
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <circle cx="12" cy="12" r="5"></circle>
+
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+
+        </svg>
+
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+
+        </svg>
+
+      </button>
+
+      <a href="contact.html#contact-form" class="nav-cta"><span>Start a Project</span></a>
+
+      <div class="nav-hamburger" onclick="toggleMobileMenu()" id="hamburger">
+
+        <span></span><span></span><span></span>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- MOBILE MENU -->
+
+  <div class="mobile-menu" id="mobile-menu">
+
+    <a href="index.html" onclick="toggleMobileMenu()">Home</a>
+
+    <a href="about.html" onclick="toggleMobileMenu()">About</a>
+
+    <a href="services.html" onclick="toggleMobileMenu()">Services</a>
+
+    <a href="portfolio.html" onclick="toggleMobileMenu()">Portfolio</a>
+
+    <a href="technology.html" onclick="toggleMobileMenu()">Technologies</a>
+
+    <a href="process.html" onclick="toggleMobileMenu()">Process</a>
+
+    <a href="contact.html" onclick="toggleMobileMenu()">Contact</a>
+
+  </div>
+
+
+
+  <!-- HERO -->
+
+  <section id="hero">
+
+    <div class="hero-bg"></div>
+
+    <div class="hero-blob hero-blob-1"></div>
+
+    <div class="hero-blob hero-blob-2"></div>
+
+    <div class="hero-blob hero-blob-3"></div>
+
+    <div class="hero-title-glow"></div>
+
+    <div class="hero-grid"></div>
+
+    <div class="hero-inner">
+
+      <div class="hero-left">
+
+        <br>
+
+        <br>
+
+        <div class="hero-badge">Building scalable, high-performance digital solutions for businesses worldwide</div>
+
+        <h1 class="hero-title" id="hero-title">
+
+          <span class="line"><span class="word">Innovate.</span></span>
+
+          <span class="line"><span class="word accent">Build.</span></span>
+
+          <span class="line"><span class="word accent2">Scale.</span></span>
+
+        </h1>
+
+        <p class="hero-sub" id="hero-sub">
+
+          We build scalable digital solutions for startups and businesses — web, mobile, desktop, cloud services, and
+
+          IoT systems that actually work.
+
+        </p>
+
+        <div class="hero-actions" id="hero-actions">
+
+          <a href="portfolio.html" class="btn-primary" onclick="location.href='portfolio.html'"><span>View Our Work
+
+              →</span></a>
+
+          <a href="contact.html#contact-form" class="btn-ghost"><span>Start A Project</span></a>
+
+        </div>
+
+        <div class="hero-stat-row" id="hero-stats">
+
+        </div>
+
+      </div>
+
+      <div class="hero-visual" id="hero-visual">
+
+        <div class="hero-cursor-glow" id="hero-cursor-glow"></div>
+
+        <div class="hero-glow-backdrop"></div>
+
+        <div class="illustration-wrapper" id="device-comp">
+
+          <img src="assets/images/developer_illustration.webp" alt="Developer Illustration" class="hero-illustration">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- WHO WE ARE -->
+
+  <section class="who-we-are-section" id="about">
+
+    <!-- Subtle ambient glow blobs -->
+
+    <div class="who-glow-blob blob-cyan"></div>
+
+    <div class="who-glow-blob blob-purple"></div>
+
+
+
+    <div class="container">
+
+      <div class="who-grid">
+
+
+
+        <!-- Left Editorial Content -->
+
+        <div class="who-left reveal">
+
+          <div class="section-label">// WHO WE ARE</div>
+
+          <h2 class="who-title">A passionate team building modern digital solutions.</h2>
+
+
+
+          <!-- Mobile Only Preview Component -->
+
+          <div class="who-flip-card mobile-only-who-card">
+
+            <div class="who-flip-card-inner">
+
+              <div class="who-flip-card-front">
+
+                <img src="assets/images/group_photo.webp" loading="lazy" alt="Control Tower Team Group Photo"
+                  class="who-group-photo">
+
+              </div>
+
+              <div class="who-flip-card-back">
+
+                <div class="who-card-back-content">
+
+                  <h3 class="who-card-back-title">Connect With Control Tower</h3>
+
+                  <div class="who-card-back-socials">
+
+                    <a href="#" title="To be updated soon" class="who-social-icon facebook" target="_blank"
+                      rel="noopener noreferrer" aria-label="Facebook">
+
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+
+                      </svg>
+
+                    </a>
+
+                    <a href="#" title="To be updated soon" class="who-social-icon instagram" target="_blank"
+                      rel="noopener noreferrer" aria-label="Instagram">
+
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+
+                      </svg>
+
+                    </a>
+
+                    <a href="#" title="To be updated soon" class="who-social-icon linkedin" target="_blank"
+                      rel="noopener noreferrer" aria-label="LinkedIn">
+
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+
+                        <rect x="2" y="9" width="4" height="12"></rect>
+
+                        <circle cx="4" cy="4" r="2"></circle>
+
+                      </svg>
+
+                    </a>
+
+                    <a href="mailto:controltower2026.ai@gmail.com" class="who-social-icon gmail" aria-label="Gmail">
+
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+
+                        <polyline points="22,6 12,13 2,6"></polyline>
+
+                      </svg>
+
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <p class="who-desc">Control Tower is a software startup focused on creating scalable web, mobile, cloud,
+
+            desktop, and IoT solutions for startups, businesses, and modern brands.</p>
+
+
+
+          <!-- CTA Buttons -->
+
+          <div class="who-teaser-actions">
+
+            <a href="about.html#about-team-section" class="btn-primary-sm"><span>Meet The Team <span
+                  class="btn-arrow">→</span></span></a>
+
+            <a href="about.html" class="btn-link-sm">Explore Our Story →</a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Right Preview Component -->
+
+        <div class="who-right reveal reveal-delay-1">
+
+          <div class="who-flip-card">
+
+            <div class="who-flip-card-inner">
+
+              <div class="who-flip-card-front">
+
+                <img src="assets/images/group_photo.webp" loading="lazy" alt="Control Tower Team Group Photo"
+                  class="who-group-photo">
+
+              </div>
+
+              <div class="who-flip-card-back">
+
+                <div class="who-card-back-content">
+
+                  <h3 class="who-card-back-title">Connect With Control Tower</h3>
+
+                  <div class="who-card-back-socials">
+
+                    <a href="#" title="To be updated soon" class="who-social-icon facebook" target="_blank"
+                      rel="noopener noreferrer" aria-label="Facebook">
+
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+
+                      </svg>
+
+                    </a>
+
+                    <a href="#" title="To be updated soon" class="who-social-icon instagram" target="_blank"
+                      rel="noopener noreferrer" aria-label="Instagram">
+
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+
+                      </svg>
+
+                    </a>
+
+                    <a href="#" title="To be updated soon" class="who-social-icon linkedin" target="_blank"
+                      rel="noopener noreferrer" aria-label="LinkedIn">
+
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+
+                        <rect x="2" y="9" width="4" height="12"></rect>
+
+                        <circle cx="4" cy="4" r="2"></circle>
+
+                      </svg>
+
+                    </a>
+
+                    <a href="mailto:controltower2026.ai@gmail.com" class="who-social-icon gmail" aria-label="Gmail">
+
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+
+                        <polyline points="22,6 12,13 2,6"></polyline>
+
+                      </svg>
+
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <br>
+
+  <br>
+
+
+
+  <!-- SERVICES PREVIEW -->
+
+  <section class="services-section" id="services">
+
+    <div class="container">
+
+      <div class="reveal">
+
+        <div class="section-label">What We Build</div>
+
+        <h2 class="section-title">Building Digital Solutions for Modern Businesses</h2>
+
+        <p class="section-sub">We create websites, android mobile apps, software, and cloud solutions that help
+
+          businesses grow and operate efficiently.</p>
+
+      </div>
+
+      <div class="services-carousel-wrapper">
+
+        <div class="services-carousel-track">
+
+          <!-- Web Development -->
+
+          <div class="service-card reveal" onmousemove="tiltCard(this,event)">
+
+            <div class="service-icon blue">🌐</div>
+
+            <h3 class="service-title">Web Development</h3>
+
+            <p class="service-desc">Full-stack web applications built for performance, SEO, and real user needs — not
+
+              just pixel-perfect mockups.</p>
+
+            <div class="service-tags">
+
+              <span class="tag">Next.js</span><span class="tag">React</span><span class="tag">Node.js</span><span
+                class="tag">PostgreSQL</span>
+
+            </div>
+
+          </div>
+
+          <!-- Android Applications -->
+
+          <div class="service-card reveal reveal-delay-1" onmousemove="tiltCard(this,event)">
+
+            <div class="service-icon purple">📱</div>
+
+            <h3 class="service-title">Android Applications</h3>
+
+            <p class="service-desc">Android mobile apps with native-like performance. Built to retain users,
+
+              not just acquire them.</p>
+
+            <div class="service-tags">
+
+              <span class="tag">React Native</span><span class="tag">Flutter</span><span class="tag">Android</span>
+
+            </div>
+
+          </div>
+
+          <!-- Cloud Deployment -->
+
+          <div class="service-card reveal reveal-delay-2" onmousemove="tiltCard(this,event)">
+
+            <div class="service-icon green">☁️</div>
+
+            <h3 class="service-title">Cloud Solutions</h3>
+
+            <p class="service-desc">Infra that scales automatically, deploys continuously, and never pages you at 3am.
+
+              Built right from the start.</p>
+
+            <div class="service-tags">
+
+              <span class="tag">AWS</span><span class="tag">Firebase</span><span class="tag">Docker</span><span
+                class="tag">CI/CD</span>
+
+            </div>
+
+          </div>
+
+          <!-- IoT Solutions -->
+
+          <div class="service-card reveal reveal-delay-3" onmousemove="tiltCard(this,event)">
+
+            <div class="service-icon amber">🔌</div>
+
+            <h3 class="service-title">IoT Solutions</h3>
+
+            <p class="service-desc">Connect physical devices to digital dashboards. Real-time monitoring, alerts, and
+
+              automation for the physical world.</p>
+
+            <div class="service-tags">
+
+              <span class="tag">MQTT</span><span class="tag">Raspberry Pi</span><span class="tag">Arduino</span><span
+                class="tag">AWS IoT</span>
+
+            </div>
+
+          </div>
+
+          <!-- Desktop Software -->
+
+          <div class="service-card reveal reveal-delay-4" onmousemove="tiltCard(this,event)">
+
+            <div class="service-icon cyan">🖥️</div>
+
+            <h3 class="service-title">Desktop Software</h3>
+
+            <p class="service-desc">Desktop applications for workflows that need more power than a web browser can
+
+              provide.</p>
+
+            <div class="service-tags">
+
+              <span class="tag">Electron</span><span class="tag">Tauri</span><span class="tag">Windows</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Pagination Dots -->
+
+        <div class="carousel-dots">
+
+          <div class="dot active"></div>
+
+          <div class="dot"></div>
+
+          <div class="dot"></div>
+
+          <div class="dot"></div>
+
+          <div class="dot"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <br>
+
+  <!-- WHY US -->
+
+  <section class="why-section">
+
+    <!-- Glow blobs -->
+
+    <div class="why-glow-blob blob-1"></div>
+
+    <div class="why-glow-blob blob-2"></div>
+
+
+
+    <div class="container">
+
+      <div class="why-sticky-layout">
+
+        <!-- Left Sticky Column -->
+
+        <div class="why-sticky-left">
+
+          <div class="why-bg-word">Scale</div>
+
+          <div class="why-left-glow"></div>
+
+          <div class="section-label">Why Control Tower</div>
+
+          <h2 class="why-sticky-title">Engineering digital systems built for growth.</h2>
+
+          <p class="why-sticky-desc">We focus on creating scalable, modern, and reliable digital solutions with clean
+
+            engineering, thoughtful execution, and long-term maintainability.</p>
+
+
+
+          <div class="why-value-stack">
+
+            <div class="why-value-item">
+
+              <span class="why-value-text">Built for scale.</span>
+
+            </div>
+
+            <div class="why-value-item">
+
+              <span class="why-value-text">Designed for trust.</span>
+
+            </div>
+
+            <div class="why-value-item">
+
+              <span class="why-value-text">Delivered with clarity.</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Right Column -->
+
+        <div class="why-timeline-right">
+
+          <!-- Timeline Cards Stack -->
+
+          <div class="why-timeline-cards">
+
+
+
+            <!-- Card 1 -->
+
+            <div class="why-timeline-card-wrapper">
+
+              <div class="why-timeline-card">
+
+                <div class="why-card-main">
+
+                  <div class="why-card-header">
+
+                    <span class="why-card-step">01</span>
+
+                    <h3 class="why-card-title">Scalable by Design</h3>
+
+                  </div>
+
+                  <p class="why-card-text">We architect solutions that grow with your user base. No quick hacks that
+
+                    break under load—we build software that scales seamlessly.</p>
+
+                </div>
+
+                <div class="why-card-visual">
+
+                  <div class="why-visual-scalable">
+
+                    <div class="scalable-nodes">
+
+                      <span class="node-center"></span>
+
+                      <span class="node-ring pulse-1"></span>
+
+                      <span class="node-ring pulse-2"></span>
+
+                      <div class="node-satellites">
+
+                        <span class="sat sat-1"></span>
+
+                        <span class="sat sat-2"></span>
+
+                        <span class="sat sat-3"></span>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+            <!-- Card 2 -->
+
+            <div class="why-timeline-card-wrapper">
+
+              <div class="why-timeline-card">
+
+                <div class="why-card-main">
+
+                  <div class="why-card-header">
+
+                    <span class="why-card-step">02</span>
+
+                    <h3 class="why-card-title">Modern Tech Stack</h3>
+
+                  </div>
+
+                  <p class="why-card-text">Leveraging React, Next.js, Vite, Node, and premium cloud services to build
+
+                    fast, robust, and future-proof systems.</p>
+
+                </div>
+
+                <div class="why-card-visual">
+
+                  <div class="why-visual-tech">
+
+                    <div class="tech-window">
+
+                      <div class="window-bar">
+
+                        <span class="dot-red"></span>
+
+                        <span class="dot-yellow"></span>
+
+                        <span class="dot-green"></span>
+
+                      </div>
+
+                      <div class="code-lines">
+
+                        <div class="code-line"><span class="c-accent">const</span> stack = [</div>
+
+                        <div class="code-line indent"><span class="c-blue">'Next'</span>, <span
+                            class="c-cyan">'Vite'</span>,</div>
+
+                        <div class="code-line indent"><span class="c-purple">'React'</span>, <span
+                            class="c-green">'Node'</span></div>
+
+                        <div class="code-line">];</div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+            <!-- Card 3 -->
+
+            <div class="why-timeline-card-wrapper">
+
+              <div class="why-timeline-card">
+
+                <div class="why-card-main">
+
+                  <div class="why-card-header">
+
+                    <span class="why-card-step">03</span>
+
+                    <h3 class="why-card-title">Premium UI Experience</h3>
+
+                  </div>
+
+                  <p class="why-card-text">Custom-crafted layouts with modern aesthetics, glassmorphism, responsive
+
+                    flow, and smooth animations that engage users.</p>
+
+                </div>
+
+                <div class="why-card-visual">
+
+                  <div class="why-visual-ui">
+
+                    <div class="mini-ui-mockup">
+
+                      <div class="ui-header">
+
+                        <div class="ui-profile"></div>
+
+                        <div class="ui-nav-bar"></div>
+
+                      </div>
+
+                      <div class="ui-body">
+
+                        <div class="ui-chart-bar bar-1"></div>
+
+                        <div class="ui-chart-bar bar-2"></div>
+
+                        <div class="ui-chart-bar bar-3"></div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+            <!-- Card 4 -->
+
+            <div class="why-timeline-card-wrapper">
+
+              <div class="why-timeline-card">
+
+                <div class="why-card-main">
+
+                  <div class="why-card-header">
+
+                    <span class="why-card-step">04</span>
+
+                    <h3 class="why-card-title">Security-Focused Development</h3>
+
+                  </div>
+
+                  <p class="why-card-text">Data encryption, secure API integrations, and robust authorization. We
+
+                    construct security into your codebase from line one.</p>
+
+                </div>
+
+                <div class="why-card-visual">
+
+                  <div class="why-visual-security">
+
+                    <div class="security-shield">
+
+                      <svg class="shield-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+
+                      </svg>
+
+                      <div class="shield-glow"></div>
+
+                      <div class="scanner-line"></div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+            <!-- Card 5 -->
+
+            <div class="why-timeline-card-wrapper">
+
+              <div class="why-timeline-card">
+
+                <div class="why-card-main">
+
+                  <div class="why-card-header">
+
+                    <span class="why-card-step">05</span>
+
+                    <h3 class="why-card-title">Startup-Friendly Execution</h3>
+
+                  </div>
+
+                  <p class="why-card-text">We run lean, communicate transparently, and align our processes with your
+
+                    launch goals. Fast delivery without architectural shortcuts.</p>
+
+                </div>
+
+                <div class="why-card-visual">
+
+                  <div class="why-visual-startup">
+
+                    <div class="startup-progress">
+
+                      <svg class="progress-ring" viewBox="0 0 100 100">
+
+                        <circle class="ring-bg" cx="50" cy="50" r="40" />
+
+                        <circle class="ring-fill" cx="50" cy="50" r="40" />
+
+                      </svg>
+
+                      <div class="rocket-icon">🚀</div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- FEATURED PROJECTS -->
+  <section class="projects-section" id="portfolio">
+    <div class="container">
+      <div class="projects-header reveal">
+        <div>
+          <div class="section-label">Selected Work</div>
+          <h2 class="section-title">Projects we're proud of</h2>
+        </div>
+        <a href="portfolio.html" class="btn-ghost" style="white-space:nowrap"><span>View all projects →</span></a>
+      </div>
+
+      <div class="projects-showcase-stack">
+
+        <!-- Project 1: Control Tower RAG -->
+        <div class="showcase-card reveal">
+          <!-- Left content area -->
+          <div class="showcase-content">
+            <div class="showcase-meta">
+              <span class="showcase-category">// AI Systems · Enterprise Inventory & RAG Platform</span>
+              <div class="showcase-meta-right">
+                <span class="trust-badge">Flagship AI Engine</span>
+                <span class="showcase-number">01 / 03</span>
+              </div>
+            </div>
+            <h3 class="showcase-title">Control Tower RAG<br>Inventory Intelligence</h3>
+            <p class="showcase-desc">An enterprise AI inventory monitoring and decision intelligence platform. Combines
+              LangGraph multi-agent hybrid orchestrators, multi-step SQL agents, real-time stockout prediction, dead
+              inventory detection, and automated alert pipelines (Telegram, WhatsApp, SMTP).</p>
+
+            <ul class="showcase-features">
+              <li><span>✦</span> Natural language to SQL query engine (Claude 3.5 Sonnet)</li>
+              <li><span>✦</span> Real-time stockout prediction & daily sales velocity</li>
+              <li><span>✦</span> LangGraph orchestrator routing vector SOPs & live MySQL</li>
+              <li><span>✦</span> Automated alerts via Telegram Bot, WhatsApp & SMTP digest</li>
+              <li><span>✦</span> Materialized snapshot cache with versioned response store</li>
+            </ul>
+
+            <div class="showcase-stack">
+              <span class="stack-badge">FastAPI</span>
+              <span class="stack-badge">Python</span>
+              <span class="stack-badge">LangChain</span>
+              <span class="stack-badge">LangGraph</span>
+              <span class="stack-badge">Claude 3.5 Sonnet</span>
+              <span class="stack-badge">MySQL</span>
+              <span class="stack-badge">ChromaDB</span>
+              <span class="stack-badge">Twilio WhatsApp</span>
+            </div>
+
+            <div class="showcase-actions">
+              <button class="btn-primary-sm" onclick="openProjectOverview('controltower_rag')"><span>Project Overview
+                  <span class="btn-arrow">→</span></span></button>
+            </div>
+          </div>
+
+          <!-- Right visual/mockup area -->
+          <div class="showcase-visual">
+            <div class="visual-glow"></div>
+            <div class="mockup-container">
+              <div class="laptop-wrap">
+                <div class="mockup-window laptop-mockup">
+                  <div class="glass-shine"></div>
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <div class="mockup-url">controltower.ai/rag-engine</div>
+                  </div>
+                  <div class="mockup-body" style="padding: 0; overflow: hidden; height: 100%;">
+                    <img src="assets/images/controltower_rag_dashboard.webp" loading="lazy"
+                      alt="Control Tower RAG Dashboard"
+                      style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                  </div>
+                </div>
+              </div>
+              <div class="floating-card dispute-analysis-card">
+                <span class="card-icon" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">🤖</span>
+                <div class="card-details">
+                  <span class="card-label">LangGraph SQL Agent</span>
+                  <span class="card-value" style="color: #3b82f6; font-size: 0.52rem;">99.4% Query Accuracy</span>
+                </div>
+              </div>
+              <div class="floating-card match-score-card">
+                <span class="card-icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">⚡</span>
+                <div class="card-details">
+                  <span class="card-label">Auto Alerts</span>
+                  <span class="match-percentage" style="color: #10b981;">Telegram · WhatsApp</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: OrderBot Supply Chain Automation -->
+        <div class="showcase-card reveal reveal-delay-1">
+          <!-- Left content area -->
+          <div class="showcase-content">
+            <div class="showcase-meta">
+              <span class="showcase-category">// Supply Chain · B2B Telegram MiniApp & Order Automation</span>
+              <div class="showcase-meta-right">
+                <span class="trust-badge">High Throughput</span>
+                <span class="showcase-number">02 / 03</span>
+              </div>
+            </div>
+            <h3 class="showcase-title">OrderBot<br>Wholesale Hub & Automation</h3>
+            <p class="showcase-desc">A modern B2B supply chain ordering and distributor management system built as a
+              high-speed Telegram WebApp MiniApp and robust backend. Automates wholesale product discovery, real-time
+              inventory checks, bulk shopping carts, wholesale tiered pricing, and direct invoice routing.</p>
+
+            <ul class="showcase-features">
+              <li><span>✦</span> Telegram WebApp MiniApp for zero-install mobile ordering</li>
+              <li><span>✦</span> Real-time catalog search & SKU filtering across categories</li>
+              <li><span>✦</span> Live multi-warehouse inventory sync & stock reservation</li>
+              <li><span>✦</span> B2B bulk shopping cart with tiered wholesale pricing</li>
+              <li><span>✦</span> Automated distributor order validation & invoice generation</li>
+            </ul>
+
+            <div class="showcase-stack">
+              <span class="stack-badge">Telegram WebApp</span>
+              <span class="stack-badge">Django</span>
+              <span class="stack-badge">FastAPI</span>
+              <span class="stack-badge">Python</span>
+              <span class="stack-badge">PostgreSQL / SQLite</span>
+              <span class="stack-badge">Vanilla JS</span>
+              <span class="stack-badge">WebSockets</span>
+            </div>
+
+            <div class="showcase-actions">
+              <button class="btn-primary-sm" onclick="openProjectOverview('supplychain_orderbot')"><span>Project
+                  Overview <span class="btn-arrow">→</span></span></button>
+            </div>
+          </div>
+
+          <!-- Right visual/mockup area -->
+          <div class="showcase-visual">
+            <div class="visual-glow purple"></div>
+            <div class="mockup-container">
+              <div class="laptop-wrap">
+                <div class="mockup-window laptop-mockup">
+                  <div class="glass-shine"></div>
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <div class="mockup-url">t.me/OrderBotWholesaleHub</div>
+                  </div>
+                  <div class="mockup-body" style="padding: 0; overflow: hidden; height: 100%;">
+                    <img src="assets/images/supplychain_orderbot_dashboard.webp" loading="lazy"
+                      alt="OrderBot Supply Chain Dashboard"
+                      style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                  </div>
+                </div>
+              </div>
+              <div class="floating-card dispute-analysis-card">
+                <span class="card-icon" style="background: rgba(56, 189, 248, 0.1); color: #38bdf8;">📱</span>
+                <div class="card-details">
+                  <span class="card-label">Telegram MiniApp</span>
+                  <span class="card-value" style="color: #38bdf8; font-size: 0.52rem;">Zero App Download</span>
+                </div>
+              </div>
+              <div class="floating-card match-score-card">
+                <span class="card-icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">📦</span>
+                <div class="card-details">
+                  <span class="card-label">Stock Status</span>
+                  <span class="match-percentage" style="color: #10b981;">100% Live Sync</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: WhatsApp ECHO Bridge -->
+        <div class="showcase-card reveal reveal-delay-2">
+          <!-- Left content area -->
+          <div class="showcase-content">
+            <div class="showcase-meta">
+              <span class="showcase-category">// Enterprise Comms · Multi-Operator WhatsApp Relay & Gateway</span>
+              <div class="showcase-meta-right">
+                <span class="trust-badge">Real-Time Sync</span>
+                <span class="showcase-number">03 / 03</span>
+              </div>
+            </div>
+            <h3 class="showcase-title">WhatsApp ECHO Bridge<br>Multi-Operator Relay</h3>
+            <p class="showcase-desc">A high-concurrency self-hosted WhatsApp ECHO bridge and customer communications
+              relay built on Node.js and the Baileys protocol. Enables dozens of support operators to collaborate on a
+              single WhatsApp business line in real-time with full message persistence, live WebSocket synchronization,
+              media handling, and audit trails.</p>
+
+            <ul class="showcase-features">
+              <li><span>✦</span> Multi-operator live presence & concurrent chat assignment</li>
+              <li><span>✦</span> Real-time bi-directional message broadcast via WebSockets (<10ms)< /li>
+              <li><span>✦</span> Native protocol message editing & message recall</li>
+              <li><span>✦</span> Persistent SQLite message history & attachment caching</li>
+              <li><span>✦</span> Google VCF automated contact resolution & address book sync</li>
+            </ul>
+
+            <div class="showcase-stack">
+              <span class="stack-badge">Node.js</span>
+              <span class="stack-badge">Express</span>
+              <span class="stack-badge">Socket.io</span>
+              <span class="stack-badge">Baileys API</span>
+              <span class="stack-badge">SQLite WAL</span>
+              <span class="stack-badge">PM2</span>
+              <span class="stack-badge">WebSockets</span>
+            </div>
+
+            <div class="showcase-actions">
+              <button class="btn-primary-sm" onclick="openProjectOverview('wa_relay')"><span>Project Overview <span
+                    class="btn-arrow">→</span></span></button>
+            </div>
+          </div>
+
+          <!-- Right visual/mockup area -->
+          <div class="showcase-visual">
+            <div class="visual-glow green"></div>
+            <div class="mockup-container">
+              <div class="laptop-wrap">
+                <div class="mockup-window laptop-mockup">
+                  <div class="glass-shine"></div>
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <div class="mockup-url">relay.controltower.ai:3001</div>
+                  </div>
+                  <div class="mockup-body" style="padding: 0; overflow: hidden; height: 100%;">
+                    <img src="assets/images/wa_relay_dashboard.webp" loading="lazy" alt="WhatsApp ECHO Bridge Dashboard"
+                      style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                  </div>
+                </div>
+              </div>
+              <div class="floating-card dispute-analysis-card">
+                <span class="card-icon" style="background: rgba(34, 197, 94, 0.1); color: #22c55e;">👥</span>
+                <div class="card-details">
+                  <span class="card-label">Multi-Operator</span>
+                  <span class="card-value" style="color: #22c55e; font-size: 0.52rem;">Live Presence Sync</span>
+                </div>
+              </div>
+              <div class="floating-card match-score-card">
+                <span class="card-icon" style="background: rgba(56, 189, 248, 0.1); color: #38bdf8;">⚡</span>
+                <div class="card-details">
+                  <span class="card-label">Socket Latency</span>
+                  <span class="match-percentage" style="color: #38bdf8;">
+                    < 10ms Broadcast</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mobile-only View All Projects Button -->
+      <div class="mobile-projects-btn-wrap">
+        <a href="portfolio.html" class="btn-ghost" style="white-space:nowrap"><span>View all projects →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+
+  <section style="padding:0 0 6rem;background:var(--bg)" id="contact-form">
+
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+
+          <h3>Talk to us directly</h3>
+
+          <p>We're a small team, which means you actually talk to the people building your product — not an account
+
+            manager who relays messages.</p>
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">📧</div>
+
+            <div class="contact-item-text">
+
+              <div class="contact-item-label">// email</div>
+
+              <div class="contact-item-val"><a
+                  href="mailto:controltower2026.ai@gmail.com">controltower2026.ai@gmail.com</a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">📞</div>
+
+            <div class="contact-item-text">
+
+              <div class="contact-item-label">// phone</div>
+
+              <div class="contact-item-val"><a href="tel:+919821139201">+91 98211 39201</a></div>
+
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">📍</div>
+
+            <div class="contact-item-text">
+
+              <div class="contact-item-label">// location</div>
+
+              <div class="contact-item-val">Remote-First (Operating Globally)</div>
+
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">🕐</div>
+
+            <div class="contact-item-text">
+
+              <div class="contact-item-label">// response time</div>
+
+              <div class="contact-item-val">Usually within 4–6 hours on working days</div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Trust Indicators -->
+
+          <div
+            style="margin-top:2rem; display:flex; flex-direction:column; gap:0.75rem; color:var(--text2); font-size:0.95rem;">
+
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+
+              <span style="color:var(--cyan);">✓</span> Free First Consultation
+
+            </div>
+
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+
+              <span style="color:var(--cyan);">✓</span> Clear Pricing Before Development Starts
+
+            </div>
+
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+
+              <span style="color:var(--cyan);">✓</span> Support After Project Delivery
+
+            </div>
+
+          </div>
+
+
+
+          <p style="font-size:.875rem;color:var(--text2);margin-top:2rem">Prefer to chat? Drop us a message on
+
+            WhatsApp — it's the fastest way to reach us.</p>
+
+          <a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business."
+            target="_blank" rel="noopener noreferrer" class="wa-button">
+
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                stroke="none" />
+
+            </svg>
+
+            <span>Chat on WhatsApp</span>
+
+          </a>
+
+        </div>
+
+        <div class="reveal reveal-delay-2">
+
+          <div class="contact-form-wrapper">
+
+            <div class="contact-form-inner">
+
+
+
+
+
+
+
+              <!-- Form Fields Column -->
+
+              <div class="contact-fields-column">
+
+                <div id="form-container">
+
+                  <h3
+                    style="font-family:var(--font-head);font-size:1.25rem;font-weight:700;margin-bottom:1.75rem;letter-spacing:-.02em">
+
+                    Send us a message</h3>
+
+                  <div class="form-row">
+
+                    <div class="form-group" id="fg-name"><label>// name</label><input type="text"
+                        placeholder="Your name" id="f-name" required>
+
+                      <div class="form-error">Please enter your name</div>
+
+                    </div>
+
+                    <div class="form-group" id="fg-email"><label>// email</label><input type="email"
+                        placeholder="your@email.com" id="f-email" required>
+
+                      <div class="form-error">❌ Please enter a valid email address.</div>
+
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="form-group" id="fg-phone">
+
+                    <label>// Phone / WhatsApp Number</label>
+
+                    <input type="tel" placeholder="+91 xxxxx xxxxx" id="f-phone" required>
+
+                    <div class="form-error">❌ Please enter a valid 10-digit mobile number.</div>
+
+                  </div>
+
+
+
+                  <div class="form-group" id="fg-service"><label>// service needed</label>
+
+                    <select id="f-service" required>
+
+                      <option value="">Select a service...</option>
+
+                      <option>Web Development</option>
+
+                      <option>Android App Development</option>
+
+                      <option>Desktop Software</option>
+
+                      <option>Cloud & DevOps</option>
+
+                      <option>IoT System</option>
+
+                      <option>Not sure yet</option>
+
+                    </select>
+
+                    <div class="form-error">Please select a service</div>
+
+                  </div>
+
+                  <div class="form-group" id="fg-msg"><label>// tell us about your project</label><textarea
+                      placeholder="What you want us to build for you ? Any timeline or budget constraints ? Any other information ?"
+                      id="f-msg" required></textarea>
+
+                    <div class="form-error">Please tell us about your project (max 1000 chars)</div>
+
+                  </div>
+
+                  <!-- Hidden Honeypot Field -->
+
+                  <div style="display:none !important;">
+
+                    <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
+
+                  </div>
+
+                  <button class="submit-btn" id="submit-btn" onclick="submitForm()"><span>Send Message
+
+                      →</span></button>
+
+                  <!-- Global Error Container -->
+
+                  <div class="form-error-global" id="form-error-global"
+                    style="display:none; color:#ef4444; font-size:0.875rem; text-align:center; margin-top:1rem; padding:0.75rem; border:1px solid rgba(239, 68, 68, 0.2); border-radius:8px; background:rgba(239, 68, 68, 0.05);">
+
+                    ❌ Unable to submit your inquiry right now. Please try again later or contact us directly through
+
+                    WhatsApp.
+
+                  </div>
+
+                  <p style="font-size:0.75rem; color:var(--text3); text-align:center; margin-top:1.25rem;">Your
+
+                    information is safe with us. We only use it to respond to your inquiry.</p>
+
+                </div>
+
+                <div class="form-success" id="form-success">
+
+                  <div class="check">✅</div>
+
+                  <h3>Thank you for contacting Control Tower.</h3>
+
+                  <p>Our team has received your inquiry and will get back to you shortly.</p>
+
+                  <a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business."
+                    target="_blank" rel="noopener noreferrer" class="wa-button"
+                    style="margin-top:1rem;display:inline-flex"><span>💬 Continue on WhatsApp</span></a>
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- WHATSAPP FLOAT -->
+
+  <div class="wa-float">
+
+    <div class="wa-tooltip">Chat with us 👋</div>
+
+    <a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business." class="wa-fab"
+      target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat with us on WhatsApp">
+
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+
+      </svg>
+
+    </a>
+
+  </div>
+
+
+
+  <!-- GLOBAL FULL FOOTER (outside all page divs) -->
+
+  <footer id="global-footer">
+
+    <div class="footer-glow"></div>
+
+    <div class="container relative">
+
+
+
+      <!-- 2. Main Footer Grid -->
+
+      <div class="footer-inner reveal reveal-delay-1">
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="nav-logo"
+            style="display:flex;margin-bottom:.5rem;align-items:center;gap:.5rem;text-decoration:none">
+
+            <img src="assets/images/vertexsoft_labs_logo_only.webp" alt="Control Tower Logo" class="logo-image">
+
+            <div>Control<span>Tower</span></div>
+
+          </a>
+
+          <p>Building scalable digital solutions for startups and businesses. Based in Mumbai, serving clients across
+
+            India and beyond.</p>
+
+
+
+          <div class="footer-socials">
+
+            <a href="mailto:controltower2026.ai@gmail.com" class="social-link" aria-label="Email">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+
+                <polyline points="22,6 12,13 2,6"></polyline>
+
+              </svg>
+
+            </a>
+
+            <a href="#" title="To be updated soon" class="social-link" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+
+                <rect x="2" y="9" width="4" height="12"></rect>
+
+                <circle cx="4" cy="4" r="2"></circle>
+
+              </svg>
+
+            </a>
+
+            <a href="#" title="To be updated soon" class="social-link" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+
+              </svg>
+
+            </a>
+
+            <a href="#" title="To be updated soon" class="social-link" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+
+              </svg>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+          <h4>Company</h4>
+
+          <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html#about">About</a></li>
+
+            <li><a href="portfolio.html#portfolio">Portfolio</a></li>
+
+            <li><a href="technology.html#tech-overview">Technologies</a></li>
+
+            <li><a href="process.html#process">Process</a></li>
+
+            <li><a href="contact.html#contact-form">Contact</a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+          <h4>Services</h4>
+
+          <ul>
+
+            <li><a href="services.html#web-development">Web Development</a></li>
+
+            <li><a href="services.html#android-applications">Android Applications</a></li>
+
+            <li><a href="services.html#cloud-deployment">Cloud Deployment</a></li>
+
+            <li><a href="services.html#iot-solutions">IoT Solutions</a></li>
+
+            <li><a href="services.html#desktop-software">Desktop Software</a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+          <h4>Contact</h4>
+
+          <ul>
+
+            <li><a href="mailto:controltower2026.ai@gmail.com">controltower2026.ai@gmail.com</a></li>
+
+            <li><a href="tel:+919821139201">📞 +91 98211 39201</a></li>
+
+            <li><a href="https://wa.me/919821139201?text=I%20want%20to%20enquire%20more%20for%20my%20business."
+                target="_blank" rel="noopener noreferrer">💬 WhatsApp Chat</a></li>
+
+            <li><a>📍 Remote-First / Global</a></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 3. Bottom Bar -->
+
+      <div class="footer-bottom reveal reveal-delay-2">
+
+        <p>© 2026 Control Tower. All rights reserved </p>
+
+        <p style="font-family:var(--font-mono);font-size:.75rem;color:var(--text3)">Built with ❤️ by Control Tower</p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- PROJECT OVERVIEW MODAL -->
+
+  <div id="project-overview-modal" class="project-modal-overlay" onclick="handleProjectModalBackdropClick(event)">
+
+    <div class="project-modal-container">
+
+      <button class="project-modal-close" onclick="closeProjectOverview()" aria-label="Close modal">✕</button>
+
+      <div id="project-modal-content">
+
+        <!-- Content will be injected dynamically via JS -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- GSAP & ScrollTrigger -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+
+</body>
+
+
+
+</html>
