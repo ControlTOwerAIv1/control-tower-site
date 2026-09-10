@@ -76,7 +76,7 @@ let whySectionScrollHandler = null;
 const projects = {
   controltower_rag: {
     industry: 'AI Systems · Enterprise Inventory & RAG Platform',
-    title: 'Control Tower RAG — Inventory Intelligence',
+    title: 'Control Tower RAG - Inventory Intelligence',
     problem: 'High-throughput distributors struggle with stockouts, dead inventory accumulation, and slow manual database queries across multi-warehouse operations.',
     solution: 'Engineered a LangGraph-based hybrid orchestrator combining multi-step SQL agents with Chroma vector retrieval to analyze sales velocity, predict stockout risks, and trigger automated alerts.',
     outcome: 'Eliminated manual inventory reports, automated daily stockout risk dispatches via Telegram and WhatsApp, and enabled instant plain-English database querying with sub-500ms latency.',
@@ -84,7 +84,7 @@ const projects = {
   },
   supplychain_orderbot: {
     industry: 'Supply Chain · B2B Telegram MiniApp & Order Automation',
-    title: 'OrderBot — Wholesale Hub & Supply Chain Automation',
+    title: 'OrderBot - Wholesale Hub & Supply Chain Automation',
     video: 'assets/videos/order_bot.mp4',
     poster: 'assets/images/supplychain_orderbot_dashboard.webp',
     problem: 'Wholesalers and distributors rely on fragmented phone calls and manual paper order taking, causing fulfillment bottlenecks, stock discrepancies, and delayed deliveries.',
@@ -94,7 +94,7 @@ const projects = {
   },
   wa_relay: {
     industry: 'Enterprise Comms · Multi-Operator WhatsApp Relay & Gateway',
-    title: 'WhatsApp ECHO Bridge — Multi-Operator Relay',
+    title: 'WhatsApp ECHO Bridge - Multi-Operator Relay',
     problem: 'WhatsApp Business only allows single-device logins for support teams, leading to lost customer inquiries, lack of collaboration, and zero message audit trails.',
     solution: 'Developed a self-hosted WhatsApp ECHO bridge on the Baileys protocol with Socket.io real-time broadcast, allowing dozens of concurrent operators to manage chat streams simultaneously.',
     outcome: 'Unified customer communications across all operators in under 10ms WebSocket latency, with native message editing, full SQLite WAL message history, and Google VCF contact sync.',
@@ -1083,55 +1083,44 @@ document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger);
 
   ScrollTrigger.matchMedia({
-    "(min-width: 769px)": function () {
+    "(min-width: 768px)": function () {
       const cards = gsap.utils.toArray('.services-carousel-track .service-card');
       const dots = gsap.utils.toArray('.carousel-dots .dot');
 
       if (cards.length === 0) return;
 
-      // Define 3D carousel states for cards (0 to 4)
-      const states = [
-        // State 0 (first card active in center)
-        [
-          { x: 0, rotateY: 0, scale: 1, opacity: 1, filter: "blur(0px)", zIndex: 10 },
-          { x: 300, rotateY: -35, scale: 0.8, opacity: 0.5, filter: "blur(2px)", zIndex: 8 },
-          { x: 550, rotateY: -45, scale: 0.6, opacity: 0.15, filter: "blur(4px)", zIndex: 5 },
-          { x: 750, rotateY: -45, scale: 0.4, opacity: 0, filter: "blur(6px)", zIndex: 2 },
-          { x: 950, rotateY: -45, scale: 0.4, opacity: 0, filter: "blur(6px)", zIndex: 1 }
-        ],
-        // State 1 (second card active in center)
-        [
-          { x: -300, rotateY: 35, scale: 0.8, opacity: 0.5, filter: "blur(2px)", zIndex: 8 },
-          { x: 0, rotateY: 0, scale: 1, opacity: 1, filter: "blur(0px)", zIndex: 10 },
-          { x: 300, rotateY: -35, scale: 0.8, opacity: 0.5, filter: "blur(2px)", zIndex: 8 },
-          { x: 550, rotateY: -45, scale: 0.6, opacity: 0.15, filter: "blur(4px)", zIndex: 5 },
-          { x: 750, rotateY: -45, scale: 0.4, opacity: 0, filter: "blur(6px)", zIndex: 1 }
-        ],
-        // State 2 (third card active in center)
-        [
-          { x: -550, rotateY: 45, scale: 0.6, opacity: 0.15, filter: "blur(4px)", zIndex: 5 },
-          { x: -300, rotateY: 35, scale: 0.8, opacity: 0.5, filter: "blur(2px)", zIndex: 8 },
-          { x: 0, rotateY: 0, scale: 1, opacity: 1, filter: "blur(0px)", zIndex: 10 },
-          { x: 300, rotateY: -35, scale: 0.8, opacity: 0.5, filter: "blur(2px)", zIndex: 8 },
-          { x: 550, rotateY: -45, scale: 0.6, opacity: 0.15, filter: "blur(4px)", zIndex: 5 }
-        ],
-        // State 3 (fourth card active in center)
-        [
-          { x: -750, rotateY: 45, scale: 0.4, opacity: 0, filter: "blur(6px)", zIndex: 1 },
-          { x: -550, rotateY: 45, scale: 0.6, opacity: 0.15, filter: "blur(4px)", zIndex: 5 },
-          { x: -300, rotateY: 35, scale: 0.8, opacity: 0.5, filter: "blur(2px)", zIndex: 8 },
-          { x: 0, rotateY: 0, scale: 1, opacity: 1, filter: "blur(0px)", zIndex: 10 },
-          { x: 300, rotateY: -35, scale: 0.8, opacity: 0.5, filter: "blur(2px)", zIndex: 8 }
-        ],
-        // State 4 (fifth card active in center)
-        [
-          { x: -950, rotateY: 45, scale: 0.4, opacity: 0, filter: "blur(6px)", zIndex: 1 },
-          { x: -750, rotateY: 45, scale: 0.4, opacity: 0, filter: "blur(6px)", zIndex: 2 },
-          { x: -550, rotateY: 45, scale: 0.6, opacity: 0.15, filter: "blur(4px)", zIndex: 5 },
-          { x: -300, rotateY: 35, scale: 0.8, opacity: 0.5, filter: "blur(2px)", zIndex: 8 },
-          { x: 0, rotateY: 0, scale: 1, opacity: 1, filter: "blur(0px)", zIndex: 10 }
-        ]
-      ];
+      // 3D card layout state calculator for any offset relative to the active card
+      function getCardState(offset) {
+        if (offset === 0) {
+          return { x: 0, rotateY: 0, scale: 1, opacity: 1, filter: "blur(0px)", zIndex: 10 };
+        } else if (offset === 1) {
+          return { x: 300, rotateY: -35, scale: 0.8, opacity: 0.5, filter: "blur(2px)", zIndex: 8 };
+        } else if (offset === -1) {
+          return { x: -300, rotateY: 35, scale: 0.8, opacity: 0.5, filter: "blur(2px)", zIndex: 8 };
+        } else if (offset === 2) {
+          return { x: 550, rotateY: -45, scale: 0.6, opacity: 0.15, filter: "blur(4px)", zIndex: 5 };
+        } else if (offset === -2) {
+          return { x: -550, rotateY: 45, scale: 0.6, opacity: 0.15, filter: "blur(4px)", zIndex: 5 };
+        } else if (offset === 3) {
+          return { x: 750, rotateY: -45, scale: 0.4, opacity: 0, filter: "blur(6px)", zIndex: 2 };
+        } else if (offset === -3) {
+          return { x: -750, rotateY: 45, scale: 0.4, opacity: 0, filter: "blur(6px)", zIndex: 2 };
+        } else if (offset > 3) {
+          return { x: 950 + (offset - 4) * 200, rotateY: -45, scale: 0.4, opacity: 0, filter: "blur(6px)", zIndex: 1 };
+        } else {
+          return { x: -950 + (offset + 4) * 200, rotateY: 45, scale: 0.4, opacity: 0, filter: "blur(6px)", zIndex: 1 };
+        }
+      }
+
+      // Generate 3D carousel states dynamically for all cards
+      const states = [];
+      for (let active = 0; active < cards.length; active++) {
+        const state = [];
+        for (let c = 0; c < cards.length; c++) {
+          state.push(getCardState(c - active));
+        }
+        states.push(state);
+      }
 
       // Initial positions
       cards.forEach((card, idx) => {
@@ -1139,28 +1128,29 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       // Pinned scroll-controlled timeline
+      const totalSteps = cards.length - 1;
+      const endScroll = "+=" + (totalSteps * 65) + "%";
+
       const servicesTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".services-section",
           start: "top top",
-          end: "+=260%", // scroll distance
+          end: endScroll,
           scrub: true,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
           onUpdate: self => {
-            // Find active card index (0 to 4)
-            const activeIdx = Math.round(self.progress * (cards.length - 1));
+            const activeIdx = Math.min(Math.round(self.progress * totalSteps), totalSteps);
             cards.forEach((card, idx) => {
               if (idx === activeIdx) {
                 card.classList.add('active-card');
                 card.style.pointerEvents = 'auto';
               } else {
                 card.classList.remove('active-card');
-                card.style.pointerEvents = 'none';
+                card.style.pointerEvents = 'auto';
               }
             });
-            // Update dots
             dots.forEach((dot, idx) => {
               if (idx === activeIdx) {
                 dot.classList.add('active');
@@ -1173,7 +1163,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       // Map transitions onto ScrollTrigger timeline
-      for (let step = 0; step < 4; step++) {
+      for (let step = 0; step < totalSteps; step++) {
         const nextStep = step + 1;
         cards.forEach((card, idx) => {
           servicesTl.to(card, {
@@ -1188,6 +1178,31 @@ document.addEventListener('DOMContentLoaded', () => {
           }, step);
         });
       }
+
+      // Clickable pagination dots to scroll directly to card
+      dots.forEach((dot, idx) => {
+        dot.style.cursor = 'pointer';
+        dot.addEventListener('click', () => {
+          const st = servicesTl.scrollTrigger;
+          if (st) {
+            const targetScroll = st.start + (idx / totalSteps) * (st.end - st.start);
+            window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+          }
+        });
+      });
+
+      // Click adjacent cards to navigate to them
+      cards.forEach((card, idx) => {
+        card.addEventListener('click', () => {
+          if (!card.classList.contains('active-card')) {
+            const st = servicesTl.scrollTrigger;
+            if (st) {
+              const targetScroll = st.start + (idx / totalSteps) * (st.end - st.start);
+              window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+            }
+          }
+        });
+      });
     },
 
     // Mobile scroll-driven horizontal slide animation
@@ -1495,7 +1510,7 @@ function initWhoFlipCard() {
 // =========================================================================
 const projectOverviewData = {
   controltower_rag: {
-    title: 'Control Tower RAG — Inventory Intelligence & Decision Engine',
+    title: 'Control Tower RAG - Inventory Intelligence & Decision Engine',
     tag: 'AI Systems · Enterprise Inventory & RAG Platform',
     overview: 'Control Tower RAG is an enterprise AI inventory monitoring and decision intelligence platform. It features multi-agent LangChain and LangGraph hybrid orchestrators, real-time MySQL database inspection, dead inventory detection, stockout prediction based on daily sales velocity, and automated multi-channel alert dispatches.',
     problem: 'High-throughput distributors struggle with stockouts, dead inventory accumulation, and slow manual database queries across multi-warehouse operations.',
@@ -1512,7 +1527,7 @@ const projectOverviewData = {
     statusClass: 'live'
   },
   supplychain_orderbot: {
-    title: 'OrderBot — Wholesale Hub & Supply Chain Automation',
+    title: 'OrderBot - Wholesale Hub & Supply Chain Automation',
     tag: 'Supply Chain · B2B Telegram MiniApp & Order Automation',
     video: 'assets/videos/order_bot.mp4',
     poster: 'assets/images/supplychain_orderbot_dashboard.webp',
@@ -1531,7 +1546,7 @@ const projectOverviewData = {
     statusClass: 'live'
   },
   wa_relay: {
-    title: 'WhatsApp ECHO Bridge — Multi-Operator Relay & Gateway',
+    title: 'WhatsApp ECHO Bridge - Multi-Operator Relay & Gateway',
     tag: 'Enterprise Comms · Multi-Operator WhatsApp Relay & Gateway',
     overview: 'A high-concurrency self-hosted WhatsApp ECHO bridge and customer communications relay built on Node.js and the Baileys protocol. Enables dozens of support operators to collaborate on a single WhatsApp business line in real-time with full message persistence, live WebSocket synchronization, media handling, and audit trails.',
     problem: 'Single-session WhatsApp limitations prevent support teams from collaborating on customer chats, tracking message history, or handling concurrent customer inquiries.',

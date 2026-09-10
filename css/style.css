@@ -220,7 +220,7 @@ nav.scrolled {
 }
 
 .logo-image {
-  height: 28px;
+  height: 30px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s var(--ease-out-expo);
@@ -277,7 +277,7 @@ nav.scrolled {
   background: var(--glow);
 }
 
-/* Active Link State — pill highlight */
+/* Active Link State  -  pill highlight */
 .nav-links a.active {
   color: var(--accent);
   background: var(--glow);
@@ -5058,11 +5058,11 @@ h3.service-title {
 
 .about-copy h1 {
   font-family: var(--font-head);
-  font-size: clamp(2.5rem, 5vw, 3.8rem);
-  font-weight: 855;
-  letter-spacing: -.04em;
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -.035em;
   margin-bottom: 1.5rem;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .about-copy p {
@@ -6762,7 +6762,7 @@ h3.service-title {
   order: 1;
 }
 
-/* CHANGE 6: Desktop — featured founder socials stay left-aligned */
+/* CHANGE 6: Desktop  -  featured founder socials stay left-aligned */
 .about-team-socials-featured {
   justify-content: flex-start;
 }
@@ -6782,7 +6782,7 @@ h3.service-title {
     display: none !important;
   }
 
-  /* CHANGE 4: Reorder CTA buttons — Start A Project first on mobile */
+  /* CHANGE 4: Reorder CTA buttons  -  Start A Project first on mobile */
   .about-hero-actions {
     display: flex;
     flex-direction: column;
@@ -6828,7 +6828,7 @@ h3.service-title {
     text-align: center;
   }
 
-  /* Featured founder — center socials on mobile */
+  /* Featured founder  -  center socials on mobile */
   .about-team-socials-featured {
     justify-content: center;
   }
@@ -7052,9 +7052,21 @@ h3.service-title {
 
 .iot-block {
   bottom: 10%;
-  left: 40%;
-  transform: translateX(-50%);
+  left: 20%;
   animation: ecoFloat2 7s ease-in-out infinite 2s;
+}
+
+.ai-block {
+  top: 34%;
+  left: 38%;
+  border-color: rgba(139, 92, 246, 0.45);
+  box-shadow: 0 4px 25px rgba(139, 92, 246, 0.25);
+  animation: ecoFloat3 5.8s ease-in-out infinite 0.7s;
+}
+
+.ai-block:hover {
+  border-color: #8b5cf6;
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.5);
 }
 
 @keyframes ecoFloat1 {
@@ -13062,7 +13074,7 @@ body.project-modal-open {
 /* PORTFOLIO MORE WORKS GRID: STATIC CARDS, FULL SCREENSHOTS  */
 /* --------------------------------------------------------- */
 
-/* Card: let height grow naturally from content — no forced aspect-ratio */
+/* Card: let height grow naturally from content  -  no forced aspect-ratio */
 .project-grid .showcase-card {
   position: relative !important;
   opacity: 1 !important;
@@ -13084,7 +13096,7 @@ body.project-modal-open {
   border-color: var(--border2) !important;
 }
 
-/* Image wrapper: no fixed height — shrinks/grows with the image */
+/* Image wrapper: no fixed height  -  shrinks/grows with the image */
 .project-grid .showcase-visual {
   height: auto !important;
   min-height: 0 !important;
@@ -13095,7 +13107,7 @@ body.project-modal-open {
   flex-shrink: 0 !important;
 }
 
-/* Image: full width, natural height — shows ENTIRE screenshot, no cropping */
+/* Image: full width, natural height  -  shows ENTIRE screenshot, no cropping */
 .project-grid .showcase-visual img {
   width: 50% !important;
   height: auto !important;
