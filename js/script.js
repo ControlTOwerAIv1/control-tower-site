@@ -38,6 +38,11 @@ window.addEventListener('beforeunload', () => {
     'home': 'home',
     'about': 'about',
     'services': 'services',
+    'billing-ai': 'billing-ai',
+    'billing ai': 'billing-ai',
+    'billing_ai': 'billing-ai',
+    'billing': 'billing-ai',
+    'supply-chain-automation': 'billing-ai',
     'portfolio': 'portfolio',
     'technology': 'tech',
     'tech': 'tech',
@@ -45,7 +50,17 @@ window.addEventListener('beforeunload', () => {
     'contact': 'contact'
   };
 
-  var activePage = pageMap[filename] || 'home';
+  var activePage = pageMap[filename];
+
+  // If inside /billing-ai/ directory or URL contains billing
+  if (!activePage || activePage === 'home') {
+    var fullPath = decodeURIComponent(window.location.pathname).toLowerCase();
+    if (fullPath.indexOf('billing-ai') !== -1 || fullPath.indexOf('billing ai') !== -1 || fullPath.indexOf('supply-chain') !== -1) {
+      activePage = 'billing-ai';
+    } else {
+      activePage = activePage || 'home';
+    }
+  }
 
   // Desktop navigation highlighting
   document.querySelectorAll('.nav-link-item').forEach(function (link) {
