@@ -441,62 +441,105 @@
 /* Phone Frame */
 .mockup-phone {
   width: 100%;
-  max-width: 380px;
-  background: #111827;
-  border-radius: 42px;
-  padding: 12px;
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  max-width: 330px;
+  background: #0f172a;
+  border-radius: 40px;
+  padding: 10px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.12);
   position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mockup-phone:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 70px -10px rgba(37, 99, 235, 0.25), 0 0 0 1px rgba(56, 189, 248, 0.35);
 }
 
 .phone-screen {
   background: #090d16;
-  border-radius: 32px;
+  border-radius: 30px;
   overflow: hidden;
   position: relative;
-  min-height: 600px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
 }
 
 .phone-notch {
-  height: 26px;
-  background: #111827;
-  width: 130px;
+  height: 22px;
+  background: #0f172a;
+  width: 120px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
 }
 
 .phone-notch-speaker {
-  width: 45px;
-  height: 4px;
-  background: #283246;
+  width: 40px;
+  height: 3px;
+  background: #334155;
   border-radius: 2px;
 }
 
 .photo-slot {
   width: 100%;
-  height: 100%;
-  min-height: 580px;
   position: relative;
   overflow: hidden;
+  display: block;
 }
 
 .photo-slot img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  height: auto;
   display: block;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.mockup-phone:hover .photo-slot img {
+  transform: scale(1.02);
+}
+
+.preview-click-hint {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+  pointer-events: none;
+  opacity: 0.88;
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.25s ease;
+  white-space: nowrap;
+  z-index: 15;
+}
+
+.mockup-phone:hover .preview-click-hint,
+.mockup-laptop:hover .preview-click-hint {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-2px);
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 /* Laptop / Desktop Mockup */
@@ -507,6 +550,14 @@
   border-radius: 16px;
   box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mockup-laptop:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 70px -10px rgba(37, 99, 235, 0.2);
 }
 
 .laptop-chrome {
@@ -540,16 +591,133 @@
 }
 
 .laptop-screen-content {
-  min-height: 400px;
   position: relative;
   overflow: hidden;
+  display: block;
 }
 
 .laptop-screen-content img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
+  transition: transform 0.35s ease;
+}
+
+.mockup-laptop:hover .laptop-screen-content img {
+  transform: scale(1.02);
+}
+
+/* ==========================================================================
+   IMAGE PREVIEW LIGHTBOX MODAL
+   ========================================================================== */
+.image-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 16, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.image-modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-modal-dialog {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: modalScaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.image-modal-close-btn {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #1e293b;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+@media (max-width: 640px) {
+  .image-modal-close-btn {
+    top: -12px;
+    right: -12px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.image-modal-close-btn:hover {
+  background: #ef4444;
+  border-color: #ef4444;
+  transform: scale(1.1) rotate(90deg);
+}
+
+.image-modal-body {
+  position: relative;
+  max-width: 100%;
+  max-height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #090d16;
+}
+
+.image-modal-body img {
+  max-width: 100%;
+  max-height: 82vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.image-modal-caption {
+  margin-top: 0.85rem;
+  color: #f1f5f9;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: var(--font-body);
+  letter-spacing: -0.01em;
 }
 
 /* Interactive ROI Calculator */
