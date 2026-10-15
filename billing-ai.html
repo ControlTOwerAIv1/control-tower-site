@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing AI | Smart Business Planner, Accounts Keeper & Autonomous Invoicing</title>
+  <meta name="description"
+    content="Billing AI by Control Tower AI: Transform wholesale, distribution, and manufacturing operations with autonomous accounts keeping, instant GST tax invoices, smart business planning, and WhatsApp MiniApp commerce.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <script>(function () { const t = localStorage.getItem('theme') || 'light'; document.documentElement.setAttribute('data-theme', t); })();</script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/supply-chain.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Open Graph / WhatsApp / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.controltower.in/billing-ai">
+  <meta property="og:title" content="Billing AI | Smart Business Planner, Accounts Keeper & Invoicing Suite">
+  <meta property="og:description"
+    content="The Smart Business Planner, Automated Accounts Keeper & Zero-Friction WhatsApp Commerce Engine for Distributors and Manufacturers.">
+  <meta property="og:image" content="https://www.controltower.in/assets/images/supplychain_orderbot_dashboard.webp">
+</head>
+
+<body>
+
+  <!-- TOP BROCHURE ACTION BAR (Screen Only) -->
+  <aside class="brochure-bar" aria-label="Brochure Quick Actions">
+    <div class="brochure-bar-left">
+      <span class="brochure-tag-pill">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+        Executive Brochure
+      </span>
+      <span>Billing AI · Enterprise B2B Invoicing, Accounts & Workflow Automation Platform</span>
+    </div>
+    <div class="brochure-bar-actions">
+      <button class="btn-print-brochure" onclick="window.print()" title="Print or Save as PDF Brochure">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        <span>Save as PDF / Print Brochure</span>
+      </button>
+      <a href="https://wa.me/919821139201?text=Hello%20Salman,%20I'm%20interested%20in%20Billing%20AI%20and%20Automation%20Suite%20for%20my%20business."
+        target="_blank" rel="noopener noreferrer" class="btn-print-brochure" style="border-color: #25d366; color: #25d366;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <span>Chat with Salman (CEO)</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- PRINT-ONLY HEADER -->
+  <div class="print-header">
+    <div>
+      <h2 style="margin:0; font-family:'Sora', sans-serif; color:#2563eb;">Control Tower AI · Billing AI</h2>
+      <p style="margin:2px 0 0; font-size:10pt; color:#555;">Enterprise ERP, Conversational Commerce & Workflow Automation</p>
+    </div>
+    <div style="text-align:right; font-size:9pt; color:#444;">
+      <p style="margin:0;"><strong>Confidential Client Offering</strong></p>
+      <p style="margin:0;">Contact: +91 98211 39201 | salman@controltower.in</p>
+      <p style="margin:0;">www.controltower.in/billing-ai</p>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/control_tower_logo.webp" alt="Control Tower AI Logo" class="logo-image">
+      <div>Control<span>Tower</span> AI</div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link-item" data-page="home">Home</a></li>
+      <li><a href="about.html" class="nav-link-item" data-page="about">About</a></li>
+      <li><a href="services.html" class="nav-link-item" data-page="services">Services</a></li>
+      <li><a href="billing-ai.html" class="nav-link-item active" data-page="billing-ai">Billing AI</a></li>
+      <li><a href="portfolio.html" class="nav-link-item" data-page="portfolio">Portfolio</a></li>
+      <li><a href="technology.html" class="nav-link-item" data-page="tech">Technologies</a></li>
+      <li><a href="process.html" class="nav-link-item" data-page="process">Process</a></li>
+      <li><a href="contact.html" class="nav-link-item" data-page="contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" onclick="toggleTheme()">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <a href="contact.html#contact-form" class="nav-cta"><span>Schedule Demo</span></a>
+
+      <div class="nav-hamburger" onclick="toggleMobileMenu()" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" onclick="toggleMobileMenu()">Home</a>
+    <a href="about.html" onclick="toggleMobileMenu()">About</a>
+    <a href="services.html" onclick="toggleMobileMenu()">Services</a>
+    <a href="billing-ai.html" onclick="toggleMobileMenu()" style="color:var(--accent); font-weight:700;">Billing AI</a>
+    <a href="portfolio.html" onclick="toggleMobileMenu()">Portfolio</a>
+    <a href="technology.html" onclick="toggleMobileMenu()">Technologies</a>
+    <a href="process.html" onclick="toggleMobileMenu()">Process</a>
+    <a href="contact.html" onclick="toggleMobileMenu()">Contact</a>
+  </div>
+
+  <!-- 1. EXECUTIVE HERO SECTION -->
+  <header class="erp-hero">
+    <div class="container">
+      <div class="erp-hero-badge">
+        <span>●</span> ENTERPRISE VALUE ARCHITECTURE · BILLING AI
+      </div>
+
+      <h1>
+        Billing AI: <span class="gradient-text">Smart Business Planner, Accounts Keeper & Growth Engine.</span>
+      </h1>
+
+      <p class="erp-hero-lead">
+        Not just another AI novelty. <strong>Billing AI</strong> is an autonomous, value-generating business operating system
+        that eliminates manual data entry, enforces strict customer credit limits, instantly generates GST tax invoices,
+        and gives executives real-time cashflow and stock visibility — directly accessible via <strong>zero-install WhatsApp & Telegram ordering</strong>.
+      </p>
+
+      <div class="services-hero-actions" style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:2.5rem;">
+        <a href="#visual-showcase" class="btn-primary">
+          <span>Explore Product Showcase ↓</span>
+        </a>
+        <button class="btn-ghost" onclick="window.print()">
+          <span>Download PDF Brochure 📄</span>
+        </button>
+        <a href="https://wa.me/919821139201?text=Hi%20Salman,%20let's%20schedule%20a%20walkthrough%20of%20Billing%20AI."
+          target="_blank" rel="noopener noreferrer" class="btn-ghost" style="border-color: rgba(37, 99, 235, 0.3);">
+          <span>Talk with CEO (Salman)</span>
+        </a>
+      </div>
+
+      <!-- Key Business Value Metrics Ribbon -->
+      <div class="erp-metrics-ribbon">
+        <div class="erp-metric-card">
+          <div class="erp-metric-val">70%</div>
+          <div class="erp-metric-label">Faster Order-to-Cash</div>
+          <div class="erp-metric-sub">Eliminates phone tag, lost voice notes, and manual re-typing into desktop accounting software.</div>
+        </div>
+
+        <div class="erp-metric-card">
+          <div class="erp-metric-val">100%</div>
+          <div class="erp-metric-label">Accurate GST Invoicing</div>
+          <div class="erp-metric-sub">Auto intra-state (CGST+SGST) vs inter-state (IGST) split with sequential invoice PDF dispatch.</div>
+        </div>
+
+        <div class="erp-metric-card">
+          <div class="erp-metric-val">Zero</div>
+          <div class="erp-metric-label">Bad Debt Slippage</div>
+          <div class="erp-metric-sub">Hard automated guardrails flag or halt dispatches the moment customer credit limits are breached.</div>
+        </div>
+
+        <div class="erp-metric-card">
+          <div class="erp-metric-val">35%</div>
+          <div class="erp-metric-label">Quicker Receivables</div>
+          <div class="erp-metric-sub">Automated ledger aging reports and 1-click WhatsApp payment reminders with integrated UPI links.</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. VALUE PILLARS: HOW IT DRIVES REAL BUSINESS VALUE -->
+  <section class="pillars-section" id="capabilities">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">// Executive Pillars</span>
+        <h2>Engineered for Bottom-Line Profit, Not Tech Buzzwords</h2>
+        <p>
+          Traditional enterprise software costs tens of lakhs and takes months of training that field staff and dealers resist.
+          <strong>Billing AI</strong> connects directly to where your customers and staff already work: everyday messaging apps,
+          backed by industrial-grade accounting logic.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Pillar 1 -->
+        <article class="pillar-card">
+          <div class="pillar-icon-box">📊</div>
+          <h3>1. Smart Business Planner</h3>
+          <p>
+            Avoid painful capital lock-in. Billing AI dynamically correlates past sales velocity, seasonal trends, and supplier lead times
+            to guide purchase orders before you run out of cash cows.
+          </p>
+          <ul class="pillar-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Automated Reorder Alerts:</strong> Alerts purchase teams before critical high-margin SKUs go out of stock.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Tiered Wholesale Pricing:</strong> Handles loose units, half-cartons, full-cartons, and stuffed packing rules effortlessly.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Supplier PO Generation:</strong> Converts back-orders into supplier purchase orders in one click.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Pillar 2 -->
+        <article class="pillar-card">
+          <div class="pillar-icon-box">💼</div>
+          <h3>2. Autonomous Accounts Keeper</h3>
+          <p>
+            A full double-entry ledger that operates in real time. Every order placed, packed, or returned updates debtor ledger balances,
+            maintains audit trails, and protects cashflow.
+          </p>
+          <ul class="pillar-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Credit Limit Guardrails:</strong> Stops risky dispatches when buyer credit limits or overdue balances exceed thresholds.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Automated Tax Invoicing:</strong> Creates compliant GST tax invoices (PDF) with accurate state-code tax calculations.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Payment Reconciliation:</strong> Logs bank transfers, cash receipts, and counter entries with instant digital receipts.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Pillar 3 -->
+        <article class="pillar-card">
+          <div class="pillar-icon-box">⚡</div>
+          <h3>3. Executive Insights Generator</h3>
+          <p>
+            Get clear operational answers without waiting for accountants to compile spreadsheets. Receive an automated executive pulse
+            every morning directly on your phone.
+          </p>
+          <ul class="pillar-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>8:00 AM WhatsApp Briefing:</strong> Yesterday's sales revenue, cash collected, pending dispatches, and overdue accounts.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Dead Stock & Velocity Radar:</strong> Flags slow-moving inventory draining warehouse space and tied-up working capital.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Buyer Retention Radar:</strong> Alerts sales directors when dependable wholesale accounts stop ordering on schedule.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Pillar 4 -->
+        <article class="pillar-card">
+          <div class="pillar-icon-box">📱</div>
+          <h3>4. Zero-Friction B2B Ordering</h3>
+          <p>
+            No complex app to install from an App Store. Wholesale buyers, retailers, and on-field sales reps access visual product
+            catalogs directly through WhatsApp and Telegram Web MiniApps.
+          </p>
+          <ul class="pillar-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Interactive Digital Catalog:</strong> High-res photo galleries, SKU variants, live carton stock, and instant search.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>100% User Adoption:</strong> Works immediately for every retailer without technical onboarding or manuals.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Natural Language Ordering:</strong> Text or voice an order naturally: <em>"5 cartons Red Gold 077, bill to Ramesh Kolkata"</em>.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Pillar 5 -->
+        <article class="pillar-card">
+          <div class="pillar-icon-box">🚚</div>
+          <h3>5. Multi-Warehouse & Dispatch Automation</h3>
+          <p>
+            Maintain pristine inventory synchronization across central distribution hubs, regional warehouses, and consignment godowns.
+          </p>
+          <ul class="pillar-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Real-time Stock Reservation:</strong> Prevents overselling when two wholesale buyers order identical high-demand lots.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Transport & Logistics Carrier Assignment:</strong> Attaches preferred transport agencies, vehicle details, and LR numbers.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Packing & Dispatch Slips:</strong> Automatically sends pick-and-pack lists to warehouse teams for immediate fulfillment.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Pillar 6 -->
+        <article class="pillar-card">
+          <div class="pillar-icon-box">🔒</div>
+          <h3>6. Enterprise Security & Architecture</h3>
+          <p>
+            Engineered with strict tenant isolation, bank-grade encryption, and resilient failover. Your commercial data, pricing formulas,
+            and customer ledgers remain entirely private.
+          </p>
+          <ul class="pillar-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Isolated Multi-Tenant DB:</strong> Dedicated data segregation for each business unit and subsidiary.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Seamless ERP Integration:</strong> Connects with existing Tally, Busy, SAP, or operates as a standalone cloud ERP.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Automated Cloud Backups:</strong> Point-in-time disaster recovery with 99.95% operational uptime commitment.</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. VISUAL PRODUCT SHOWCASE: DEDICATED SLOTS FOR USER PHOTOS -->
+  <section class="showcase-visuals-section" id="visual-showcase">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">// Live Interactive Interface</span>
+        <h2>Experience Billing AI in Action</h2>
+        <p>
+          See how distributors, accountants, warehouse coordinators, and executive leadership interact with Billing AI daily.
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="visual-tabs-nav" role="tablist">
+        <button class="visual-tab-btn active" onclick="switchVisualTab('tab-chat')" id="btn-tab-chat" role="tab" aria-selected="true">
+          <span>💬</span> Conversational Ordering (WhatsApp/Telegram)
+        </button>
+        <button class="visual-tab-btn" onclick="switchVisualTab('tab-catalogue')" id="btn-tab-catalogue" role="tab" aria-selected="false">
+          <span>🛍️</span> Interactive Visual Catalogue
+        </button>
+        <button class="visual-tab-btn" onclick="switchVisualTab('tab-accounts')" id="btn-tab-accounts" role="tab" aria-selected="false">
+          <span>📑</span> Accounts Keeper & GST Invoices
+        </button>
+        <button class="visual-tab-btn" onclick="switchVisualTab('tab-insights')" id="btn-tab-insights" role="tab" aria-selected="false">
+          <span>📈</span> Executive Insights Briefing
+        </button>
+      </div>
+
+      <!-- TAB 1: Conversational Chat Screen (Space for User's Telegram Chat Photo) -->
+      <div class="visual-tab-pane active" id="tab-chat" role="tabpanel">
+        <div class="tab-info-side">
+          <span class="tab-badge">ZERO-INSTALL COMMERCE</span>
+          <h3>Billing AI Conversational Assistant & Order Booking</h3>
+          <p>
+            Wholesale buyers and field agents don't want clunky forms. They can order 10 cartons in 15 seconds through natural language,
+            check live stock, request ledgers, and receive instant GST tax invoices.
+          </p>
+
+          <div class="tab-highlights">
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Intelligent Ambiguity Disambiguation</strong>
+                <span>If two accounts have similar names (e.g., <em>Raj Traders Kolkata</em> vs <em>Raj Traders Jaipur</em>), Billing AI prompts for confirmation before booking.</span>
+              </div>
+            </div>
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Automated Carton Tier Pricing</strong>
+                <span>Applies tiered volume pricing (loose units vs full cartons) and computes exact GST tax splits automatically.</span>
+              </div>
+            </div>
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Instant PDF Invoice Generation</strong>
+                <span>Dispatches tax invoices with sequential voucher numbering directly into the chat thread.</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919821139201?text=Hi%20Salman,%20can%20you%20demonstrate%20Billing%20AI%20conversational%20order%20booking%20bot?"
+            target="_blank" rel="noopener noreferrer" class="btn-primary-sm">
+            <span>Test Live Chat Demo →</span>
+          </a>
+        </div>
+
+        <div class="device-container">
+          <!-- PHONE MOCKUP (SLOT FOR USER'S TELEGRAM CHAT PHOTO) -->
+          <div class="mockup-phone">
+            <div class="phone-notch">
+              <div class="phone-notch-speaker"></div>
+            </div>
+            <div class="phone-screen">
+              <!-- USER PHOTO PLACEHOLDER: Replace src="assets/images/telegram_chat_mockup.jpg" with your actual Telegram / WhatsApp chat screenshot -->
+              <div class="photo-slot" id="telegram-chat-photo-slot">
+                <img src="assets/images/telegram_chat_mockup.jpg"
+                  alt="Billing AI Telegram Chat - Automated Wholesale Ordering & Tax Invoicing"
+                  loading="lazy"
+                  id="img-telegram-chat"
+                  onerror="this.src='assets/images/wa_relay_dashboard.webp';">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: Visual Catalogue Screen (Space for User's Catalogue Photo) -->
+      <div class="visual-tab-pane" id="tab-catalogue" role="tabpanel">
+        <div class="tab-info-side">
+          <span class="tab-badge">HIGH-SPEED MINIAAP</span>
+          <h3>Digital B2B Wholesale Catalogue & Multi-Tier Carting</h3>
+          <p>
+            Empower your retailers with an app-like digital showroom that loads in milliseconds inside Telegram or WhatsApp.
+            Browse SKU variants, check live stock availability, and place high-volume bulk orders without paper catalogs.
+          </p>
+
+          <div class="tab-highlights">
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Live Multi-Warehouse Stock Sync</strong>
+                <span>Shows accurate real-time inventory counts so buyers only order items physically available in your godown.</span>
+              </div>
+            </div>
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Color & Size Variant Selection</strong>
+                <span>Easily select color swatches (e.g. Red Gold, Ivory, Pearl) with real-time photo previews and SKU specs.</span>
+              </div>
+            </div>
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Tiered Carton Breakdown</strong>
+                <span>Live carton quantity counters with automatic volume discount progression as buyers increase quantities.</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919821139201?text=Hi%20Salman,%20I'd%20like%20to%20see%20a%20demo%20of%20the%20digital%20wholesale%20catalogue%20miniapp%20in%20Billing%20AI."
+            target="_blank" rel="noopener noreferrer" class="btn-primary-sm">
+            <span>Explore Catalogue Demo →</span>
+          </a>
+        </div>
+
+        <div class="device-container">
+          <!-- PHONE MOCKUP (SLOT FOR USER'S CATALOGUE PAGE PHOTO) -->
+          <div class="mockup-phone">
+            <div class="phone-notch">
+              <div class="phone-notch-speaker"></div>
+            </div>
+            <div class="phone-screen">
+              <!-- USER PHOTO PLACEHOLDER: Replace src="assets/images/catalogue_page_mockup.jpg" with your actual Catalogue Page screenshot -->
+              <div class="photo-slot" id="catalogue-page-photo-slot">
+                <img src="assets/images/catalogue_page_mockup.jpg"
+                  alt="Billing AI Wholesale Digital Catalogue MiniApp"
+                  loading="lazy"
+                  id="img-catalogue-page"
+                  onerror="this.src='assets/images/supplychain_orderbot_dashboard.webp';">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: Accounts Keeper & GST Invoicing -->
+      <div class="visual-tab-pane" id="tab-accounts" role="tabpanel">
+        <div class="tab-info-side">
+          <span class="tab-badge">AUTONOMOUS AUDITING</span>
+          <h3>Real-Time Double Entry Ledgers & Tax Invoices</h3>
+          <p>
+            No more manual balance reconciliations or end-of-month panic. Every commercial event creates debit/credit ledger records,
+            maintains running customer balances, and monitors exposure against pre-approved credit limits.
+          </p>
+
+          <div class="tab-highlights">
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Hard Credit Stop Enforcement</strong>
+                <span>Billing AI actively rejects or flags orders when a retailer reaches their credit ceiling, stopping bad debt cold.</span>
+              </div>
+            </div>
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Automated GST State-Code Logic</strong>
+                <span>Differentiates Intra-State sales (CGST 9% + SGST 9%) from Inter-State sales (IGST 18%) automatically based on GSTIN.</span>
+              </div>
+            </div>
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Instant Statement of Accounts</strong>
+                <span>Customers can request their running statement of accounts anytime on WhatsApp, cutting billing disputes by 90%.</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html#contact-form" class="btn-primary-sm">
+            <span>Request Full Accounts Module Demo →</span>
+          </a>
+        </div>
+
+        <div class="device-container">
+          <!-- LAPTOP / DESKTOP MOCKUP (SLOT FOR ERP / INVOICE DASHBOARD PHOTO) -->
+          <div class="mockup-laptop">
+            <div class="laptop-chrome">
+              <div class="laptop-dot red"></div>
+              <div class="laptop-dot yellow"></div>
+              <div class="laptop-dot green"></div>
+              <div class="laptop-url-bar">https://billing.controltower.in/accounts/ledger-invoicing</div>
+            </div>
+            <div class="laptop-screen-content" id="accounts-dashboard-photo-slot">
+              <!-- USER PHOTO PLACEHOLDER: Replace src="assets/images/supplychain_orderbot_dashboard.webp" with your ERP / Invoicing dashboard photo -->
+              <img src="assets/images/supplychain_orderbot_dashboard.webp"
+                alt="Billing AI Accounts Keeper & Invoicing Console"
+                loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: Executive Insights Briefing -->
+      <div class="visual-tab-pane" id="tab-insights" role="tabpanel">
+        <div class="tab-info-side">
+          <span class="tab-badge">EXECUTIVE INTELLIGENCE</span>
+          <h3>Automated Morning Pulse for Business Owners</h3>
+          <p>
+            As a CEO, founder, or managing director, you shouldn't have to chase staff for updates. Billing AI compiles yesterday's numbers,
+            bank receipts, critical delays, and stockout alerts, delivering a concise executive brief straight to your WhatsApp at 8:00 AM.
+          </p>
+
+          <div class="tab-highlights">
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Daily Revenue & Dispatch Summary</strong>
+                <span>Total invoices raised, total payments cleared into bank, and pending dispatches ready for loading.</span>
+              </div>
+            </div>
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Overdue Debtors Aging Alert</strong>
+                <span>Lists top 5 accounts with payment delays past 30/60 days, with 1-click WhatsApp payment reminders ready to send.</span>
+              </div>
+            </div>
+            <div class="highlight-row">
+              <div class="highlight-icon">✓</div>
+              <div>
+                <strong>Runway & Inventory Velocity</strong>
+                <span>Forecasts stockout dates for high-demand items based on 7-day moving order velocity.</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919821139201?text=Hi%20Salman,%20I%20want%20to%20see%20sample%20executive%20morning%20briefings%20for%20Billing%20AI."
+            target="_blank" rel="noopener noreferrer" class="btn-primary-sm">
+            <span>Get Sample Executive Briefing →</span>
+          </a>
+        </div>
+
+        <div class="device-container">
+          <div class="mockup-phone">
+            <div class="phone-notch">
+              <div class="phone-notch-speaker"></div>
+            </div>
+            <div class="phone-screen" style="padding: 1.5rem 1rem; justify-content: center; background: #0c1322;">
+              <!-- Simulated Executive WhatsApp Morning Briefing Card -->
+              <div style="background: rgba(17, 24, 39, 0.95); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 16px; padding: 1.25rem; font-family: var(--font-body); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.5rem;">
+                  <span style="font-weight: 700; color: #38bdf8; font-size: 0.85rem;">📊 BILLING AI DAILY BRIEFING</span>
+                  <span style="font-size: 0.7rem; color: #94a3b8; font-family:var(--font-mono);">08:00 AM</span>
+                </div>
+                <p style="font-size: 0.85rem; line-height: 1.5; color: #f8fafc; margin-bottom: 0.75rem;">
+                  Good morning Salman! Here is your business pulse for <strong>Yesterday</strong>:
+                </p>
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-bottom: 0.85rem;">
+                  <div style="background: rgba(255,255,255,0.04); padding: 0.6rem; border-radius: 8px;">
+                    <span style="display:block; font-size: 0.68rem; color:#94a3b8;">Yesterday's Sales</span>
+                    <strong style="color: #10b981; font-size: 1.05rem;">₹4,82,500</strong>
+                  </div>
+                  <div style="background: rgba(255,255,255,0.04); padding: 0.6rem; border-radius: 8px;">
+                    <span style="display:block; font-size: 0.68rem; color:#94a3b8;">Payments Collected</span>
+                    <strong style="color: #38bdf8; font-size: 1.05rem;">₹3,40,000</strong>
+                  </div>
+                </div>
+                <div style="font-size: 0.78rem; line-height: 1.5; color: #cbd5e1; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.6rem;">
+                  <p style="margin: 0.2rem 0;">📦 <strong>Dispatches:</strong> 18 Orders packed & loaded via Jaipur Golden Transport.</p>
+                  <p style="margin: 0.2rem 0; color: #f59e0b;">⚠️ <strong>Credit Alert:</strong> Ramesh Traders reached ₹50,000 limit. 1-click nudge sent.</p>
+                  <p style="margin: 0.2rem 0; color: #ef4444;">🚨 <strong>Low Stock:</strong> 077 Red Gold (14 Cartons left ~ 1.5 days runway).</p>
+                </div>
+                <div style="margin-top: 0.85rem; padding-top: 0.5rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.08);">
+                  <span style="font-size: 0.72rem; color: #38bdf8; font-weight: 600;">[Reply 1 for Full Debtor Report | 2 for Inventory]</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. COMPARISON MATRIX: THE OLD WAY VS. BILLING AI -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">// Strategic Advantage</span>
+        <h2>Why Businesses Lose Lakhs Every Year to Manual Chaos</h2>
+        <p>
+          Compare the hidden costs of disconnected Excel sheets and WhatsApp chats against Billing AI's automated standard.
+        </p>
+      </div>
+
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="width: 28%;">Operational Area</th>
+              <th style="width: 36%;">The Old Way (Manual & Disconnected)</th>
+              <th style="width: 36%; color: var(--accent);">The Billing AI Way (Autonomous)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Order Collection</strong></td>
+              <td class="old-way">Scattered WhatsApp voice notes, unformatted text messages, paper order slips, and constant misunderstandings.</td>
+              <td class="ct-way">Structured WhatsApp MiniApp ordering & natural language agent with 100% SKU and variant precision.</td>
+            </tr>
+            <tr>
+              <td><strong>GST Tax Invoicing</strong></td>
+              <td class="old-way">Accountants re-type orders into Tally or Busy 2-3 days late; high risk of typo and state tax rate errors.</td>
+              <td class="ct-way">Automated GST tax invoice PDF generated instantly upon order confirmation with zero manual entry.</td>
+            </tr>
+            <tr>
+              <td><strong>Credit Risk & Bad Debts</strong></td>
+              <td class="old-way">Orders dispatched to defaulting buyers because sales reps don't know the buyer's outstanding balance.</td>
+              <td class="ct-way">Real-time credit limit guardrail automatically warns or blocks dispatches when limits are exceeded.</td>
+            </tr>
+            <tr>
+              <td><strong>Inventory & Stockouts</strong></td>
+              <td class="old-way">Calling the warehouse supervisor 20 times a day to ask <em>"Is SKU 077 in stock?"</em>; double-selling items.</td>
+              <td class="ct-way">Live multi-warehouse stock reservation; buyers and sales reps see exact real-time carton availability.</td>
+            </tr>
+            <tr>
+              <td><strong>Receivables Collection</strong></td>
+              <td class="old-way">awkward manual phone calls at month-end; receivables cycle drags out 45-90 days.</td>
+              <td class="ct-way">Automated ledger aging alerts and 1-click WhatsApp reminders with embedded UPI payment links.</td>
+            </tr>
+            <tr>
+              <td><strong>Executive Visibility</strong></td>
+              <td class="old-way">Business owners stay in the dark until monthly accounts are closed weeks later.</td>
+              <td class="ct-way">Daily 8:00 AM WhatsApp briefing delivers live revenues, collections, and stock alerts to the CEO's phone.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. INTERACTIVE ROI & TIME SAVINGS CALCULATOR -->
+  <section class="roi-section" id="roi-calculator">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">// Bottom-Line Calculator</span>
+        <h2>Calculate Your Business ROI & Hours Saved</h2>
+        <p>
+          See how automating order processing, tax invoicing, and credit control with Billing AI impacts your operating profit.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <!-- Interactive Sliders -->
+        <div class="calc-inputs">
+          <div class="calc-slider-group">
+            <div class="calc-slider-header">
+              <span class="calc-slider-label">Daily Order Volume:</span>
+              <span class="calc-slider-val" id="val-orders">50 Orders / day</span>
+            </div>
+            <input type="range" class="calc-slider" id="slider-orders" min="10" max="300" step="5" value="50" oninput="updateROICalculator()">
+          </div>
+
+          <div class="calc-slider-group">
+            <div class="calc-slider-header">
+              <span class="calc-slider-label">Average Order Value:</span>
+              <span class="calc-slider-val" id="val-aov">₹ 25,000</span>
+            </div>
+            <input type="range" class="calc-slider" id="slider-aov" min="5000" max="150000" step="5000" value="25000" oninput="updateROICalculator()">
+          </div>
+
+          <div class="calc-slider-group">
+            <div class="calc-slider-header">
+              <span class="calc-slider-label">Sales Reps / Order Clerks:</span>
+              <span class="calc-slider-val" id="val-staff">4 Staff Members</span>
+            </div>
+            <input type="range" class="calc-slider" id="slider-staff" min="1" max="25" step="1" value="4" oninput="updateROICalculator()">
+          </div>
+
+          <p style="font-size:0.85rem; color:var(--text3); margin-top:1rem; line-height:1.4;">
+            *Calculated based on industry averages of 12 minutes saved per order in phone coordination, billing, and ledger posting.
+          </p>
+        </div>
+
+        <!-- Calculated Results Panel -->
+        <div class="calc-results-panel">
+          <div class="calc-stat-box">
+            <span class="calc-stat-label">Monthly Hours Reclaimed</span>
+            <div class="calc-stat-number"><span class="highlight" id="res-hours">260</span> hrs / mo</div>
+            <span style="font-size:0.75rem; color:var(--text2);">Freedom from manual data entry & phone reconciliation.</span>
+          </div>
+
+          <div class="calc-stat-box">
+            <span class="calc-stat-label">Estimated Annual Revenue Protected</span>
+            <div class="calc-stat-number"><span class="highlight" id="res-revenue">₹ 4,50,000</span></div>
+            <span style="font-size:0.75rem; color:var(--text2);">Eliminating pricing errors, missed orders & bad debt defaults.</span>
+          </div>
+
+          <div class="calc-stat-box">
+            <span class="calc-stat-label">Cashflow Acceleration</span>
+            <div class="calc-stat-number"><span class="highlight" id="res-days">14 Days</span></div>
+            <span style="font-size:0.75rem; color:var(--text2);">Faster receivables collection through automated WhatsApp nudges.</span>
+          </div>
+
+          <a href="#" id="calc-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="btn-primary" style="text-align:center; justify-content:center; margin-top:0.5rem;">
+            <span>Share My ROI Report with Salman (CEO) →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SEAMLESS COMPATIBILITY & INTEGRATION -->
+  <section style="padding: 5rem 0; border-bottom: 1px solid var(--border);">
+    <div class="container" style="text-align: center;">
+      <span class="section-label">// Zero Disruption</span>
+      <h2>Works Alongside Your Existing Software Stack</h2>
+      <p style="max-width: 680px; margin: 0 auto 2rem; color: var(--text2);">
+        You do not need to discard your current setup. Billing AI operates either as a <strong>complete standalone cloud ERP</strong>
+        or integrates seamlessly with your existing accounting and ERP packages.
+      </p>
+
+      <div class="integration-ribbon">
+        <div class="integration-badge">
+          <span style="color:#2563eb;">⚡</span> TallyPrime & Tally.ERP 9
+        </div>
+        <div class="integration-badge">
+          <span style="color:#059669;">⚡</span> Busy Accounting
+        </div>
+        <div class="integration-badge">
+          <span style="color:#7c3aed;">⚡</span> SAP Business One
+        </div>
+        <div class="integration-badge">
+          <span style="color:#d97706;">⚡</span> Marg ERP 9+
+        </div>
+        <div class="integration-badge">
+          <span style="color:#0891b2;">⚡</span> Custom SQL / PostgreSQL
+        </div>
+        <div class="integration-badge">
+          <span style="color:#25d366;">⚡</span> Official WhatsApp Business API
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. EXECUTIVE LEADERSHIP & BROCHURE CONSULTATION -->
+  <section class="container">
+    <div class="executive-cta-card">
+      <div class="leadership-avatars">
+        <div class="leader-item">
+          <img src="assets/images/salman_memon.webp" alt="Salman Memon - CEO" class="leader-avatar" onerror="this.src='apple-touch-icon.png'">
+          <span class="leader-name">Salman Memon</span>
+          <span class="leader-role">Chief Executive Officer</span>
+        </div>
+        <div class="leader-item">
+          <img src="assets/images/jafar_beldar.webp" alt="Jafar Beldar - CTO" class="leader-avatar" onerror="this.src='apple-touch-icon.png'">
+          <span class="leader-name">Jafar Beldar</span>
+          <span class="leader-role">Chief Technology Officer</span>
+        </div>
+      </div>
+
+      <h2 style="font-family:var(--font-head); font-size:clamp(1.8rem, 3.2vw, 2.6rem); margin-bottom:1rem; color:var(--text);">
+        Ready to Put Your Invoicing & Accounts on Autopilot with Billing AI?
+      </h2>
+
+      <p style="max-width:680px; margin:0 auto 2rem; color:var(--text2); font-size:1.05rem; line-height:1.6;">
+        Schedule a 20-minute operational audit with our leadership. We'll review your existing billing flow, invoice bottlenecks,
+        and show you a customized demonstration tailored to your exact product catalog and distributor hierarchy.
+      </p>
+
+      <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+        <a href="https://wa.me/919821139201?text=Hello%20Salman,%20I'd%20like%20to%20schedule%20a%20consultation%20for%20Billing%20AI."
+          target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>Schedule Executive Consultation (WhatsApp)</span>
+        </a>
+        <button class="btn-ghost" onclick="window.print()">
+          <span>Download PDF Brochure 📄</span>
+        </button>
+      </div>
+
+      <div style="margin-top: 2rem; font-size: 0.85rem; color: var(--text3); font-family: var(--font-mono);">
+        Direct Line: +91 98211 39201 · Email: controltower2026.ai@gmail.com
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer id="global-footer">
+    <div class="footer-glow"></div>
+    <div class="container relative">
+      <div class="footer-inner reveal reveal-delay-1">
+        <div class="footer-brand">
+          <div class="nav-logo" style="display:flex;margin-bottom:.5rem;align-items:center;gap:.5rem">
+            <img src="assets/images/control_tower_logo.webp" alt="Control Tower AI Logo" class="logo-image">
+            <div>Control<span>Tower</span> AI</div>
+          </div>
+          <p>
+            Building high-impact digital solutions, autonomous agentic systems, and enterprise Billing AI platforms.
+            Based in Mumbai, serving clients globally.
+          </p>
+          <div class="footer-socials">
+            <a href="mailto:controltower2026.ai@gmail.com" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="https://wa.me/919821139201" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="billing-ai.html">Billing AI</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="technology.html">Technologies</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="billing-ai.html">Billing AI Operating System</a></li>
+            <li><a href="billing-ai.html">Smart Business Planner</a></li>
+            <li><a href="billing-ai.html">Autonomous Accounts Keeper</a></li>
+            <li><a href="billing-ai.html">WhatsApp B2B Commerce</a></li>
+            <li><a href="billing-ai.html">Multi-Warehouse Inventory</a></li>
+            <li><a href="services.html#ai-solutions">AI & Agentic Systems</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Contact</h4>
+          <ul>
+            <li><a href="mailto:controltower2026.ai@gmail.com">controltower2026.ai@gmail.com</a></li>
+            <li><a href="tel:+919821139201">📞 +91 98211 39201</a></li>
+            <li><a href="https://wa.me/919821139201?text=Hi%20Salman,%20I'm%20contacting%20regarding%20Billing%20AI." target="_blank" rel="noopener noreferrer">💬 WhatsApp with CEO</a></li>
+            <li><a>📍 Mumbai / Remote-First</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom reveal reveal-delay-2">
+        <p>© 2026 Control Tower AI. All rights reserved.</p>
+        <p style="font-family:var(--font-mono);font-size:.75rem;color:var(--text3)">Billing AI Suite · Site v2</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CORE SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- INTERACTIVE PAGE LOGIC -->
+  <script>
+    // Tab Switching for Interactive Showcase
+    function switchVisualTab(tabId) {
+      document.querySelectorAll('.visual-tab-pane').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.visual-tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+
+      const selectedPane = document.getElementById(tabId);
+      const selectedBtn = document.getElementById('btn-' + tabId);
+
+      if (selectedPane) selectedPane.classList.add('active');
+      if (selectedBtn) {
+        selectedBtn.classList.add('active');
+        selectedBtn.setAttribute('aria-selected', 'true');
+      }
+    }
+
+    // Dynamic ROI & Time Savings Calculator
+    function updateROICalculator() {
+      const orders = parseInt(document.getElementById('slider-orders').value, 10);
+      const aov = parseInt(document.getElementById('slider-aov').value, 10);
+      const staff = parseInt(document.getElementById('slider-staff').value, 10);
+
+      // Display Labels
+      document.getElementById('val-orders').textContent = orders + " Orders / day";
+      document.getElementById('val-aov').textContent = "₹ " + aov.toLocaleString('en-IN');
+      document.getElementById('val-staff').textContent = staff + (staff === 1 ? " Staff Member" : " Staff Members");
+
+      // Calculations:
+      // Hours saved: 12 minutes (0.2 hr) per order * 26 working days + staff coordination savings
+      const monthlyHours = Math.round(orders * 0.2 * 26);
+      
+      // Annual revenue saved from order errors, pricing leakage (approx 1.2% of GMV) + bad debt prevention
+      const annualGMV = orders * aov * 300;
+      const protectedRevenue = Math.round(annualGMV * 0.012);
+
+      // Days faster receivables: Base 10 days + scales with order volume up to 21 days
+      const daysFaster = Math.min(21, Math.max(7, Math.round(8 + (orders / 25))));
+
+      document.getElementById('res-hours').textContent = monthlyHours.toLocaleString('en-IN');
+      document.getElementById('res-revenue').textContent = "₹ " + protectedRevenue.toLocaleString('en-IN');
+      document.getElementById('res-days').textContent = daysFaster + " Days";
+
+      // Update WhatsApp share link
+      const waText = encodeURIComponent(
+        `Hi Salman, I calculated my business ROI on Billing AI:\n` +
+        `- Daily Orders: ${orders}\n` +
+        `- Average Order Value: ₹${aov.toLocaleString('en-IN')}\n` +
+        `- Projected Time Saved: ${monthlyHours} hrs/month\n` +
+        `- Projected Revenue Protected: ₹${protectedRevenue.toLocaleString('en-IN')}/year\n` +
+        `Let's schedule a call to see how we can implement Billing AI.`
+      );
+      document.getElementById('calc-whatsapp-btn').href = `https://wa.me/919821139201?text=${waText}`;
+    }
+
+    // Initialize calculator on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      updateROICalculator();
+    });
+  </script>
+
+</body>
+</html>
