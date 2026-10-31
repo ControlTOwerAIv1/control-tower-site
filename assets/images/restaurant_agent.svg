@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Restaurant agent taking a table booking and an order on WhatsApp">
+  <!-- warm, editorial palette: cream paper, charcoal ink, terracotta accent, sage for status -->
+  <rect width="800" height="600" fill="#f6efe6"/>
+  <rect x="0" y="0" width="800" height="150" fill="#ece1d3"/>
+
+  <!-- header -->
+  <text x="60" y="78" fill="#2b211a" font-family="Georgia, serif" font-size="30" font-style="italic">Table for four?</text>
+  <text x="60" y="108" fill="#8a6f5a" font-family="sans-serif" font-size="14" letter-spacing="2">BOOK · ORDER · PAY · TRACK</text>
+
+  <!-- phone -->
+  <rect x="470" y="150" width="270" height="420" rx="34" fill="#2b211a"/>
+  <rect x="482" y="168" width="246" height="384" rx="24" fill="#fbf7f1"/>
+  <rect x="482" y="168" width="246" height="46" rx="24" fill="#d9e3d3"/>
+  <rect x="482" y="190" width="246" height="24" fill="#d9e3d3"/>
+  <circle cx="512" cy="191" r="13" fill="#7d9a74"/>
+  <text x="534" y="188" fill="#2b211a" font-family="sans-serif" font-size="13" font-weight="700">Bistro Table</text>
+  <text x="534" y="203" fill="#5f7a57" font-family="sans-serif" font-size="10">online</text>
+
+  <!-- chat bubbles -->
+  <rect x="496" y="232" width="150" height="42" rx="12" fill="#ffffff"/>
+  <text x="508" y="250" fill="#2b211a" font-family="sans-serif" font-size="11">Table for 4 tonight at 8?</text>
+  <text x="508" y="264" fill="#8a6f5a" font-family="sans-serif" font-size="9">9:41</text>
+
+  <rect x="552" y="286" width="164" height="60" rx="12" fill="#c8643b"/>
+  <text x="566" y="306" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700">Confirmed: 4 guests, 8:00 PM</text>
+  <text x="566" y="322" fill="#fbe7dc" font-family="sans-serif" font-size="10">Window table · reminder set</text>
+  <text x="566" y="338" fill="#fbe7dc" font-family="sans-serif" font-size="9">Booking RS-2041</text>
+
+  <rect x="496" y="360" width="200" height="54" rx="12" fill="#ffffff"/>
+  <text x="508" y="380" fill="#2b211a" font-family="sans-serif" font-size="11">1 butter chicken + 2 naan,</text>
+  <text x="508" y="396" fill="#2b211a" font-family="sans-serif" font-size="11">home delivery</text>
+
+  <rect x="496" y="426" width="200" height="60" rx="12" fill="#f0e4d4"/>
+  <text x="508" y="446" fill="#2b211a" font-family="sans-serif" font-size="11" font-weight="700">Total ₹1,240 · UPI</text>
+  <rect x="508" y="456" width="176" height="20" rx="6" fill="#2b211a"/>
+  <text x="530" y="470" fill="#fbf7f1" font-family="sans-serif" font-size="10" font-weight="700">Pay with GPay / UPI</text>
+
+  <!-- order receipt card -->
+  <rect x="60" y="200" width="340" height="300" rx="10" fill="#ffffff" stroke="#e2d5c4" stroke-width="1.5"/>
+  <text x="90" y="240" fill="#2b211a" font-family="Georgia, serif" font-size="20" font-style="italic">Order #3318</text>
+  <text x="90" y="262" fill="#8a6f5a" font-family="sans-serif" font-size="12">Home delivery · Paid online</text>
+  <line x1="90" y1="280" x2="370" y2="280" stroke="#e2d5c4"/>
+
+  <text x="90" y="306" fill="#2b211a" font-family="sans-serif" font-size="14">1 × Butter chicken</text>
+  <text x="330" y="306" fill="#2b211a" font-family="sans-serif" font-size="14" text-anchor="end">₹620</text>
+  <text x="90" y="332" fill="#2b211a" font-family="sans-serif" font-size="14">2 × Garlic naan</text>
+  <text x="330" y="332" fill="#2b211a" font-family="sans-serif" font-size="14" text-anchor="end">₹240</text>
+  <text x="90" y="358" fill="#2b211a" font-family="sans-serif" font-size="14">1 × Masala chai</text>
+  <text x="330" y="358" fill="#2b211a" font-family="sans-serif" font-size="14" text-anchor="end">₹80</text>
+  <line x1="90" y1="374" x2="370" y2="374" stroke="#e2d5c4"/>
+  <text x="90" y="398" fill="#2b211a" font-family="sans-serif" font-size="15" font-weight="700">Total</text>
+  <text x="330" y="398" fill="#2b211a" font-family="sans-serif" font-size="15" font-weight="700" text-anchor="end">₹940</text>
+
+  <!-- status track -->
+  <circle cx="98" cy="440" r="7" fill="#7d9a74"/>
+  <circle cx="176" cy="440" r="7" fill="#7d9a74"/>
+  <circle cx="254" cy="440" r="7" fill="#c8643b"/>
+  <circle cx="332" cy="440" r="7" fill="#e2d5c4"/>
+  <line x1="98" y1="440" x2="332" y2="440" stroke="#e2d5c4" stroke-width="2"/>
+  <line x1="98" y1="440" x2="254" y2="440" stroke="#7d9a74" stroke-width="2"/>
+  <text x="98" y="464" fill="#5f7a57" font-family="sans-serif" font-size="11" text-anchor="middle">Received</text>
+  <text x="176" y="464" fill="#5f7a57" font-family="sans-serif" font-size="11" text-anchor="middle">Cooking</text>
+  <text x="254" y="464" fill="#c8643b" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">On the way</text>
+  <text x="332" y="464" fill="#8a6f5a" font-family="sans-serif" font-size="11" text-anchor="middle">Delivered</text>
+  <text x="90" y="486" fill="#8a6f5a" font-family="sans-serif" font-size="12">ETA 18 min</text>
+</svg>

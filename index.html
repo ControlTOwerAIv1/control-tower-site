@@ -195,9 +195,7 @@
 
       <li><a href="about.html" class="nav-link-item" data-page="about">About</a></li>
 
-      <li><a href="services.html" class="nav-link-item" data-page="services">Services</a></li>
-
-      <li><a href="billing-ai.html" class="nav-link-item" data-page="billing-ai">Billing AI</a></li>
+      <li class="nav-dropdown"><a href="services.html" class="nav-link-item" data-page="services">Services <span class="nav-caret">▾</span></a><ul class="nav-submenu"><li><a href="services.html#software">Custom Software, ERP & Business Solutions</a></li><li><a href="services.html#ai-services">AI Services</a></li><li><a href="services.html#whatsapp-agents">WhatsApp AI Agents</a></li></ul></li>
 
       <li><a href="portfolio.html" class="nav-link-item" data-page="portfolio">Portfolio</a></li>
 
@@ -266,8 +264,9 @@
     <a href="about.html" onclick="toggleMobileMenu()">About</a>
 
     <a href="services.html" onclick="toggleMobileMenu()">Services</a>
-
-    <a href="billing-ai.html" onclick="toggleMobileMenu()">Billing AI</a>
+    <a href="services.html#software" class="mobile-sub" onclick="toggleMobileMenu()">Custom Software, ERP & Business Solutions</a>
+    <a href="services.html#ai-services" class="mobile-sub" onclick="toggleMobileMenu()">AI Services</a>
+    <a href="services.html#whatsapp-agents" class="mobile-sub" onclick="toggleMobileMenu()">WhatsApp AI Agents</a>
 
     <a href="portfolio.html" onclick="toggleMobileMenu()">Portfolio</a>
 
@@ -381,7 +380,7 @@
 
         <div class="who-left reveal">
 
-          <div class="section-label">// WHO WE ARE</div>
+          <div class="section-label">WHO WE ARE</div>
 
           <h2 class="who-title">A passionate team building modern digital solutions.</h2>
 
@@ -1143,44 +1142,35 @@
 
       <div class="projects-showcase-stack">
 
-        <!-- Project 1: Control Tower RAG -->
+        <!-- Project 1: WhatsApp AI Doctor -->
         <div class="showcase-card reveal">
           <!-- Left content area -->
           <div class="showcase-content">
             <div class="showcase-meta">
-              <span class="showcase-category">// AI Systems · Enterprise Inventory & RAG Platform</span>
+              <span class="showcase-category">// Healthcare · WhatsApp AI Appointment Agent</span>
               <div class="showcase-meta-right">
-                <span class="trust-badge">Flagship AI Engine</span>
+                <span class="trust-badge">24/7 AI Front Desk</span>
                 <span class="showcase-number">01 / 03</span>
               </div>
             </div>
-            <h3 class="showcase-title">Control Tower RAG<br>Inventory Intelligence</h3>
-            <p class="showcase-desc">An enterprise AI inventory monitoring and decision intelligence platform. Combines
-              LangGraph multi-agent hybrid orchestrators, multi-step SQL agents, real-time stockout prediction, dead
-              inventory detection, and automated alert pipelines (Telegram, WhatsApp, SMTP).</p>
+            <h3 class="showcase-title">WhatsApp AI Doctor<br>Clinic Appointment Agent</h3>
+            <p class="showcase-desc">An AI receptionist that lives on your clinic's WhatsApp number. Patients book
+              appointments in plain language, doctors see their day on chat, and the admin changes timings and
+              capacity by simply sending a message. No app, no queue, no front-desk calls.</p>
 
             <ul class="showcase-features">
-              <li><span>✦</span> Natural language to SQL query engine (Claude 3.5 Sonnet)</li>
-              <li><span>✦</span> Real-time stockout prediction & daily sales velocity</li>
-              <li><span>✦</span> LangGraph orchestrator routing vector SOPs & live MySQL</li>
-              <li><span>✦</span> Automated alerts via Telegram Bot, WhatsApp & SMTP digest</li>
-              <li><span>✦</span> Materialized snapshot cache with versioned response store</li>
+              <li><span>✦</span> Natural-language booking in English, Hindi, Urdu & Hinglish</li>
+              <li><span>✦</span> Smart scheduling with capacity limits & estimated arrival times</li>
+              <li><span>✦</span> Voice-note understanding with speech transcription</li>
+              <li><span>✦</span> Admin-by-chat schedule control with confirm-before-change safety</li>
+              <li><span>✦</span> Live operator dashboard with human takeover & Google Sheets sync</li>
             </ul>
 
-            <div class="showcase-stack">
-              <span class="stack-badge">FastAPI</span>
-              <span class="stack-badge">Python</span>
-              <span class="stack-badge">LangChain</span>
-              <span class="stack-badge">LangGraph</span>
-              <span class="stack-badge">Claude 3.5 Sonnet</span>
-              <span class="stack-badge">MySQL</span>
-              <span class="stack-badge">ChromaDB</span>
-              <span class="stack-badge">Twilio WhatsApp</span>
-            </div>
 
-            <div class="showcase-actions">
-              <button class="btn-primary-sm" onclick="openProjectOverview('controltower_rag')"><span>Project Overview
+            <div class="showcase-actions" style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <button class="btn-primary-sm" onclick="openProjectOverview('wa_doctor')"><span>Project Overview
                   <span class="btn-arrow">→</span></span></button>
+              <a href="services.html#whatsapp-agents" class="btn-ghost-sm"><span>WhatsApp AI Agents</span></a>
             </div>
           </div>
 
@@ -1195,27 +1185,27 @@
                     <span class="dot red"></span>
                     <span class="dot yellow"></span>
                     <span class="dot green"></span>
-                    <div class="mockup-url">controltower.ai/rag-engine</div>
+                    <div class="mockup-url">clinic.controltower.ai/dashboard</div>
                   </div>
                   <div class="mockup-body" style="padding: 0; overflow: hidden; height: 100%;">
-                    <img src="assets/images/controltower_rag_dashboard.webp" loading="lazy"
-                      alt="Control Tower RAG Dashboard"
+                    <img src="assets/images/wa_relay_dashboard.webp" loading="lazy"
+                      alt="WhatsApp AI Doctor Operator Dashboard"
                       style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                   </div>
                 </div>
               </div>
               <div class="floating-card dispute-analysis-card">
-                <span class="card-icon" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">🤖</span>
+                <span class="card-icon" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">🗣️</span>
                 <div class="card-details">
-                  <span class="card-label">LangGraph SQL Agent</span>
-                  <span class="card-value" style="color: #3b82f6; font-size: 0.52rem;">99.4% Query Accuracy</span>
+                  <span class="card-label">Multilingual Booking</span>
+                  <span class="card-value" style="color: #3b82f6; font-size: 0.52rem;">EN · हिं · اردو</span>
                 </div>
               </div>
               <div class="floating-card match-score-card">
-                <span class="card-icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">⚡</span>
+                <span class="card-icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">🎟️</span>
                 <div class="card-details">
-                  <span class="card-label">Auto Alerts</span>
-                  <span class="match-percentage" style="color: #10b981;">Telegram · WhatsApp</span>
+                  <span class="card-label">Smart Scheduling</span>
+                  <span class="match-percentage" style="color: #10b981;">Auto Queue</span>
                 </div>
               </div>
             </div>
@@ -1233,7 +1223,7 @@
                 <span class="showcase-number">02 / 03</span>
               </div>
             </div>
-            <h3 class="showcase-title">OrderBot<br>Wholesale Hub & Automation</h3>
+            <h3 class="showcase-title">Supply Chain AI</h3>
             <p class="showcase-desc">A modern B2B supply chain ordering and distributor management system built as a
               high-speed Telegram WebApp MiniApp and robust backend. Automates wholesale product discovery, real-time
               inventory checks, bulk shopping carts, wholesale tiered pricing, and direct invoice routing.</p>
@@ -1301,40 +1291,30 @@
           </div>
         </div>
 
-        <!-- Project 3: WhatsApp ECHO Bridge -->
+        <!-- Project 3: Unified Customer Engagement Platform -->
         <div class="showcase-card reveal reveal-delay-2">
           <!-- Left content area -->
           <div class="showcase-content">
             <div class="showcase-meta">
-              <span class="showcase-category">// Enterprise Comms · Multi-Operator WhatsApp Relay & Gateway</span>
+              <span class="showcase-category">// Customer Communications · Unified WhatsApp Operations</span>
               <div class="showcase-meta-right">
                 <span class="trust-badge">Real-Time Sync</span>
                 <span class="showcase-number">03 / 03</span>
               </div>
             </div>
-            <h3 class="showcase-title">WhatsApp ECHO Bridge<br>Multi-Operator Relay</h3>
-            <p class="showcase-desc">A high-concurrency self-hosted WhatsApp ECHO bridge and customer communications
-              relay built on Node.js and the Baileys protocol. Enables dozens of support operators to collaborate on a
-              single WhatsApp business line in real-time with full message persistence, live WebSocket synchronization,
-              media handling, and audit trails.</p>
+            <h3 class="showcase-title">Unified Customer Engagement Platform</h3>
+            <p class="showcase-desc">One shared WhatsApp number that your whole team can work from at the same time. Every
+              customer chat is visible to the team, assigned to the right person, and saved as a permanent record, so
+              no customer message gets lost or left unanswered.</p>
 
             <ul class="showcase-features">
-              <li><span>✦</span> Multi-operator live presence & concurrent chat assignment</li>
-              <li><span>✦</span> Real-time bi-directional message broadcast via WebSockets (&lt;10ms)</li>
-              <li><span>✦</span> Native protocol message editing & message recall</li>
-              <li><span>✦</span> Persistent SQLite message history & attachment caching</li>
-              <li><span>✦</span> Google VCF automated contact resolution & address book sync</li>
+              <li><span>✦</span> Multiple team members work the same number at once</li>
+              <li><span>✦</span> Live updates across every team member's screen</li>
+              <li><span>✦</span> Edit and recall messages, with a full record kept</li>
+              <li><span>✦</span> Permanent chat history, including photos and documents</li>
+              <li><span>✦</span> Customer contacts saved and synced automatically</li>
             </ul>
 
-            <div class="showcase-stack">
-              <span class="stack-badge">Node.js</span>
-              <span class="stack-badge">Express</span>
-              <span class="stack-badge">Socket.io</span>
-              <span class="stack-badge">Baileys API</span>
-              <span class="stack-badge">SQLite WAL</span>
-              <span class="stack-badge">PM2</span>
-              <span class="stack-badge">WebSockets</span>
-            </div>
 
             <div class="showcase-actions">
               <button class="btn-primary-sm" onclick="openProjectOverview('wa_relay')"><span>Project Overview <span
@@ -1356,7 +1336,7 @@
                     <div class="mockup-url">relay.controltower.ai:3001</div>
                   </div>
                   <div class="mockup-body" style="padding: 0; overflow: hidden; height: 100%;">
-                    <img src="assets/images/wa_relay_dashboard.webp" loading="lazy" alt="WhatsApp ECHO Bridge Dashboard"
+                    <img src="assets/images/wa_relay_dashboard.webp" loading="lazy" alt="Unified Customer Engagement Platform Dashboard"
                       style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                   </div>
                 </div>
@@ -1364,16 +1344,16 @@
               <div class="floating-card dispute-analysis-card">
                 <span class="card-icon" style="background: rgba(34, 197, 94, 0.1); color: #22c55e;">👥</span>
                 <div class="card-details">
-                  <span class="card-label">Multi-Operator</span>
+                  <span class="card-label">Live Team Control</span>
                   <span class="card-value" style="color: #22c55e; font-size: 0.52rem;">Live Presence Sync</span>
                 </div>
               </div>
               <div class="floating-card match-score-card">
                 <span class="card-icon" style="background: rgba(56, 189, 248, 0.1); color: #38bdf8;">⚡</span>
                 <div class="card-details">
-                  <span class="card-label">Socket Latency</span>
+                  <span class="card-label">Response Time</span>
                   <span class="match-percentage" style="color: #38bdf8;">
-                    < 10ms Broadcast</span>
+                    Instant Sync</span>
                 </div>
               </div>
             </div>
@@ -1810,19 +1790,9 @@
           <h4>Services</h4>
 
           <ul>
-
-            <li><a href="services.html#ai-solutions">AI & Agentic Systems</a></li>
-
-            <li><a href="services.html#web-development">Web Development</a></li>
-
-            <li><a href="services.html#android-applications">Android Applications</a></li>
-
-            <li><a href="services.html#cloud-deployment">Cloud & AI Infrastructure</a></li>
-
-            <li><a href="services.html#desktop-software">Desktop Software</a></li>
-
-            <li><a href="services.html#iot-solutions">IoT Solutions</a></li>
-
+            <li><a href="services.html#software">Custom Software, ERP & Business Solutions</a></li>
+            <li><a href="services.html#ai-services">AI Services</a></li>
+            <li><a href="services.html#whatsapp-agents">WhatsApp AI Agents</a></li>
           </ul>
 
         </div>

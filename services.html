@@ -195,9 +195,7 @@
 
       <li><a href="about.html" class="nav-link-item" data-page="about">About</a></li>
 
-      <li><a href="services.html" class="nav-link-item active" data-page="services">Services</a></li>
-
-      <li><a href="billing-ai.html" class="nav-link-item" data-page="billing-ai">Billing AI</a></li>
+      <li class="nav-dropdown"><a href="services.html" class="nav-link-item active" data-page="services">Services <span class="nav-caret">▾</span></a><ul class="nav-submenu"><li><a href="services.html#software">Custom Software, ERP & Business Solutions</a></li><li><a href="services.html#ai-services">AI Services</a></li><li><a href="services.html#whatsapp-agents">WhatsApp AI Agents</a></li></ul></li>
 
       <li><a href="portfolio.html" class="nav-link-item" data-page="portfolio">Portfolio</a></li>
 
@@ -266,8 +264,9 @@
     <a href="about.html" onclick="toggleMobileMenu()">About</a>
 
     <a href="services.html" onclick="toggleMobileMenu()">Services</a>
-
-    <a href="billing-ai.html" onclick="toggleMobileMenu()">Billing AI</a>
+    <a href="services.html#software" class="mobile-sub" onclick="toggleMobileMenu()">Custom Software, ERP & Business Solutions</a>
+    <a href="services.html#ai-services" class="mobile-sub" onclick="toggleMobileMenu()">AI Services</a>
+    <a href="services.html#whatsapp-agents" class="mobile-sub" onclick="toggleMobileMenu()">WhatsApp AI Agents</a>
 
     <a href="portfolio.html" onclick="toggleMobileMenu()">Portfolio</a>
 
@@ -293,12 +292,12 @@
 
         <h1>AI-first software & systems built for <span class="text-accent">real</span> business growth.</h1>
 
-        <p>From autonomous AI agents and enterprise RAG systems to high-performance web, mobile, cloud, and IoT platforms, we engineer reliable digital products that automate operations and scale businesses.</p>
+        <p>From custom software and ERP systems to AI services and WhatsApp AI agents that run your front desk, billing counter and booking line, we engineer reliable digital products that automate operations and scale businesses.</p>
 
         <div class="services-hero-actions">
 
           <button class="btn-primary"
-            onclick="document.querySelector('.service-detailed').scrollIntoView({behavior: 'smooth'})"><span>Explore
+            onclick="document.getElementById('svc-tabs').scrollIntoView({behavior: 'smooth'})"><span>Explore
               Services</span></button>
 
         </div>
@@ -369,19 +368,38 @@
 
 
 
+
+  <!-- Services Tabs -->
+  <div class="svc-tabs-wrap" id="svc-tabs">
+    <div class="container">
+      <div class="svc-tabs" role="tablist">
+        <button class="svc-tab active" role="tab" data-tab="software" onclick="selectSvcTab('software')">Custom Software, ERP &amp; Business Solutions</button>
+        <button class="svc-tab" role="tab" data-tab="ai" onclick="selectSvcTab('ai')">AI Services</button>
+        <button class="svc-tab" role="tab" data-tab="whatsapp" onclick="selectSvcTab('whatsapp')">WhatsApp AI Agents</button>
+      </div>
+    </div>
+  </div>
+
   <!-- 2. Services Overview -->
 
-  <section class="services-overview" id="services-grid">
+  <section class="services-overview" id="services-grid" data-panel="software ai">
 
     <div class="container reveal">
 
-      <div class="section-label">Core Competencies</div>
-
-      <h2>What we do best</h2>
+      <div data-panel="software">
+        <div class="section-label">Custom Software, ERP &amp; Business Solutions</div>
+        <h2>Software built around how your business actually runs</h2>
+        <p class="svc-panel-sub">We design and build the systems that run your operations: ERP and billing platforms, inventory and business management suites, web portals, mobile apps and desktop software. Fully custom, cloud-ready, integrated with the tools you already use, and supported long after launch.</p>
+      </div>
+      <div data-panel="ai">
+        <div class="section-label">AI Services</div>
+        <h2>Put AI to work inside your operations</h2>
+        <p class="svc-panel-sub">Autonomous agents, natural-language access to your data, predictive alerts and intelligent automation. Production systems connected to your real data, not demos.</p>
+      </div>
 
       <div class="overview-grid">
 
-        <div class="svc-card svc-card-featured">
+        <div data-panel="ai" class="svc-card svc-card-featured">
 
           <div class="svc-card-icon">🧠</div>
 
@@ -391,7 +409,27 @@
 
         </div>
 
-        <div class="svc-card">
+        <div data-panel="software" class="svc-card">
+
+          <div class="svc-card-icon">🧾</div>
+
+          <h3>ERP, Billing &amp; Business Systems</h3>
+
+          <p>Custom ERP, billing, inventory and workflow platforms that replace spreadsheets and disconnected tools.</p>
+
+        </div>
+
+        <div data-panel="ai" class="svc-card">
+
+          <div class="svc-card-icon">🧾</div>
+
+          <h3>Billing AI</h3>
+
+          <p>An autonomous accounts keeper and business planner: instant GST invoices, credit-limit control and live cashflow, orderable on WhatsApp &amp; Telegram. <a href="billing-ai.html" style="color:var(--accent)">Explore Billing AI →</a></p>
+
+        </div>
+
+        <div data-panel="software" class="svc-card">
 
           <div class="svc-card-icon">🌐</div>
 
@@ -401,7 +439,7 @@
 
         </div>
 
-        <div class="svc-card">
+        <div data-panel="software" class="svc-card">
 
           <div class="svc-card-icon">📱</div>
 
@@ -411,7 +449,7 @@
 
         </div>
 
-        <div class="svc-card">
+        <div data-panel="software" class="svc-card">
 
           <div class="svc-card-icon">☁️</div>
 
@@ -421,7 +459,7 @@
 
         </div>
 
-        <div class="svc-card">
+        <div data-panel="software" class="svc-card">
 
           <div class="svc-card-icon">💻</div>
 
@@ -431,7 +469,7 @@
 
         </div>
 
-        <div class="svc-card">
+        <div data-panel="software" class="svc-card">
 
           <div class="svc-card-icon">🔌</div>
 
@@ -451,7 +489,7 @@
 
   <!-- 3. Detailed Service Showcase -->
 
-  <section class="service-detailed">
+  <section class="service-detailed" data-panel="software ai">
 
     <div class="container">
 
@@ -459,7 +497,7 @@
 
       <!-- AI & Agentic Systems Showcase -->
 
-      <div class="service-full-item reveal" id="ai-solutions">
+      <div class="service-full-item reveal" id="ai-solutions" data-panel="ai">
 
         <div class="service-full-text">
 
@@ -573,7 +611,7 @@
 
       <!-- Web Apps Showcase -->
 
-      <div class="service-full-item reveal" id="web-development">
+      <div class="service-full-item reveal" id="web-development" data-panel="software">
 
         <div class="service-full-text">
 
@@ -695,7 +733,7 @@
 
       <!-- Mobile Apps Showcase -->
 
-      <div class="service-full-item reveal" id="android-applications">
+      <div class="service-full-item reveal" id="android-applications" data-panel="software">
 
         <div class="service-full-text">
 
@@ -814,7 +852,7 @@
 
       <!-- Cloud Architecture Showcase -->
 
-      <div class="service-full-item reveal" id="cloud-deployment">
+      <div class="service-full-item reveal" id="cloud-deployment" data-panel="software">
 
         <div class="service-full-text">
 
@@ -920,7 +958,7 @@
 
       <!-- Desktop Software Showcase -->
 
-      <div class="service-full-item reveal" id="desktop-software">
+      <div class="service-full-item reveal" id="desktop-software" data-panel="software">
 
         <div class="service-full-text">
 
@@ -1054,7 +1092,7 @@
 
       <!-- IoT Ecosystems Showcase -->
 
-      <div class="service-full-item reveal" id="iot-solutions">
+      <div class="service-full-item reveal" id="iot-solutions" data-panel="software">
 
         <div class="service-full-text">
 
@@ -1165,6 +1203,136 @@
 
 
 
+
+
+
+  <!-- WhatsApp AI Agents -->
+  <section class="wa-agents" id="whatsapp-agents" data-panel="whatsapp" hidden>
+    <div class="container">
+
+      <div class="wa-hero reveal">
+        <div class="section-label">WhatsApp AI Agents</div>
+        <h2>Your front desk, billing counter and booking line, all on WhatsApp. Open 24/7.</h2>
+        <p>Your customers already live on WhatsApp. Our AI agents turn that chat into your most efficient team member. They book appointments, collect payments, answer order-status queries and record every transaction automatically. No app to install, no forms, no hold music. They understand English, Hindi, Urdu and Hinglish, including voice notes.</p>
+        <p>Think of an agent as a coordinator that never sleeps. It takes over the repetitive work of front desks, cashiers and booking counters so your team can focus on real work.</p>
+        <div class="wa-pitch-lines">
+          <span>One number. Zero queues. Every conversation recorded.</span>
+          <span>Customers message. The agent handles it. Your books update themselves.</span>
+          <span>A coordinator that works 24/7 at a fraction of a salary.</span>
+        </div>
+      </div>
+
+      <h3 class="wa-subhead">What our WhatsApp agents do</h3>
+      <div class="wa-cap-grid">
+        <div class="wa-cap"><span>📅</span><div><h4>Bookings &amp; queues</h4><p>Book, reschedule and cancel appointments in natural language, with automatic capacity management and estimated arrival times.</p></div></div>
+        <div class="wa-cap"><span>💳</span><div><h4>Payments in chat</h4><p>Collect payments through GPay/UPI links and QR codes, confirm them instantly and send digital receipts and invoices.</p></div></div>
+        <div class="wa-cap"><span>📦</span><div><h4>Live order status</h4><p>Customers ask "where is my order?" and get a live answer from your ERP or sheet.</p></div></div>
+        <div class="wa-cap"><span>📒</span><div><h4>Automatic bookkeeping</h4><p>Every booking and payment is logged, with daily and monthly summaries sent to the owner on WhatsApp.</p></div></div>
+        <div class="wa-cap"><span>⏰</span><div><h4>Reminders &amp; follow-ups</h4><p>Appointment reminders to cut no-shows, plus feedback requests, recall reminders and offers to past customers.</p></div></div>
+        <div class="wa-cap"><span>🛍️</span><div><h4>Catalogue &amp; ordering</h4><p>Customers browse your catalogue and place orders in chat.</p></div></div>
+        <div class="wa-cap"><span>🎙️</span><div><h4>Voice &amp; languages</h4><p>Understands voice notes in English, Hindi, Urdu and Hinglish.</p></div></div>
+        <div class="wa-cap"><span>🔑</span><div><h4>Owner control by chat</h4><p>Change timings, capacity and holidays over WhatsApp, with confirm-before-change safety.</p></div></div>
+        <div class="wa-cap"><span>🤝</span><div><h4>Human handoff &amp; dashboard</h4><p>A live operator dashboard to monitor chats and take over from the AI at any moment.</p></div></div>
+        <div class="wa-cap"><span>🔗</span><div><h4>Integrations</h4><p>Sync with Google Sheets, your ERP or your CRM, and route one number across multiple branches or doctors.</p></div></div>
+        <div class="wa-cap"><span>📊</span><div><h4>Analytics</h4><p>Peak hours, no-show rate, revenue and repeat customers at a glance.</p></div></div>
+      </div>
+
+      <p class="wa-works-for"><strong>Works for:</strong> clinics, salons, restaurants, gyms, schools, repair shops, distributors and travel businesses.</p>
+
+      <h3 class="wa-subhead">Featured solutions</h3>
+
+      <div class="wa-solution reveal" id="doctor-agent">
+        <div class="wa-sol-media"><img src="assets/images/wa_relay_dashboard.webp" alt="WhatsApp AI Doctor operator dashboard" loading="lazy"></div>
+        <div class="wa-sol-body">
+        <div class="wa-sol-tag">Solution 01 · Healthcare clinic</div>
+        <h3>WhatsApp AI Doctor</h3>
+        <p class="wa-sol-tagline">A clinic appointment agent that never closes.</p>
+        <p>Patients message the clinic's WhatsApp number and book appointments in their own words and language. The agent schedules appointments, enforces booking windows and capacity, and tells each patient their approximate arrival time. Doctors check their day on chat, and the admin changes the schedule by messaging the bot.</p>
+        <ul class="feature-list">
+          <li>Natural-language appointment booking in English, Hindi, Urdu &amp; Hinglish</li>
+          <li>Smart scheduling, morning/afternoon capacity and estimated arrival times</li>
+          <li>Voice-note understanding with speech transcription</li>
+          <li>Doctor agent: today's patient list and upcoming schedule</li>
+          <li>Admin-by-chat schedule changes with confirm-before-change safety</li>
+          <li>Cancellations with automatic patient notifications</li>
+          <li>Live operator dashboard with human takeover and Google Sheets sync</li>
+        </ul>
+        <a href="javascript:void(0)" class="service-showcase-cta" onclick="openProjectOverview('wa_doctor')">Project overview →</a>
+        </div>
+      </div>
+
+      <div class="wa-solution reveal" id="travel-agent">
+        <div class="wa-sol-media"><img src="assets/images/travel_agent.svg" alt="AI travel booking agent booking a flight through chat" loading="lazy"></div>
+        <div class="wa-sol-body">
+        <div class="wa-sol-tag">Solution 02 · Travel</div>
+        <h3>AI Travel Booking Agent</h3>
+        <p class="wa-sol-tagline">Your travel desk, in a conversation. Every mode, every border, every hour.</p>
+        <p>An AI agent that books flights, buses and trains, domestic and international, through plain conversation. A traveller says "Mumbai to Dubai next Friday, window seat, under ₹30k" in any language, and the agent searches, compares, books and issues the ticket. It then manages the journey: changes, cancellations, refunds and day-of-travel questions, all handled 24/7 without queues or call-centre waits.</p>
+        <ul class="feature-list">
+          <li>Search and compare flights, buses and trains across operators</li>
+          <li>Book in natural language, including multi-city and international trips</li>
+          <li>Handle refunds, cancellations and rescheduling, with fare-rule explanations</li>
+          <li>24/7 customer service: PNR and booking status, delay alerts, baggage and visa FAQs</li>
+          <li>Take payments and send e-tickets and invoices in chat</li>
+          <li>Multiple languages and voice support</li>
+          <li>Escalate complex cases to a human agent with full context</li>
+          <li>Log every booking and refund for automatic bookkeeping</li>
+          <li>Runs on WhatsApp, web chat or your own app</li>
+        </ul>
+        <p class="wa-built-for"><strong>Built for:</strong> travel agencies, bus operators, OTAs and corporate travel desks.</p>
+        <a href="contact.html" class="service-showcase-cta">Discuss this solution →</a>
+        </div>
+      </div>
+
+      <div class="wa-solution reveal" id="restaurant-agent">
+        <div class="wa-sol-media"><img src="assets/images/restaurant_agent.svg" alt="AI restaurant agent taking a table booking and order" loading="lazy"></div>
+        <div class="wa-sol-body">
+        <div class="wa-sol-tag">Solution 03 · Restaurants</div>
+        <h3>AI Restaurant Agent</h3>
+        <p class="wa-sol-tagline">Your waiter, cashier and order desk, on WhatsApp. Never closed, never busy.</p>
+        <p>Diners message your restaurant number the way they would talk to a waiter: "Table for 4 tonight at 8", "one butter chicken and two naan, home delivery" or "where's my order?" The agent shows the menu, takes the booking or order, collects payment and keeps the kitchen and your books in sync. Peak-hour phone rush, missed orders and manual order slips go away.</p>
+        <ul class="feature-list">
+          <li>Table reservations: book, change and cancel with automatic capacity management</li>
+          <li>Menu and ordering with customisations and combos, for dine-in, takeaway and delivery</li>
+          <li>GPay/UPI payments in chat with instant confirmation and digital bills</li>
+          <li>Live order status: "Preparing", "Out for delivery" and ETAs</li>
+          <li>Orders reach the kitchen or POS in a clean format, with a dashboard for staff takeover</li>
+          <li>Automatic bookkeeping with daily sales summaries sent to the owner</li>
+          <li>Owner control by chat: menu changes, "sold out" items, timings and holidays</li>
+          <li>Booking reminders, review requests and "we miss you" offers</li>
+          <li>Complaints and refunds handled in chat, escalated to a manager when needed</li>
+          <li>Reports on best sellers, peak hours and repeat customers</li>
+        </ul>
+        <p class="wa-built-for"><strong>Built for:</strong> restaurants, cafes, cloud kitchens, bakeries and catering businesses.</p>
+        <a href="contact.html" class="service-showcase-cta">Discuss this solution →</a>
+        </div>
+      </div>
+
+      <div class="wa-solution reveal" id="billing-ai-agent">
+        <div class="wa-sol-media"><img src="assets/images/telegram_chat_mockup.jpg" alt="Billing AI ordering on Telegram" loading="lazy"></div>
+        <div class="wa-sol-body">
+        <div class="wa-sol-tag">Solution 04 · Wholesale, distribution &amp; manufacturing</div>
+        <h3>Billing AI</h3>
+        <p class="wa-sol-tagline">Smart business planner, accounts keeper and growth engine, run from a chat.</p>
+        <p>Billing AI takes orders over zero-install WhatsApp and Telegram ordering, enforces customer credit limits, generates GST tax invoices instantly and keeps your accounts updated without manual data entry. Owners get real-time cashflow and stock visibility without opening a spreadsheet.</p>
+        <ul class="feature-list">
+          <li>WhatsApp and Telegram ordering with no app to install</li>
+          <li>Instant GST tax invoices</li>
+          <li>Autonomous accounts keeping with no manual data entry</li>
+          <li>Customer credit-limit enforcement</li>
+          <li>Real-time cashflow and stock visibility</li>
+        </ul>
+        <a href="billing-ai.html" class="service-showcase-cta">Explore Billing AI →</a>
+        </div>
+      </div>
+
+      <div class="wa-cta reveal">
+        <h3>Tell us your counter. We'll build the agent.</h3>
+        <a href="contact.html#contact-form" class="btn-primary"><span>Start a Conversation →</span></a>
+      </div>
+
+    </div>
+  </section>
 
 
 
@@ -1687,19 +1855,9 @@
           <h4>Services</h4>
 
           <ul>
-
-            <li><a href="services.html#ai-solutions">AI & Agentic Systems</a></li>
-
-            <li><a href="services.html#web-development">Web Development</a></li>
-
-            <li><a href="services.html#android-applications">Android Applications</a></li>
-
-            <li><a href="services.html#cloud-deployment">Cloud & AI Infrastructure</a></li>
-
-            <li><a href="services.html#desktop-software">Desktop Software</a></li>
-
-            <li><a href="services.html#iot-solutions">IoT Solutions</a></li>
-
+            <li><a href="services.html#software">Custom Software, ERP & Business Solutions</a></li>
+            <li><a href="services.html#ai-services">AI Services</a></li>
+            <li><a href="services.html#whatsapp-agents">WhatsApp AI Agents</a></li>
           </ul>
 
         </div>
@@ -1752,6 +1910,49 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
   <script src="js/script.js"></script>
+
+  <script>
+    (function () {
+      var TABS = ['software', 'ai', 'whatsapp'];
+      var HASH = {
+        'software': 'software', 'ai-services': 'ai', 'whatsapp-agents': 'whatsapp',
+        'web-development': 'software', 'android-applications': 'software', 'cloud-deployment': 'software',
+        'desktop-software': 'software', 'iot-solutions': 'software', 'ai-solutions': 'ai',
+        'doctor-agent': 'whatsapp', 'travel-agent': 'whatsapp', 'restaurant-agent': 'whatsapp', 'billing-ai-agent': 'whatsapp'
+      };
+      function apply(tab) {
+        document.querySelectorAll('.svc-tab').forEach(function (b) {
+          var on = b.getAttribute('data-tab') === tab;
+          b.classList.toggle('active', on);
+          b.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        document.querySelectorAll('[data-panel]').forEach(function (el) {
+          var show = el.getAttribute('data-panel').split(' ').indexOf(tab) !== -1;
+          el.hidden = !show;
+          if (show) {
+            el.classList.add('visible');
+            el.querySelectorAll('.reveal, .svc-card').forEach(function (c) { c.classList.add('visible'); });
+          }
+        });
+      }
+      window.selectSvcTab = function (tab) {
+        apply(tab);
+        try { history.replaceState(null, '', '#' + (tab === 'ai' ? 'ai-services' : tab === 'whatsapp' ? 'whatsapp-agents' : 'software')); } catch (e) { }
+      };
+      function fromHash(scroll) {
+        var h = (location.hash || '').slice(1);
+        var tab = HASH[h] || 'software';
+        apply(tab);
+        var target = document.getElementById(h);
+        if (scroll) {
+          var el = (target && !target.hidden) ? target : document.getElementById('svc-tabs');
+          setTimeout(function () { el.scrollIntoView({ behavior: 'smooth' }); }, 150);
+        }
+      }
+      fromHash(!!location.hash);
+      window.addEventListener('hashchange', function () { fromHash(true); });
+    })();
+  </script>
 
 
 </body>

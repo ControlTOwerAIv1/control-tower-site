@@ -13238,4 +13238,74 @@ body.project-modal-open {
   background: #000;
   outline: none;
   border-radius: 13px;
-}
+}
+
+/* ===== Nav dropdown (Services) ===== */
+.nav-dropdown { position: relative; }
+.nav-dropdown .nav-caret { font-size: .65rem; opacity: .7; margin-left: 2px; }
+.nav-submenu {
+  position: absolute; top: 100%; left: 0; min-width: 270px; list-style: none; margin: 0; padding: .5rem;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, .12);
+  opacity: 0; visibility: hidden; transform: translateY(6px);
+  transition: opacity .2s, transform .2s, visibility .2s; z-index: 1100;
+}
+.nav-dropdown:hover .nav-submenu, .nav-dropdown:focus-within .nav-submenu { opacity: 1; visibility: visible; transform: translateY(0); }
+.nav-links .nav-submenu a { display: block; border-radius: 10px; padding: .55rem .85rem; white-space: nowrap; }
+.mobile-menu a.mobile-sub { padding-left: 2rem; font-size: .9em; opacity: .85; }
+
+/* ===== Services tabs ===== */
+.svc-tabs-wrap { padding: 1rem 0 0; background: transparent; }
+.svc-tabs { display: flex; gap: .6rem; flex-wrap: wrap; justify-content: center; padding: 0 0 .5rem; }
+.svc-tab {
+  font-family: var(--font-head); font-weight: 600; font-size: .9rem; cursor: pointer;
+  padding: .65rem 1.3rem; border-radius: 100px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text2); transition: all .25s;
+}
+.svc-tab:hover { color: var(--text); border-color: var(--accent); }
+.svc-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 6px 20px var(--glow); }
+[hidden] { display: none !important; }
+.svc-panel-sub { max-width: 760px; margin: .75rem 0 0; color: var(--text2); line-height: 1.6; }
+
+/* ===== WhatsApp AI agents panel ===== */
+.wa-agents { padding: 2rem 0 5rem; background: var(--bg2); }
+.wa-hero h2 { font-family: var(--font-head); font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -.03em; margin: .5rem 0 1rem; max-width: 900px; }
+.wa-hero p { max-width: 800px; color: var(--text2); line-height: 1.7; margin: 0 0 1rem; }
+.wa-pitch-lines { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.25rem; }
+.wa-pitch-lines span { font-family: var(--font-mono); font-size: .75rem; padding: .5rem .9rem; border-radius: 100px; background: var(--glow); color: var(--accent); border: 1px solid var(--border); }
+.wa-subhead { font-family: var(--font-head); font-size: 1.5rem; margin: 3.5rem 0 1.25rem; letter-spacing: -.02em; }
+.wa-cap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+.wa-cap { display: flex; gap: .9rem; padding: 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; transition: all .3s; }
+.wa-cap:hover { border-color: var(--accent); box-shadow: 0 10px 30px var(--glow); transform: translateY(-3px); }
+.wa-cap > span { font-size: 1.6rem; line-height: 1; }
+.wa-cap h4 { margin: 0 0 .3rem; font-family: var(--font-head); font-size: 1rem; }
+.wa-cap p { margin: 0; font-size: .86rem; color: var(--text2); line-height: 1.5; }
+.wa-works-for, .wa-built-for { color: var(--text2); margin: 1.5rem 0 0; }
+.wa-built-for { margin: 1rem 0 1.25rem; }
+.wa-solution { margin-top: 1.75rem; padding: 2rem; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; }
+.wa-sol-tag { font-family: var(--font-mono); font-size: .72rem; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; }
+.wa-solution h3 { font-family: var(--font-head); font-size: 1.8rem; margin: .4rem 0 .25rem; letter-spacing: -.02em; }
+.wa-sol-tagline { font-weight: 600; color: var(--text); margin: 0 0 1rem; }
+.wa-solution > p { color: var(--text2); line-height: 1.7; max-width: 820px; }
+.wa-cta { text-align: center; margin-top: 3.5rem; }
+.wa-cta h3 { font-family: var(--font-head); font-size: 1.6rem; margin-bottom: 1.25rem; }
+@media (max-width: 768px) {
+  .svc-tab { font-size: .8rem; padding: .55rem 1rem; }
+  .wa-solution { padding: 1.4rem; }
+}
+
+/* ===== WhatsApp solution cards: media + compact body ===== */
+.wa-solution { display: grid; grid-template-columns: minmax(220px, 2fr) 3fr; gap: 2rem; align-items: start; padding: 1.5rem; }
+.wa-sol-media { border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg2); aspect-ratio: 4 / 3; }
+.wa-sol-media img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.wa-sol-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .5rem; background: linear-gradient(135deg, rgba(37, 99, 235, .15), rgba(56, 189, 248, .05)); }
+.wa-sol-placeholder span { font-size: 3.5rem; line-height: 1; }
+.wa-sol-placeholder small { font-family: var(--font-mono); font-size: .75rem; color: var(--text2); text-align: center; }
+.wa-sol-body .feature-list { margin-bottom: 1rem; gap: .5rem; }
+.wa-sol-body .feature-list li { opacity: 1; transform: none; font-size: .9rem; }
+.wa-solution h3 { font-size: 1.5rem; }
+.wa-solution > p, .wa-sol-body > p { font-size: .92rem; }
+@media (max-width: 768px) {
+  .wa-solution { grid-template-columns: 1fr; gap: 1.25rem; }
+  .wa-sol-media { aspect-ratio: 16 / 10; }
+}

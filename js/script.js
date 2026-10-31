@@ -38,11 +38,11 @@ window.addEventListener('beforeunload', () => {
     'home': 'home',
     'about': 'about',
     'services': 'services',
-    'billing-ai': 'billing-ai',
-    'billing ai': 'billing-ai',
-    'billing_ai': 'billing-ai',
-    'billing': 'billing-ai',
-    'supply-chain-automation': 'billing-ai',
+    'billing-ai': 'services',
+    'billing ai': 'services',
+    'billing_ai': 'services',
+    'billing': 'services',
+    'supply-chain-automation': 'services',
     'portfolio': 'portfolio',
     'technology': 'tech',
     'tech': 'tech',
@@ -56,7 +56,7 @@ window.addEventListener('beforeunload', () => {
   if (!activePage || activePage === 'home') {
     var fullPath = decodeURIComponent(window.location.pathname).toLowerCase();
     if (fullPath.indexOf('billing-ai') !== -1 || fullPath.indexOf('billing ai') !== -1 || fullPath.indexOf('supply-chain') !== -1) {
-      activePage = 'billing-ai';
+      activePage = 'services';
     } else {
       activePage = activePage || 'home';
     }
@@ -89,17 +89,17 @@ window.addEventListener('beforeunload', () => {
 let processTimelineScrollHandler = null;
 let whySectionScrollHandler = null;
 const projects = {
-  controltower_rag: {
-    industry: 'AI Systems · Enterprise Inventory & RAG Platform',
-    title: 'Control Tower RAG - Inventory Intelligence',
-    problem: 'High-throughput distributors struggle with stockouts, dead inventory accumulation, and slow manual database queries across multi-warehouse operations.',
-    solution: 'Engineered a LangGraph-based hybrid orchestrator combining multi-step SQL agents with Chroma vector retrieval to analyze sales velocity, predict stockout risks, and trigger automated alerts.',
-    outcome: 'Eliminated manual inventory reports, automated daily stockout risk dispatches via Telegram and WhatsApp, and enabled instant plain-English database querying with sub-500ms latency.',
-    stack: ['FastAPI', 'Python', 'LangChain', 'LangGraph', 'Claude 3.5 Sonnet', 'MySQL', 'ChromaDB', 'Twilio WhatsApp']
+  wa_doctor: {
+    industry: 'Healthcare · WhatsApp AI Appointment Agent',
+    title: 'WhatsApp AI Doctor - Clinic Appointment Agent',
+    problem: 'Clinics lose hours every day to phone calls, manual booking registers and front-desk queues, and patients cannot book outside working hours.',
+    solution: 'Built a WhatsApp AI agent on the Meta Cloud API that books appointments in natural language, enforces booking windows and capacity, and lets doctors and the clinic admin manage the schedule directly from chat.',
+    outcome: 'Patients book 24/7 in English, Hindi, Urdu or Hinglish, appointment times and arrival estimates are set automatically, and the clinic schedule stays in sync with Google Sheets and a live operator dashboard.',
+    stack: ['Node.js', 'Express', 'Claude AI', 'WhatsApp Cloud API', 'SQLite', 'Socket.IO', 'Google Sheets API', 'Whisper']
   },
   supplychain_orderbot: {
     industry: 'Supply Chain · B2B Telegram MiniApp & Order Automation',
-    title: 'OrderBot - Wholesale Hub & Supply Chain Automation',
+    title: 'Supply Chain AI',
     video: 'assets/videos/order_bot.mp4',
     poster: 'assets/images/supplychain_orderbot_dashboard.webp',
     problem: 'Wholesalers and distributors rely on fragmented phone calls and manual paper order taking, causing fulfillment bottlenecks, stock discrepancies, and delayed deliveries.',
@@ -108,22 +108,22 @@ const projects = {
     stack: ['Telegram WebApp', 'Django', 'FastAPI', 'Python', 'PostgreSQL / SQLite', 'Vanilla JS', 'WebSockets']
   },
   wa_relay: {
-    industry: 'Enterprise Comms · Multi-Operator WhatsApp Relay & Gateway',
-    title: 'WhatsApp ECHO Bridge - Multi-Operator Relay',
+    industry: 'Customer Communications · Unified WhatsApp Operations',
+    title: 'Unified Customer Engagement Platform',
     problem: 'WhatsApp Business only allows single-device logins for support teams, leading to lost customer inquiries, lack of collaboration, and zero message audit trails.',
-    solution: 'Developed a self-hosted WhatsApp ECHO bridge on the Baileys protocol with Socket.io real-time broadcast, allowing dozens of concurrent operators to manage chat streams simultaneously.',
+    solution: 'Built one shared WhatsApp inbox that lets dozens of support staff handle the same business number at once, with every chat assigned, tracked and saved.',
     outcome: 'Unified customer communications across all operators in under 10ms WebSocket latency, with native message editing, full SQLite WAL message history, and Google VCF contact sync.',
     stack: ['Node.js', 'Express', 'Socket.io', 'Baileys API', 'SQLite WAL', 'PM2', 'WebSockets']
   }
 };
 // Aliases
-projects.rag = projects.controltower_rag;
+projects.rag = projects.wa_doctor;
 projects.orderbot = projects.supplychain_orderbot;
 projects.relay = projects.wa_relay;
-projects.supremex = projects.controltower_rag;
+projects.supremex = projects.wa_doctor;
 projects.finova = projects.supplychain_orderbot;
 projects.chintamani = projects.wa_relay;
-projects.shantilal = projects.controltower_rag;
+projects.shantilal = projects.wa_doctor;
 
 function openModal(id) {
   const p = projects[id];
@@ -1524,25 +1524,27 @@ function initWhoFlipCard() {
 // PROJECT OVERVIEW MODAL SYSTEM
 // =========================================================================
 const projectOverviewData = {
-  controltower_rag: {
-    title: 'Control Tower RAG - Inventory Intelligence & Decision Engine',
-    tag: 'AI Systems · Enterprise Inventory & RAG Platform',
-    overview: 'Control Tower RAG is an enterprise AI inventory monitoring and decision intelligence platform. It features multi-agent LangChain and LangGraph hybrid orchestrators, real-time MySQL database inspection, dead inventory detection, stockout prediction based on daily sales velocity, and automated multi-channel alert dispatches.',
-    problem: 'High-throughput distributors struggle with stockouts, dead inventory accumulation, and slow manual database queries across multi-warehouse operations.',
+  wa_doctor: {
+    title: 'WhatsApp AI Doctor - Clinic Appointment Agent',
+    tag: 'Healthcare · WhatsApp AI Appointment Agent',
+    overview: 'WhatsApp AI Doctor is an AI receptionist that lives on a clinic\'s WhatsApp number. Patients book appointments in plain language, doctors check their day, and the clinic admin changes timings and capacity by simply messaging the bot. Built on the Meta WhatsApp Cloud API with Claude AI, it replaces the phone-and-register front desk.',
+    problem: 'Clinics lose hours every day to phone calls, manual booking registers and front-desk queues, and patients cannot book outside working hours.',
     features: [
-      'Intelligent Natural Language to SQL Agent querying',
-      'Real-time stockout prediction & sales velocity tracking',
-      'LangGraph hybrid routing (Vector docs + Live SQL)',
-      'Automated alert dispatches (Telegram Bot, SMTP HTML, Twilio WhatsApp)',
-      'In-memory snapshot caching & response versioning',
-      'Multi-warehouse product inventory management'
+      'Natural-language appointment booking in English, Hindi, Urdu & Hinglish',
+      'Smart scheduling with morning/afternoon capacity and estimated arrival times',
+      'Automatic booking windows and duplicate-booking prevention',
+      'Voice-note understanding with speech transcription',
+      'Doctor agent: today\'s patient list and upcoming schedule on chat',
+      'Admin-by-chat schedule changes with confirm-before-change safety',
+      'Cancellations with automatic patient notifications',
+      'Live multi-operator dashboard with human takeover & Google Sheets sync'
     ],
-    tech: ['FastAPI', 'Python', 'LangChain', 'LangGraph', 'Claude 3.5 Sonnet', 'MySQL / SQLAlchemy', 'ChromaDB', 'APScheduler'],
-    status: 'Live Enterprise System',
+    tech: [],
+    status: 'Live Client System',
     statusClass: 'live'
   },
   supplychain_orderbot: {
-    title: 'OrderBot - Wholesale Hub & Supply Chain Automation',
+    title: 'Supply Chain AI',
     tag: 'Supply Chain · B2B Telegram MiniApp & Order Automation',
     video: 'assets/videos/order_bot.mp4',
     poster: 'assets/images/supplychain_orderbot_dashboard.webp',
@@ -1561,31 +1563,31 @@ const projectOverviewData = {
     statusClass: 'live'
   },
   wa_relay: {
-    title: 'WhatsApp ECHO Bridge - Multi-Operator Relay & Gateway',
-    tag: 'Enterprise Comms · Multi-Operator WhatsApp Relay & Gateway',
-    overview: 'A high-concurrency self-hosted WhatsApp ECHO bridge and customer communications relay built on Node.js and the Baileys protocol. Enables dozens of support operators to collaborate on a single WhatsApp business line in real-time with full message persistence, live WebSocket synchronization, media handling, and audit trails.',
+    title: 'Unified Customer Engagement Platform',
+    tag: 'Customer Communications · Unified WhatsApp Operations',
+    overview: 'One shared WhatsApp number that your whole team can work from at the same time. Every customer chat is visible to the team, assigned to the right person, and saved as a permanent record, with photos, documents and voice notes included. Your team replies faster and no customer message goes unanswered.',
     problem: 'Single-session WhatsApp limitations prevent support teams from collaborating on customer chats, tracking message history, or handling concurrent customer inquiries.',
     features: [
       'Multi-operator live presence & concurrent chat assignment',
       'Real-time bi-directional message broadcast via WebSockets (<10ms)',
       'Native protocol message editing & message recall',
       'Persistent SQLite message history & attachment caching',
-      'Google VCF automated contact resolution & address book sync',
-      'PM2 process management with 99.98% uptime'
+      'Customer contacts saved and synced automatically',
+      'Reliable round-the-clock operation'
     ],
-    tech: ['Node.js', 'Express', 'Socket.io', 'Baileys WhatsApp API', 'SQLite WAL', 'PM2', 'WebSockets'],
+    tech: [],
     status: 'Production Deployed',
     statusClass: 'live'
   }
 };
 // Aliases
-projectOverviewData.rag = projectOverviewData.controltower_rag;
+projectOverviewData.rag = projectOverviewData.wa_doctor;
 projectOverviewData.orderbot = projectOverviewData.supplychain_orderbot;
 projectOverviewData.relay = projectOverviewData.wa_relay;
-projectOverviewData.supremex = projectOverviewData.controltower_rag;
+projectOverviewData.supremex = projectOverviewData.wa_doctor;
 projectOverviewData.finova = projectOverviewData.supplychain_orderbot;
 projectOverviewData.chintamani = projectOverviewData.wa_relay;
-projectOverviewData.shantilal = projectOverviewData.controltower_rag;
+projectOverviewData.shantilal = projectOverviewData.wa_doctor;
 
 function openProjectOverview(id) {
   const data = projectOverviewData[id];
@@ -1637,12 +1639,13 @@ function openProjectOverview(id) {
         </ul>
       </div>
       
+      ${techHtml ? `
       <div class="project-modal-section" style="margin-bottom: 0;">
         <h4>// Technology</h4>
         <div class="project-modal-tech-stack">
           ${techHtml}
         </div>
-      </div>
+      </div>` : ''}
     </div>
   `;
 
