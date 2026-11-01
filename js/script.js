@@ -199,7 +199,7 @@ function showPage(name) {
 // WhatsApp
 function openWhatsApp() {
   const msg = encodeURIComponent("I want to enquire more for my business.");
-  window.open('https://wa.me/919821139201?text=' + msg, '_blank');
+  window.open('https://wa.me/917262067842?text=' + msg, '_blank');
 }
 
 // Nav scroll with smooth transition
